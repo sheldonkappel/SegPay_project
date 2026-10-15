@@ -1,0 +1,15 @@
+response_code,description
+00,Approved
+05,Do not honor
+14,Invalid card number
+41,Lost card - pick up
+51,Insufficient funds
+54,Expired card
+57,Transaction not permitted to cardholder
+59,Suspected fraud
+61,Exceeds withdrawal amount limit
+62,Restricted card
+78,"Blocked, first used / no account"
+91,Issuer or switch inoperative
+96,System malfunction
+N7,CVV2 / CVC2 failure

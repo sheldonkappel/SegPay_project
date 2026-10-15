@@ -1,0 +1,2 @@
+txn_id,purchase_id,parent_txn_id,merchant_id,site_id,package_id,customer_id,txn_type,amount,currency,card_brand,card_bin,card_last4,payment_method,response_code,response_text,status,auth_timestamp,settle_date,acquirer,mid,three_ds,device_type,ip_address,ip_country,affiliate_id,is_test,batch_id,load_ts
+810000001,4000003,0,1289,5749,92919,C00000001,SALE,1.84,EUR,MASTERCARD,545403,1556,CARD,62,RESTRICTED CARD,DECLINED,2024-09-30 21:51:47,,EUROSETTLE,5319324701,TRUE,mobile,144.90.1.174,PL,,false,B20241001-6226,2024-10-01 02:11:00

@@ -1,6 +1,3 @@
-# Source data files - inputs, not code (160 MB; may contain personal data)
-AI generated data/
-
 # Run logs written by PowerShell scripts\Load-All.ps1
 logs/
 

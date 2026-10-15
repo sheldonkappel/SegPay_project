@@ -1,0 +1,17 @@
+network,reason_code,description,category
+VISA,10.4,Other Fraud - Card Absent Environment,Fraud
+VISA,10.5,Visa Fraud Monitoring Program,Fraud
+VISA,11.1,Card Recovery Bulletin,Authorization
+VISA,12.6.1,Duplicate Processing,Processing Error
+VISA,13.1,Merchandise/Services Not Received,Consumer Dispute
+VISA,13.2,Cancelled Recurring Transaction,Consumer Dispute
+VISA,13.3,Not as Described or Defective,Consumer Dispute
+MASTERCARD,4837,No Cardholder Authorization,Fraud
+MASTERCARD,4853,Cardholder Dispute,Consumer Dispute
+MASTERCARD,4863,Cardholder Does Not Recognize - Potential Fraud,Fraud
+MASTERCARD,4834,Point-of-Interaction Error / Duplicate,Processing Error
+AMEX,F29,Card Not Present,Fraud
+AMEX,C08,Goods/Services Not Received,Consumer Dispute
+AMEX,C02,Credit Not Processed,Consumer Dispute
+DISCOVER,UA02,Fraud - Card Not Present,Fraud
+DISCOVER,RG,Non-Receipt of Goods/Services,Consumer Dispute

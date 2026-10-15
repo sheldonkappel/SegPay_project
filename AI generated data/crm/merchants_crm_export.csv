@@ -1,0 +1,420 @@
+merchant_id,legal_name,dba_name,vertical,country,onboard_date,status,risk_tier,reserve_pct,processing_fee_pct,per_txn_fee,chargeback_fee,mcc,account_manager,contact_email,last_modified,modified_by
+MRC-00059,Orbit Group LLC,Orbit Group,Nutraceuticals,US,2019-08-04,Pending Review,4,15%,0.0895,0.25,35,5122,Jo Matsuda,billing@orbitgroup.com,2019-08-04 00:00:00,jsmith
+MRC-00001,Ember Entertainment Inc.,Ember Entertainment,SaaS / Software,US,2023-04-10,PENDING REVIEW,1,0.05,0.0551,0.3,15,5734,Tom Haverford,billing@emberentertainment.com,2023-04-10 00:00:00,boarding_svc
+MRC-00086,Atlas Entertainment B.V.,Atlas Entertainment,Adult,Netherlands,2022-08-08,Terminated,T5,0.2,0.0954,0.35,35,5967,Sam Achterberg,billing@atlasentertainment.com,2025-07-06 21:36:12,SYSTEM
+MRC-00078,Ivory Digital Inc.,Ivory Digital,Adult Entertainment,US,2024-11-06,Closed,T4,15%,0.0922,0.3,15,5967,Rico Delgado,billing@ivorydigital.com,2026-06-15 15:00:52,boarding_svc
+MRC-00041,Blue Labs Ltd,Blue Labs,Software/SaaS,CY,2020-05-12,Act,Low,5%,4.77,0.3,35,5734,Sam Achterberg,billing@bluelabs.com,2020-05-26 00:00:00,boarding_svc
+MRC-00021,Willow Digital Limited,Willow Digital,SaaS / Software,HK,01/15/2022,Active,T2,0.05,0.0655,0.2,25,5734,Marcus Oyelaran,billing@willowdigital.com,2023-04-18 16:28:02,SYSTEM
+MRC-00039,Neon Media GmbH,Neon Media,E-Learning,DE,20-Jan-18,Pending Review,T2,0.05,0.0595,0.3,35,8299,Jo Matsuda,billing@neonmedia.com,2018-01-20 00:00:00,admin
+MRC-00101,Onyx Studios Ltd,Onyx Studios,Dating,CY,"Sep 09, 2023",Active,MED,10%,0.0876,0.2,15,7273,Sam Achterberg,billing@onyxstudios.com,2023-09-23 00:00:00,boarding_svc
+MRC-00089,Nova Works Limited,Nova Works,SaaS,GB,2022-12-06,Terminated,1,0.05,5.7,0.3,35,5734,Lena Kowalczyk,billing@novaworks.com,2026-04-06 00:19:59,am_portal
+MRC-00100,Indigo Systems Inc.,Indigo Systems,Dating,US,20210704,Act,Tier 3,0.1,9.24%,0.2,25,7273,Tom Haverford,billing@indigosystems.com,2021-07-18 00:00:00,SYSTEM
+MRC-00054,Atlas Systems Ltd,Atlas Systems,Adult Entertainment,CYP,06/29/2025,Pending Review,Critical,0.2,9.6%,0.25,25,5967,Tom Haverford,billing@atlassystems.com,2025-06-29 00:00:00,am_portal
+MRC-00008,Pixel Interactive B.V.,Pixel Interactive,FITNESS,NL,10/21/2019,Pending Review,3,10,7.14%,0.2,15,7997,Rico Delgado,billing@pixelinteractive.com,10/21/2019 00:00,jsmith
+MRC-00116,Lumen Interactive Ltd,Lumen Interactive,Adult Entertainment,GB,2025-05-10,Active,Tier 4,15,0.0889,0.15,25,5967,Dana Whitfield,,01/10/2026 02:24,SYSTEM
+MRC-00053,Cobalt Digital Corp.,Cobalt Digital,Streaming,US,2025-02-28,Active,3,10,0.0607,0.35,15,7841,Tom Haverford,billing@cobaltdigital.com,2025-03-14 00:00:00,jsmith
+MRC-00118,Willow Studios Inc.,Willow Studios,E Learning,United States,12/22/2019,Active,2,5%,6%,0.25,25,8299,Tom Haverford,billing@willowstudios.com,2021-08-06 12:24:21,boarding_svc
+MRC-00101,Onyx Studios Ltd,Onyx Studios,Dating,Cyprus,09-Sep-23,Pending Review,3,10,0.0876,0.2,15,7273,Sam Achterberg,BILLING@ONYXSTUDIOS.COM,2023-09-09 00:00:00,am_portal
+MRC-00104,Pixel Works LLC,Pixel Works,Wellness,US,2021-09-05,Pending Review,Tier 3,10%,7.74,0.2,35,7997,Tom Haverford,billing@pixelworks.com,2021-09-05 00:00:00,am_portal
+MRC-00133,Velvet Digital LLC,Velvet Digital,Adult Entertainment,US,2025-11-12,active,3,0.1,0.0798,0.2,15,5967,Sam Achterberg,billing@velvetdigital.com,2025-11-26 00:00:00,admin
+MRC-00012,Nova Media Corp.,Nova Media,Streaming / Digital Media,United States,11/11/2022,Active,Tier 2,0.05,7.14%,0.35,35,7841,Rico Delgado,billing@novamedia.com,2022-11-25 00:00:00,boarding_svc
+MRC-00020,Cobalt Studios LLC,Cobalt Studios,Nutraceuticals,US,2023-09-02,ACTIVE,5,0.2,9.53,0.25,35,5122,Sam Achterberg,,2025-04-09 08:24:20,boarding_svc
+MRC-00092,Juniper Digital s.r.o.,Juniper Digital,Fitness & Wellness,CZ,"Apr 05, 2026",Pending Review,2,5%,0.0715,0.3,35,7997,Jo Matsuda,billing@juniperdigital.com,2026-04-05 00:00:00,am_portal
+MRC-00100,Indigo Systems Inc.,Indigo Systems,Online Dating,US,2021-07-04,Active,HIGH,0.15,9.24%,0.2,25,7273,Tom Haverford,billing@indigosystems.com,2024-04-05 13:13:01,boarding_svc
+MRC-00017,Delta Group Inc.,Delta Group,STREAMING,United States of America,29-Jan-18,Active,Tier 3,10,0.0755,0.2,35,7841,Marcus Oyelaran,billing@deltagroup.com,2018-02-12 00:00:00,jsmith
+MRC-00022,Nova Online Corp.,Nova Online,Streaming / Digital Media,US,2025-01-13,Pending Review,Tier 4,15%,0.0761,0.3,35,7841,Dana Whitfield,billing@novaonline.com,01/13/2025 00:00,SYSTEM
+MRC-00091,Neon Works Corp.,Neon Works,Adult Entertainment,US,2020-04-06,Act,4,15%,0.084,0.3,25,5967,Dana Whitfield,billing@neonworks.com,2025-08-19 20:51:59,SYSTEM
+MRC-00121,Mirage Media Pty Ltd,Mirage Media,Dating,Australia,01/04/2021,Active,High,15%,8.43,0.2,15,7273,Jo Matsuda,billing@miragemedia.com,2025-03-12 13:24:02,am_portal
+MRC-00059,Orbit Group LLC,Orbit Group,Nutraceuticals,US,04/08/2019,Active,4,15%,8.95%,0.25,35,5122,Jo Matsuda,billing@orbitgroup.com,2019-08-18 00:00:00,boarding_svc
+MRC-00109,Saffron Labs LLC,Saffron Labs ,Adult Entertainment,US,08/26/2018,Active,T3,10%,0.0724,0.3,35,5967,Marcus Oyelaran,billing@saffronlabs.com,2018-09-09 00:00:00,SYSTEM
+MRC-00004,Blue Ventures Ltd,Blue Ventures,SaaS / Software,GB,2024-12-21,Term,1,0.05,0.0523,0.35,15,5734,Dana Whitfield,billing@blueventures.com,2026-03-18 07:09:29,SYSTEM
+MRC-00035,Summit Interactive LLC,Summit Interactive,Adult Ent.,US,02/12/2023,Active,Very High,20%,0.1046,0.35,25,5967,Jo Matsuda,billing@summitinteractive.com,2024-01-12 17:29:07,am_portal
+MRC-00152,Indigo Ventures B.V.,Indigo Ventures,Dating,NL,2020-02-28,Pending Review,4,15,0.0843,0.2,15,7273,Dana Whitfield,billing@indigoventures.com,2020-02-28 00:00:00,SYSTEM
+MRC-00131,Harbor Systems SRL,Harbor Systems,SaaS / Software,RO,22-Aug-20,Active,LOW,0.05,4.87%,0.2,25,5734,Tom Haverford,billing@harborsystems.com,09/05/2020 00:00,admin
+MRC-00200,mirage digital llc,MIRAGE DIGITAL,ADULT ENT,US,2020-06-11,pending review,High,0.15,8.41%,0.15,15,5967,Rico Delgado,,2020-06-16 00:00:00,boarding_svc
+MRC-00143,Ember Digital SRL,Ember Digital,dating,RO,"Jan 19, 2020",Active,3,10,0.0738,0.3,35,7273,Dana Whitfield,billing@emberdigital.com,2025-08-06 16:42:26,SYSTEM
+MRC-00003,Aurora Media Ltd,Aurora Media,Software/SaaS,GB,04/04/2021,Pending Review,3,10%,6.32%,0.15,35,5734,Dana Whitfield,billing@auroramedia.com,04/04/2021 00:00,boarding_svc
+MRC-00141,Saffron Systems Limited,Saffron Systems,E-Learning,GB,2026-01-20,pending review,2,0.05,5.95%,0.35,25,8299,Priya Nandakumar,billing@saffronsystems.com,2026-01-20 00:00:00,SYSTEM
+MRC-00119,Echo Interactive Inc.,Echo Interactive,Streaming / Digital Media,USA,20210523,Active,Tier 3,10%,0.0758,0.35,35,7841,Lena Kowalczyk,billing@echointeractive.com,2024-03-09 00:31:14,boarding_svc
+MRC-00015,Summit Digital Ltd,Summit Digital,nutraceutical,GBR,07/05/2019,Pending Review,Critical,20,8.74%,0.25,35,5122,Lena Kowalczyk,billing@summitdigital.com,2019-05-07 00:00:00,am_portal
+MRC-00023,Echo Media Ltd,Echo Media,Software,CYP,2026-02-03,Pending Review,1,5%,0.0541,0.15,25,5734,Marcus Oyelaran,billing@echomedia.com,2026-02-03 00:00:00,admin
+MRC-00115,Onyx Media SRL,Onyx Media,Dating,RO,2026-05-11,Active,4,15,0.0916,0.15,25,7273,Lena Kowalczyk,N/A,2026-05-25 00:00:00,admin
+MRC-00104,Pixel Works LLC,Pixel Works,Fitness,US,2021-09-05,Active,MED,10%,0.0774,0.2,35,7997,Tom Haverford,billing@pixelworks.com,09/19/2021 00:00,SYSTEM
+MRC-00111,Delta Ventures S.L.,Delta Ventures,Adult Entertainment,ES,20-Oct-25,Active,T5,20%,9.81,0.15,35,5967,Tom Haverford,billing@deltaventures.com,2025-11-03 00:00:00,am_portal
+MRC-00151,Echo Online Limited,Echo Online,Adult Entertainment,GB,01/01/2022,Active,5,20%,9.75%,0.15,15,5967,Lena Kowalczyk,billing@echoonline.com,06/01/2023 07:52,am_portal
+MRC-00091,Neon Works Corp.,Neon Works,adult entertainment,USA,2020-04-06,Active,High,15,8.4%,0.3,25,5967,Lena Kowalczyk,billing@neonworks.com,04/20/2020 00:00,jsmith
+MRC-00007, Nova Interactive Inc.,Nova Interactive,Online Gaming,USA,05/16/2019,Closed,T4,15%,8.39%,0.35,35,5816,Dana Whitfield,billing@novainteractive.com,05/31/2026 03:57,am_portal
+MRC-00147,Polar Networks Inc.,Polar Networks,Streaming / Digital Media,US,2022-05-10,Pending Review,Medium,0.1,8.02%,0.35,35,7841,Jo Matsuda,billing@polarnetworks.com,2022-05-10 00:00:00,SYSTEM
+MRC-00087, Mirage Works Inc.,Mirage Works,SaaS / Software,United States,2021-12-26,Active,2,5,6.76,0.25,35,5734,Sam Achterberg,billing@mirageworks.com,10/08/2023 19:56,am_portal
+MRC-00139,Ivory Studios s.r.o.,Ivory Studios,Nutraceuticals,CZ,2025-01-22,Active,Critical,20,9.66%,0.25,35,5122,Dana Whitfield,billing@ivorystudios.com,2025-02-05 00:00:00,admin
+MRC-00087,Mirage Works Inc., Mirage Works,SaaS / Software,US,2021-12-26,Suspended,2,0.05,0.0676,0.25,35,5734,Sam Achterberg, billing@mirageworks.com,2025-10-15 08:25:17,SYSTEM
+MRC-00049,Willow Ventures Inc.,Willow Ventures,Streaming,USA,2021-05-12,pending review,3,0.1,0.074,0.25,25,7841,Jo Matsuda,,05/12/2021 00:00,admin
+MRC-00107,Aurora Interactive Corp.,Aurora Interactive,Dating,US,10/11/2020,Pending Review,HIGH,15,8.88,0.3,15,7273,Lena Kowalczyk,billing@aurorainteractive.com,2020-10-11 00:00:00,boarding_svc
+MRC-00043,Polar Entertainment LLC,Polar Entertainment,Nutraceuticals,US,01/25/2018,Pending Review,T5,20,9.93,0.2,25,5122,Jo Matsuda,billing@polarentertainment.com,2018-01-25 00:00:00,am_portal
+MRC-00123,Velvet Ventures Corp.,Velvet Ventures,E-Learning,US,2020-08-02,Pending Review,2,5%,6.36,0.35,25,8299,Jo Matsuda,billing@velvetventures.com,2020-08-02 00:00:00,admin
+MRC-00056,Ember Networks Inc.,Ember Networks,Streaming / Digital Media,US,2023-04-22,ACTIVE,2,0.05,0.0644,0.35,15,7841,Rico Delgado,billing@embernetworks.com,2023-05-06 00:00:00,admin
+MRC-00118,Willow Studios Inc.,Willow Studios,E-Learning,USA,2019-12-22,Pending Review,Tier 3,10%,6%,0.25,25,8299,Tom Haverford, billing@willowstudios.com,12/22/2019 00:00,SYSTEM
+MRC-00034,Falcon Ventures B.V.,Falcon Ventures,Adult Entertainment,NL,2018-06-17,Pending Review,Very High,20%,9.52%,0.35,35,5967,Marcus Oyelaran,,2018-06-17 00:00:00,boarding_svc
+MRC-00045,Apex Entertainment Ltd,Apex Entertainment,Dating,CY,2020-12-16,Active,Medium,10,7.26%,0.35,15,7273,Lena Kowalczyk,billing@apexentertainment.com,12/30/2020 00:00,admin
+MRC-00203,Velvet Studios L.L.C.,Velvet Studios,Adult Entertainment,United States,2022-03-11,pending review,HIGH,0.15,0.0804,0.35,15,5967,Marcus Oyelaran,billing@velvetstudios.com,2022-03-15 00:00:00,am_portal
+MRC-00053,Cobalt Digital Corp.,Cobalt Digital,Streaming,US,2025-02-28,PENDING REVIEW,Tier 3,0.1,0.0607,0.35,15,7841,Tom Haverford,,2025-02-28 00:00:00,admin
+MRC-00077,Lumen Ventures GmbH,Lumen Ventures,Dating,DE,11/18/2022,pending review,High,0.15,0.083,0.3,35,7273,Sam Achterberg,billing@lumenventures.com,2022-11-18 00:00:00,SYSTEM
+MRC-00033, Lumen Group B.V.,Lumen Group,SAAS,NL,2026-08-05,Terminated,T1,5%,0.0544,0.35,25,5734,Tom Haverford,billing@lumengroup.com,2026-09-10 21:55:19,am_portal
+MRC-00020,Cobalt Studios LLC,Cobalt Studios,Nutra,US,2023-09-02,Term,5,0.2,0.0953,0.25,35,5122,Sam Achterberg,billing@cobaltstudios.com,2025-08-04 17:00:22,am_portal
+MRC-00065,Ember Studios Corp.,Ember Studios,Online Gaming,US,08-Jul-18,Pending Review,T4,0.15,0.0928,0.35,25,5816,Sam Achterberg,billing@emberstudios.com,07/08/2018 00:00,am_portal
+MRC-00061,Saffron Media SRL,Saffron Media,STREAMING,ROU,2020-03-13,A,2,0.05,6.72,0.3,35,7841,Sam Achterberg,billing@saffronmedia.com,03/21/2026 04:34,SYSTEM
+MRC-00013,Marlin Labs Inc.,Marlin Labs,adult entertainment,CA,2018-10-24,Pending Review,T5,0.2,0.1043,0.2,35,5967,Marcus Oyelaran,billing@marlinlabs.com,10/24/2018 00:00,boarding_svc
+MRC-00127,Echo Works Ltd,Echo Works,Adult Entertainment,CY,2019-01-16,Active,5,20%,9.52,0.2,35,5967,Jo Matsuda,billing@echoworks.com,01/30/2019 00:00,SYSTEM
+MRC-00092,Juniper Digital s.r.o.,Juniper Digital,Fitness & Wellness,CZECH REPUBLIC,2026-04-05,Active,T2,0.05,0.0715,0.3,35,7997,Jo Matsuda,billing@juniperdigital.com,2026-04-19 00:00:00,SYSTEM
+MRC-00099,Ember Systems Limited,Ember Systems,Fitness & Wellness,HK,11/23/2025,Active,2,0.05,0.0604,0.2,25,7997,Marcus Oyelaran,billing@embersystems.com,2025-12-07 00:00:00,am_portal
+MRC-00138,Silk Entertainment LLC ,Silk Entertainment,Adult Ent.,USA,2026-07-23,Active,4,15,8.41%,0.25,15,5967,Jo Matsuda,billing@silkentertainment.com,08/06/2026 00:00,am_portal
+MRC-00070,Velvet Works S.L.,Velvet Works,Streaming / Digital Media,ES,20220810,Pending Review,3,10%,7.1,0.35,15,7841,Rico Delgado,billing@velvetworks.com,2022-08-10 00:00:00,SYSTEM
+MRC-00041,Blue Labs Ltd,Blue Labs,SaaS / Software,CYP,2020-05-12,Pending Review,1,5%,0.0477,0.3,35,5734,Sam Achterberg,billing@bluelabs.com,2020-05-12 00:00:00,admin
+MRC-00048,Onyx Labs LLC,Onyx Labs,dating,US,02/27/2020,Active,3,10%,0.0754,0.25,15,7273,Lena Kowalczyk,billing@onyxlabs.com,04/02/2025 19:25,jsmith
+MRC-99999,SEGPAY INTERNAL TEST ACCOUNT,SEGPAY INTERNAL TEST,TEST,US,2017-06-01,ACTIVE,1,0,0,0,0,0000,Dana Whitfield,qa@segpay-test.example,2017-06-15 00:00:00,admin
+MRC-00077,Lumen Ventures GmbH,Lumen Ventures,Dating,DE,2022-11-18,Active,4,15,0.083,0.3,35,7273,Sam Achterberg,billing@lumenventures.com,2022-12-02 00:00:00,boarding_svc
+MRC-00076,Indigo Online Inc.,Indigo Online,Online Gaming,US,09/03/2025,ACTIVE,3,10%,0.0763,0.3,15,5816,Rico Delgado,billing@indigoonline.com,03/23/2025 00:00,jsmith
+MRC-00052, Juniper Ventures B.V.,Juniper Ventures,Fitness & Wellness,NL,2023-08-10,Active,3,0.1,0.0799,0.3,15,7997,Rico Delgado,billing@juniperventures.com,2023-08-24 00:00:00,SYSTEM
+MRC-00152,Indigo Ventures B.V.,Indigo Ventures,Dating,NL,2020-02-28,Active,4,0.15,0.0843,0.2,15,7273,Dana Whitfield,billing@indigoventures.com,2020-03-13 00:00:00,am_portal
+MRC-00203,Velvet Studios L.L.C.,Velvet Studios,Adult Entertainment,US,2022-03-11,Active,Tier 4,15%,8.04,0.35,15,5967,Marcus Oyelaran,billing@velvetstudios.com,2022-03-24 00:00:00,jsmith
+MRC-00101,Onyx Studios Ltd,Onyx Studios,Dating & Social,CY,09/09/2023,Active,4,15%,0.0876,0.2,15,7273,Sam Achterberg,billing@onyxstudios.com,2024-06-04 19:03:22,jsmith
+MRC-00109,Saffron Labs LLC,Saffron Labs,Adult Entertainment,U.S.,26/08/2018,Active,HIGH,15%,7.24,0.3,35,5967,Marcus Oyelaran,billing@saffronlabs.com,2019-08-28 11:08:03,SYSTEM
+MRC-00103,Blue Entertainment Inc., Blue Entertainment,Online Gaming,US,2019-10-25,Closed,HIGH,15,0.0906,0.2,35,5816,Priya Nandakumar,BILLING@BLUEENTERTAINMENT.COM,2025-02-19 06:05:00,boarding_svc
+MRC-00131,Harbor Systems SRL,Harbor Systems,Software,RO,08/22/2020,Pending Review,1,0.05,0.0487,0.2,25,5734,Tom Haverford,billing@harborsystems.com,2020-08-22 00:00:00,admin
+MRC-00150,Pixel Networks Ltd,Pixel Networks,Software,CY,2020-02-20,Pending Review,1,0.05,0.0509,0.25,35,5734,Rico Delgado,billing@pixelnetworks.com,02/20/2020 00:00,jsmith
+MRC-00056,Ember Networks Inc.,Ember Networks,Streaming / Digital Media,US,2023-04-22,pending review,Low-Med,5%,6.44%,0.35,15,7841,Rico Delgado,billing@embernetworks.com,2023-04-22 00:00:00,SYSTEM
+MRC-00010,Aurora Entertainment Ltd,AURORA ENTERTAINMENT,Fitness & Wellness,CY,2020-01-21,Pending Review,High,0.15,7.35,0.25,25,7997,Marcus Oyelaran,billing@auroraentertainment.com,2020-01-21 00:00:00,SYSTEM
+MRC-00045,Apex Entertainment Ltd,Apex Entertainment,Dating,Cyprus,2020-12-16,Pending Review,Tier 3,0.1,0.0726,0.35,15,7273,Lena Kowalczyk,billing@apexentertainment.com,2020-12-16 00:00:00,admin
+MRC-00103,Blue Entertainment Inc.,Blue Entertainment,Online Gaming,US,2019-10-25,Active,4,15%,9.06,0.2,35,5816,Priya Nandakumar,billing@blueentertainment.com,2019-11-08 00:00:00,jsmith
+MRC-00071,Falcon Networks Corp.,Falcon Networks,Fitness & Wellness,US,2021-01-05,ACTIVE,T3,10%,7.55,0.25,15,7997,Rico Delgado,billing@falconnetworks.com,2021-01-19 00:00:00,jsmith
+MRC-00142,Cobalt Group Ltd,Cobalt Group,Media/Streaming,MT,2018-10-06,PENDING REVIEW,2,5,5.93%,0.15,35,7841,Sam Achterberg,billing@cobaltgroup.com,2018-10-06 00:00:00,am_portal
+MRC-00015,Summit Digital Ltd,SUMMIT DIGITAL,Nutraceuticals,United Kingdom,07-May-19,Active,Tier 5,20%,8.74,0.25,35,5122,Lena Kowalczyk,N/A,2019-05-21 00:00:00,jsmith
+MRC-00033,Lumen Group B.V.,Lumen Group,Software/SaaS,NLD,2026-08-05,Pending Review,1,0.05,5.44%,0.35,25,5734,Tom Haverford,billing@lumengroup.com,2026-08-05 00:00:00,am_portal
+MRC-00059,Orbit Group LLC,Orbit Group,Nutra,US,08/04/2019,Active,4,15%,8.95,0.25,35,5122,Sam Achterberg,billing@orbitgroup.com,2025-09-11 03:16:59,jsmith
+MRC-00130,Silk Studios Inc.,Silk Studios,SaaS / Software,U.S.A.,01/18/2026,Pending Review,LOW,0.05,0.0553,0.25,25,5734,Rico Delgado,billing@silkstudios.com,2026-01-18 00:00:00,am_portal
+MRC-00055,Orbit Works Corp.,Orbit Works,Education,US,20180912,Onboarding,2,0.05,6.34,0.35,15,8299,Jo Matsuda,billing@orbitworks.com,2018-09-12 00:00:00,boarding_svc
+MRC-00127,Echo Works Ltd,Echo Works,ADULT ENT,CY,2019-01-16,Pending Review,5,0.2,9.52%,0.2,35,5967,Jo Matsuda,BILLING@ECHOWORKS.COM,01/16/2019 00:00,admin
+MRC-00007,Nova Interactive Inc.,Nova Interactive,Online Gaming,US,05/16/2019,Active,3,0.1,0.0839,0.35,35,5816,Jo Matsuda,billing@novainteractive.com,2019-05-30 00:00:00,boarding_svc
+MRC-00065,Ember Studios Corp.,Ember Studios,Gaming,US,2018-07-08,Active,4,0.15,9.28%,0.35,25,5816,Sam Achterberg,billing@emberstudios.com,2018-07-22 00:00:00,jsmith
+MRC-00136,Atlas Digital S.L.,Atlas Digital,Dating,ES,2022-03-26,Pending Review,Tier 4,15%,7.67%,0.25,35,7273,Rico Delgado,billing@atlasdigital.com,2022-03-26 00:00:00,boarding_svc
+MRC-00101,Onyx Studios Ltd,Onyx Studios,Dating,CYP,20230909,Active,4,15%,8.76%,0.2,15,7273,Tom Haverford,billing@onyxstudios.com,2024-08-14 11:44:24,boarding_svc
+MRC-00128,Zenith Ventures Ltd,Zenith Ventures,SAAS,GB,2018-03-29,Active,2,0.05,5.99%,0.35,35,5734,Priya Nandakumar,billing@zenithventures.com,2020-02-11 01:18:43,SYSTEM
+MRC-00034,Falcon Ventures B.V.,Falcon Ventures,Adult Entertainment,NLD,06/17/2018,Act,5,20%,0.0952,0.35,35,5967,Marcus Oyelaran,billing@falconventures.com,07/01/2018 00:00,am_portal
+MRC-00066,Apex Labs B.V.,Apex Labs,SaaS / Software,Netherlands,2021-01-15,Pending Review,2,5,6.12%,0.2,15,5734,Tom Haverford,billing@apexlabs.com,2021-01-15 00:00:00,jsmith
+MRC-00074,Atlas Works B.V.,Atlas Works,Digital Media,Holland,01/27/2023,Active,2,0.05,0.0645,0.25,35,7841,Rico Delgado,billing@atlasworks.com,02/10/2023 00:00,admin
+MRC-00073,Atlas Online B.V.,Atlas Online,Nutraceuticals,NL,02/11/2020,Pending Review,4,15,8.37%,0.15,15,5122,Rico Delgado,billing@atlasonline.com,2020-02-11 00:00:00,jsmith
+MRC-00011,MIRAGE ONLINE LTD,Mirage Online,SaaS,CY,2022-11-03,Active,2,0.05,6.48,0.15,35,5734,Jo Matsuda,billing@mirageonline.com,2022-11-17 00:00:00,SYSTEM
+MRC-00058,Velvet Studios LLC,Velvet Studios,Adult Entertainment,United States,03/10/2022,Active,4,0.15,0.0804,0.35,15,5967,Marcus Oyelaran,billing@velvetstudios.com,2022-03-24 00:00:00,SYSTEM
+MRC-00038,Delta Works Ltd,Delta Works,Adult Content,MLT,2025-12-13,pending review,T2,5%,7.55%,0.25,15,5967,Priya Nandakumar,,2025-12-13 00:00:00,am_portal
+MRC-00111,Delta Ventures S.L.,Delta Ventures,Adult Entertainment,ES,2025-10-20,Active,5,20,0.0981,0.15,35,5967,Tom Haverford,billing@deltaventures.com,2026-07-29 22:58:09,boarding_svc
+MRC-00051,Marlin Entertainment Limited,Marlin Entertainment,Adult Entertainment,GBR,2021-05-24,Active,5,0.2,10.22%,0.15,35,5967,Sam Achterberg,billing@marlinentertainment.com,06/07/2021 00:00,am_portal
+MRC-00024,Quartz Interactive Limited,Quartz Interactive,Supplements,HK,25-Dec-20,Active,5,0.2,0.0955,0.2,25,5122,Tom Haverford,N/A,2026-04-07 10:16:00,admin
+MRC-00064,Orbit Systems B.V.,Orbit Systems,gaming,NL,2022-07-19,pending review,2,0.05,0.0618,0.3,25,5816,Tom Haverford,billing@orbitsystems.com,07/19/2022 00:00,am_portal
+MRC-00116,Lumen Interactive Ltd,Lumen Interactive,Adult Entertainment,GBR,2025-05-10,Active,Tier 4,15,0.0889,0.15,25,5967,Priya Nandakumar,billing@lumeninteractive.com,2025-05-24 00:00:00,jsmith
+MRC-00201,silk studios inc.,Silk Studios,SaaS / Software,US,2026-01-19,ACTIVE,Tier 1,0.05,5.53,0.25,25,5734,Rico Delgado,BILLING@SILKSTUDIOS.COM,2026-02-01 00:00:00,admin
+MRC-00115,Onyx Media SRL,Onyx Media,Dating,RO,2026-05-11,Pending Review,Tier 4,15%,0.0916,0.15,25,7273,Lena Kowalczyk,billing@onyxmedia.com,05/11/2026 00:00,SYSTEM
+MRC-00035,Summit Interactive LLC,Summit Interactive,Adult Entertainment,US,12-Feb-23,Active,5,20,0.1046,0.35,25,5967,Jo Matsuda, billing@summitinteractive.com,2023-02-26 00:00:00,am_portal
+MRC-00130,Silk Studios Inc.,Silk Studios,SaaS / Software,us,2026-01-18,Closed by Merchant,1,5,5.53,0.25,25,5734,Rico Delgado,billing@silkstudios.com,07/21/2026 08:56,am_portal
+MRC-00007,Nova Interactive Inc.,Nova Interactive,ONLINE GAMING,U.S.A.,2019-05-16,Act,HIGH,0.15,8.39%,0.35,35,5816,Dana Whitfield,BILLING@NOVAINTERACTIVE.COM,06/25/2025 04:37,jsmith
+MRC-00083,Silk Networks LLC ,Silk Networks,Streaming / Digital Media,United States,2025-03-12,Pending Review,2,0.05,6.14,0.15,25,7841,Sam Achterberg,billing@silknetworks.com,2025-03-12 00:00:00,am_portal
+MRC-00101,Onyx Studios Ltd,Onyx Studios,Dating,CY,2023-09-09,Suspended,T4,0.15,8.76%,0.2,15,7273,Tom Haverford,billing@onyxstudios.com,10/07/2025 16:50,admin
+MRC-00069,Zenith Networks Limited,Zenith Networks,Digital Media,Hong Kong,07/26/2025,Pending Review,2,0.05,7.17%,0.35,25,7841,Jo Matsuda,billing@zenithnetworks.com,2025-07-26 00:00:00,SYSTEM
+MRC-00142,COBALT GROUP LTD,Cobalt Group,Streaming / Digital Media,MT,2018-10-06,Active,Low-Med,0.05,5.93,0.15,35,7841,Sam Achterberg,billing@cobaltgroup.com,2018-10-20 00:00:00,jsmith
+MRC-00112,Zenith Systems GmbH,Zenith Systems,Adult Content,DE,2026-06-03,Active,5,0.2,9.02%,0.3,35,5967,Dana Whitfield,billing@zenithsystems.com,2026-06-17 00:00:00,admin
+MRC-00046,Neon Systems Limited,Neon Systems,Adult Entertainment,GB,2022-12-20,Act,5,20%,0.1015,0.25,35,5967,Rico Delgado,billing@neonsystems.com,2023-01-03 00:00:00,boarding_svc
+MRC-00024,Quartz Interactive Limited,Quartz Interactive,Nutra,HK,12/25/2020,Active,5,20%,0.0955,0.2,25,5122,Jo Matsuda,billing@quartzinteractive.com,2021-11-11 03:43:02,admin
+MRC-00093,Atlas Studios Ltd, Atlas Studios,Online Gaming,MT,12/11/2021,Pending Review,Very High,20%,8.72,0.25,35,5816,Tom Haverford,billing@atlasstudios.com,2021-12-11 00:00:00,admin
+MRC-00015,Summit Digital Ltd,Summit Digital,Supplements,GB,2019-05-07,Closed - Terminated,4,0.15,8.74%,0.25,35,5122,Lena Kowalczyk,billing@summitdigital.com,2024-11-28 19:59:39,admin
+MRC-00001,Ember Entertainment Inc.,Ember Entertainment,Software/SaaS,US,10-Apr-23,TERMINATED,1,0.05,5.51%,0.3,15,5734,Tom Haverford,billing@emberentertainment.com,05/31/2026 02:30,jsmith
+MRC-00109,Saffron Labs LLC,Saffron Labs,Adult Content,us,2018-08-26,Pending Review,Tier 3,10,0.0724,0.3,35,5967,Marcus Oyelaran,billing@saffronlabs.com,08/26/2018 00:00,SYSTEM
+MRC-00146,Summit Ventures Inc.,Summit Ventures,Adult Entertainment,CA,2022-11-18,Pending Review,Tier 4,15,0.0794,0.3,25,5967,Jo Matsuda,billing@summitventures.com,2022-11-18 00:00:00,am_portal
+MRC-00134,Falcon Interactive Inc.,Falcon Interactive,Adult Entertainment,US,11/14/2021,Active,5,20%,0.0965,0.2,35,5967,Sam Achterberg,billing@falconinteractive.com,2021-11-28 00:00:00,admin
+MRC-00080,Ivory Group Corp.,Ivory Group,Nutraceuticals,US,2025-02-08,Active,4,0.15,8.85%,0.3,35,5122,Jo Matsuda,billing@ivorygroup.com,2025-02-22 00:00:00,am_portal
+MRC-00125,Willow Entertainment Corp.,Willow Entertainment,Online Gaming,US,07/06/2020,Pending Review,2,0.05,0.0662,0.3,35,5816,Dana Whitfield,billing@willowentertainment.com,2020-06-07 00:00:00,admin
+MRC-00016,Neon Ventures B.V.,Neon Ventures,Adult Entertainment,NL,10/29/2021,Active,Tier 5,20,0.0843,0.25,35,5967,Sam Achterberg,billing@neonventures.com,2021-11-12 00:00:00,admin
+MRC-00099,Ember Systems Limited,Ember Systems,Fitness & Wellness,Hong Kong,2025-11-23,Pending Review,Low-Med,5,6.04%,0.2,25,7997,Marcus Oyelaran,billing@embersystems.com,2025-11-23 00:00:00,jsmith
+MRC-00073,Atlas Online B.V.,Atlas Online,Nutraceuticals,Netherlands,02/11/2020,Active,4,0.15,0.0837,0.15,15,5122,Rico Delgado,billing@atlasonline.com,2020-02-25 00:00:00,admin
+MRC-00024,Quartz Interactive Limited,Quartz Interactive,Nutraceuticals,HK,2020-12-25,Active,Critical,0.2,9.55%,0.2,25,5122,Jo Matsuda,billing@quartzinteractive.com,2021-01-08 00:00:00,jsmith
+MRC-00139,Ivory Studios s.r.o.,Ivory Studios,Nutra,Czech Republic,20250122,Onboarding,T5,20,9.66,0.25,35,5122,Dana Whitfield,billing@ivorystudios.com,01/22/2025 00:00,jsmith
+MRC-00010,Aurora Entertainment Ltd,Aurora Entertainment,Fitness & Wellness,CY,2020-01-21,Active,Tier 3,10,0.0735,0.25,25,7997,Marcus Oyelaran,billing@auroraentertainment.com,2021-05-29 04:07:46,admin
+MRC-00140,Orbit Media S.L.,Orbit Media,Software/SaaS,ES,06-Feb-23,Active,T2,0.05,0.0655,0.2,35,5734,Jo Matsuda,billing@orbitmedia.com,2023-06-17 05:39:10,am_portal
+MRC-00070,Velvet Works S.L.,Velvet Works,Media/Streaming,ES,10-Aug-22,Act,Medium,10%,7.1%,0.35,15,7841,Rico Delgado,billing@velvetworks.com,2022-08-24 00:00:00,admin
+MRC-00137,Indigo Entertainment GmbH,Indigo Entertainment,Online Dating,DE,2021-04-09,Active,T3,0.1,7.44,0.2,25,7273,Marcus Oyelaran,billing@indigoentertainment.com,2021-04-23 00:00:00,am_portal
+MRC-00063,Juniper Labs s.r.o.,Juniper Labs,dating,CZ,2020-08-14,Active,High,0.15,0.0717,0.3,35,7273,Lena Kowalczyk,billing@juniperlabs.com,2020-08-28 00:00:00,boarding_svc
+MRC-00110,Saffron Group Ltd,Saffron Group,Adult Entertainment,CYP,2024-12-28,Pending,4,0.15,7.83,0.25,35,5967,Dana Whitfield,billing@saffrongroup.com,2024-12-28 00:00:00,admin
+MRC-00089,Nova Works Limited,Nova Works,Software/SaaS,gb,12/06/2022,Pending Review,Tier 1,5,0.057,0.3,35,5734,Lena Kowalczyk,billing@novaworks.com,2022-12-06 00:00:00,am_portal
+MRC-00136,Atlas Digital S.L.,Atlas Digital,Dating,ES,26-Mar-22,Active,T4,0.15,0.0767,0.25,35,7273,Rico Delgado,billing@atlasdigital.com,2022-04-09 00:00:00,jsmith
+MRC-00046,Neon Systems Limited,Neon Systems,Adult Entertainment,gb,2022-12-20,Pending Review,5,20%,10.15%,0.25,35,5967,Rico Delgado,billing@neonsystems.com,2022-12-20 00:00:00,boarding_svc
+MRC-00062,Apex Group B.V.,Apex Group,Online Gaming,NL,29-May-21,Active,5,20%,8.39,0.15,35,5816,Tom Haverford,billing@apexgroup.com,2021-06-12 00:00:00,SYSTEM
+MRC-00008,Pixel Interactive B.V.,Pixel Interactive,FITNESS,NL,2019-10-21,active,Tier 3,10,7.14%,0.2,15,7997,Rico Delgado,billing@pixelinteractive.com,2019-11-04 00:00:00,jsmith
+MRC-00097,Silk Online B.V.,Silk Online,Dating,Netherlands,11/17/2025,Active,3,10,0.0768,0.2,35,7273,Sam Achterberg,billing@silkonline.com,2025-12-01 00:00:00,am_portal
+MRC-00088,Ivory Networks s.r.o.,Ivory Networks,Adult Ent.,CZ,2026-03-11,Onboarding,5,0.2,0.0886,0.2,35,5967,Sam Achterberg,billing@ivorynetworks.com,2026-03-11 00:00:00,admin
+MRC-00024,Quartz Interactive Limited,Quartz Interactive,Nutraceuticals,HK,2020-12-25,Pending Review,T5,20%,9.55,0.2,25,5122,Jo Matsuda,billing@quartzinteractive.com,2020-12-25 00:00:00,boarding_svc
+MRC-00067,Harbor Media B.V.,Harbor Media,Online Gaming,NL,2025-07-19,Active,4,0.15,0.0867,0.15,35,5816,Lena Kowalczyk,billing@harbormedia.com,2025-08-02 00:00:00,boarding_svc
+MRC-00085,Summit Online Inc.,Summit Online,SaaS,US,20180430,Pending,1,5%,5.65%,0.2,25,5734,Jo Matsuda,billing@summitonline.com,04/30/2018 00:00,jsmith
+MRC-00044,Mirage Studios Pty Ltd,Mirage Studios,Software/SaaS,AU,"Jan 29, 2020",Pending Review,Low-Med,5%,5.65%,0.35,15,5734,Jo Matsuda,billing@miragestudios.com,2020-01-29 00:00:00,jsmith
+MRC-00132,Velvet Labs Inc.,Velvet Labs,gaming,US,2024-10-23,Pending Review,2,5,6.41,0.3,35,5816,Rico Delgado, billing@velvetlabs.com,2024-10-23 00:00:00,admin
+MRC-00202,Apex Interactive Incorporated,Apex Interactive ,Adult Entertainment,US,04/25/2021,pending review,T3,10,7.59%,0.25,25,5967,Lena Kowalczyk,billing@apexinteractive.com,2021-04-28 00:00:00,boarding_svc
+MRC-00124,Ember Labs Corp.,Ember Labs,Streaming / Digital Media,US,20230303,Pending Review,Tier 2,5%,6.4%,0.3,35,7841,Jo Matsuda,billing@emberlabs.com,2023-03-03 00:00:00,SYSTEM
+MRC-00093,Atlas Studios Ltd,Atlas Studios,Online Gaming,MT,2021-12-11,Active,4,15,8.72%,0.25,35,5816,Tom Haverford,billing@atlasstudios.com,2022-01-19 15:28:50,am_portal
+MRC-00060,ATLAS MEDIA LLC,Atlas Media,SaaS / Software,US,05/06/2026,Active,1,0.05,5.2%,0.35,15,5734,Marcus Oyelaran,billing@atlasmedia.com,2026-05-20 00:00:00,jsmith
+MRC-00108,Indigo Interactive Inc.,Indigo Interactive,Streaming / Digital Media,US,2020-07-03,Closed,T2,0.05,0.0618,0.3,25,7841,Lena Kowalczyk,billing@indigointeractive.com,2025-02-17 16:14:50,am_portal
+MRC-00118,Willow Studios Inc.,Willow Studios,E-Learning,US,2019-12-22,Act,MED,10%,0.06,0.25,25,8299,Tom Haverford,billing@willowstudios.com,2020-01-05 00:00:00,SYSTEM
+MRC-00083,Silk Networks LLC,Silk Networks,Streaming / Digital Media,US,2025-03-12,Active,2,0.05,6.14,0.15,25,7841,Sam Achterberg,billing@silknetworks.com,2025-03-26 00:00:00,admin
+MRC-00032,Harbor Labs LLC,Harbor Labs,Online Gaming,US,01/22/2019,pending review,4,15%,8.88%,0.35,35,5816,Jo Matsuda,billing@harborlabs.com,2019-01-22 00:00:00,admin
+MRC-00146,Summit Ventures Inc. ,Summit Ventures,Adult Entertainment,ca,2022-11-18,Active,T4,0.15,7.94%,0.3,25,5967,Jo Matsuda,billing@summitventures.com,2022-12-02 00:00:00,admin
+MRC-00003,Aurora Media Ltd,Aurora Media,SaaS / Software,GB,2021-04-04,Active,MED,10,0.0632,0.15,35,5734,Priya Nandakumar,billing@auroramedia.com,2023-02-12 11:27:23,am_portal
+MRC-00001,Ember Entertainment Inc.,Ember Entertainment,SaaS / Software,USA,04/10/2023,Active,Low,5,0.0551,0.3,15,5734,Tom Haverford,billing@emberentertainment.com,04/24/2023 00:00,jsmith
+MRC-00128,Zenith Ventures Ltd,Zenith Ventures,SaaS / Software,GB,2018-03-29,Pending,1,5%,5.99%,0.35,35,5734,Priya Nandakumar,billing@zenithventures.com,2018-03-29 00:00:00,SYSTEM
+MRC-00089,Nova Works Limited,Nova Works,SaaS / Software,GB,12/06/2022,Active,Tier 1,0.05,0.057,0.3,35,5734,Lena Kowalczyk,billing@novaworks.com,2022-12-20 00:00:00,jsmith
+MRC-00143,Ember Digital SRL,Ember Digital,Online Dating,RO,2020-01-19,Active,2,0.05,0.0738,0.3,35,7273,Dana Whitfield,billing@emberdigital.com,2020-02-02 00:00:00,SYSTEM
+MRC-00096,Apex Interactive Inc.,Apex Interactive,Adult Entertainment,US,2021-04-25,Active,3,10,7.59%,0.25,25,5967,Lena Kowalczyk,N/A,2021-05-09 00:00:00,jsmith
+MRC-00038,Delta Works Ltd,Delta Works ,Adult Ent.,MT,2025-12-13,Active,2,5%,0.0755,0.25,15,5967,Priya Nandakumar,billing@deltaworks.com,2025-12-27 00:00:00,jsmith
+MRC-00071,Falcon Networks Corp.,Falcon Networks,Wellness,US,05-Jan-21,Onboarding,MED,0.1,0.0755,0.25,15,7997,Rico Delgado,billing@falconnetworks.com,2021-01-05 00:00:00,SYSTEM
+MRC-00021,Willow Digital Limited,Willow Digital,SaaS,HK,2022-01-15,Terminated,T2,0.05,0.0655,0.2,25,5734,Marcus Oyelaran,billing@willowdigital.com,2026-02-01 00:11:31,jsmith
+MRC-00006,Nova Entertainment Ltd,Nova Entertainment,Dating,GBR,12/09/2020,Pending Review,4,15,8.64%,0.25,35,7273,Dana Whitfield, billing@novaentertainment.com,12/09/2020 00:00,jsmith
+MRC-00025, Pixel Studios Inc.,Pixel Studios,Online Gaming,US,2022-01-06,Pending Review,HIGH,0.15,9.17%,0.3,35,5816,Tom Haverford,billing@pixelstudios.com,2022-01-06 00:00:00,SYSTEM
+MRC-00145,Summit Systems GmbH,Summit Systems,NUTRACEUTICALS,DE,"Mar 14, 2019",Active,4,0.15,0.0913,0.25,25,5122,Priya Nandakumar,billing@summitsystems.com,2019-03-28 00:00:00,boarding_svc
+MRC-00002,Willow Networks Ltd,Willow Networks,Adult Entertainment,GB,2025-04-05,A,Very High,20,9.51%,0.3,35,5967,Lena Kowalczyk,billing@willownetworks.com,2026-01-22 12:15:34,jsmith
+MRC-00108,Indigo Interactive Inc.,Indigo Interactive,Streaming / Digital Media,US,20200703,Pending,T2,0.05,0.0618,0.3,25,7841,Sam Achterberg,billing@indigointeractive.com,2020-07-03 00:00:00,admin
+MRC-00095,Silk Digital Corp.,Silk Digital,Adult Ent.,USA,25/08/2025,Active,4,15,0.0914,0.25,35,5967,Sam Achterberg,billing@silkdigital.com,2025-09-08 00:00:00,jsmith
+MRC-00064,Orbit Systems B.V.,Orbit Systems,Games,NL,2022-07-19,Active,T2,5%,6.18%,0.3,25,5816,Tom Haverford,billing@orbitsystems.com,2022-08-02 00:00:00,am_portal
+MRC-00053,Cobalt Digital Corp.,Cobalt Digital,Digital Media,US,2025-02-28,A,T2,0.05,6.07%,0.35,15,7841,Tom Haverford,billing@cobaltdigital.com,2025-11-16 01:54:52,am_portal
+MRC-00072,Polar Systems GmbH,Polar Systems,Adult Content,DE,23-Mar-19,Pending Review,Tier 5,0.2,10.35,0.15,35,5967,Dana Whitfield,billing@polarsystems.com,2019-03-23 00:00:00,admin
+MRC-00048,Onyx Labs LLC,Onyx Labs,dating,US,27-Feb-20,Terminated,3,10,0.0754,0.25,15,7273,Lena Kowalczyk,billing@onyxlabs.com,2026-06-11 05:25:04,am_portal
+MRC-00005,Harbor Interactive Corp.,Harbor Interactive,Adult Entertainment,US,2019-06-11,Active,4,0.15,0.0856,0.3,25,5967,Marcus Oyelaran,billing@harborinteractive.com,06/25/2019 00:00,boarding_svc
+MRC-00084,Silk Group Inc.,Silk Group,Adult Entertainment,CA,2018-07-02,Pending,Tier 3,0.1,7.93%,0.15,15,5967,Sam Achterberg,billing@silkgroup.com,2018-07-02 00:00:00,jsmith
+MRC-00090,Polar Media Inc.,Polar Media,SaaS / Software,US,07/23/2019,Active,2,5,6.59,0.35,15,5734,Jo Matsuda,billing@polarmedia.com,2023-06-12 10:03:43,admin
+MRC-00068,Nova Studios LLC,Nova Studios,SaaS / Software,U.S.A.,2019-08-29,Active,2,5,0.0601,0.2,35,5734,Lena Kowalczyk,,2019-09-12 00:00:00,am_portal
+MRC-00019,Marlin Interactive B.V.,Marlin Interactive,saas / software,Netherlands,"Apr 08, 2021",Pending Review,Low-Med,5%,5.01%,0.25,15,5734,Jo Matsuda,billing@marlininteractive.com,04/08/2021 00:00,am_portal
+MRC-00032,Harbor Labs LLC,Harbor Labs,Online Gaming,US,2019-01-22,Active,High,15%,8.88%,0.35,35,5816,Jo Matsuda,billing@harborlabs.com,02/05/2019 00:00,boarding_svc
+MRC-00127,Echo Works Ltd,Echo Works,Adult Entertainment,CY,2019-01-16,Active,Tier 5,0.2,0.0952,0.2,35,5967,Rico Delgado,billing@echoworks.com,2025-04-27 09:45:04,boarding_svc
+MRC-00008,Pixel Interactive B.V.,Pixel Interactive,Fitness & Wellness,NL,21/10/2019,Active,3,10,7.14,0.2,15,7997,Sam Achterberg,billing@pixelinteractive.com,2022-07-09 05:45:21,admin
+MRC-00149,Lumen Media Ltd,Lumen Media,STREAMING,CY,01/25/2018,Active,Tier 3,0.1,7.84%,0.3,35,7841,Marcus Oyelaran,billing@lumenmedia.com,2020-02-21 23:02:36,admin
+MRC-00066,Apex Labs B.V.,Apex Labs,SaaS / Software,NL,01/15/2021,ACTIVE,T2,5%,6.12%,0.2,15,5734,Tom Haverford,billing@apexlabs.com,2021-01-29 00:00:00,SYSTEM
+MRC-00102,Marlin Works Inc.,Marlin Works,Online Dating,US,2021-06-03,Pending Review,3,0.1,8.63%,0.15,25,7273,Tom Haverford,billing@marlinworks.com,2021-06-03 00:00:00,SYSTEM
+MRC-00028,Saffron Works Inc.,Saffron Works,Supplements,USA,2021-09-17,Active,4,0.15,9.79,0.35,25,5122,Jo Matsuda,,2021-10-01 00:00:00,admin
+MRC-00036,Cobalt Media S.L.,Cobalt Media,Adult,ES,17-Jan-19,Onboarding,T3,0.1,7.89,0.15,25,5967,Jo Matsuda,billing@cobaltmedia.com,2019-01-17 00:00:00,am_portal
+MRC-00128,Zenith Ventures Ltd,Zenith Ventures,SaaS / Software,GB,2018-03-29,Active,Tier 1,5%,0.0599,0.35,35,5734,Priya Nandakumar,billing@zenithventures.com,2018-04-12 00:00:00,boarding_svc
+MRC-00123,Velvet Ventures Corp.,Velvet Ventures,ELEARNING,US,08/02/2020,Active,2,5%,0.0636,0.35,25,8299,Jo Matsuda,,08/16/2020 00:00,boarding_svc
+MRC-00109,Saffron Labs LLC,Saffron Labs,Adult Entertainment,US,2018-08-26,Active,4,0.15,0.0724,0.3,35,5967,Rico Delgado,billing@saffronlabs.com,2023-08-08 02:29:52,SYSTEM
+MRC-00126,Aurora Labs LLC,Aurora Labs,Nutraceuticals,US,2019-03-21,Active,Very High,20%,0.0986,0.3,15,5122,Tom Haverford,billing@auroralabs.com,2019-04-04 00:00:00,boarding_svc
+MRC-00050,Willow Online Ltd,Willow Online,Adult Entertainment,GB,20230512,Pending,T4,0.15,7.61,0.2,25,5967,Sam Achterberg,billing@willowonline.com,2023-05-12 00:00:00,jsmith
+MRC-00062,Apex Group B.V.,Apex Group,Online Gaming,Netherlands,05/29/2021,Pending Review,5,0.2,0.0839,0.15,35,5816,Tom Haverford,billing@apexgroup.com,2021-05-29 00:00:00,admin
+MRC-00204,willow online ltd,Willow Online ,Adult Entertainment,United Kingdom,"May 12, 2023",active,HIGH,0.15,7.61,0.2,25,5967,Sam Achterberg,billing@willowonline.com,2023-05-29 00:00:00,boarding_svc
+MRC-00029,Juniper Media Corp.,Juniper Media,Streaming / Digital Media,US,2025-12-30,Pending Review,2,5%,6.31,0.25,15,7841,Priya Nandakumar,billing@junipermedia.com,2025-12-30 00:00:00,am_portal
+MRC-00120,Onyx Entertainment S.L.,Onyx Entertainment,Adult Content,ES,2026-04-02,A,4,15%,8.94%,0.25,35,5967,Jo Matsuda,billing@onyxentertainment.com,2026-04-16 00:00:00,admin
+MRC-00144,Velvet Media Ltd.,Velvet Media ,Fitness & Wellness,CAN,"Jul 15, 2025",Active,Tier 2,5%,0.0667,0.2,15,7997,Rico Delgado,billing@velvetmedia.com,2025-08-10 21:20:20,admin
+MRC-00018,Polar Interactive Ltd.,Polar Interactive,SAAS,CA,2025-02-25,Active,T2,0.05,0.0632,0.15,35,5734,Tom Haverford,billing@polarinteractive.com,2025-03-11 00:00:00,SYSTEM
+MRC-00113,Crimson Ventures GmbH,Crimson Ventures,adult entertainment,de,2023-07-12,Active,5,0.2,0.1015,0.15,15,5967,Tom Haverford,billing@crimsonventures.com,2023-07-26 00:00:00,boarding_svc
+MRC-00026,Cobalt Works Ltd,Cobalt Works,Adult Entertainment,GB,2025-09-23,Act,T4,15,7.43%,0.25,15,5967,Priya Nandakumar,billing@cobaltworks.com,2025-10-07 00:00:00,SYSTEM
+MRC-00021,Willow Digital Limited,Willow Digital,saas / software,HK,2022-01-15,Pending Review,3,0.1,6.55%,0.2,25,5734,Marcus Oyelaran,billing@willowdigital.com,01/15/2022 00:00,boarding_svc
+MRC-00202,Apex Interactive Incorporated,Apex Interactive,Adult Entertainment,US,2021-04-25,Active,3,0.1,7.59%,0.25,25,5967,Lena Kowalczyk,billing@apexinteractive.com,2021-05-09 00:00:00,admin
+MRC-00028,Saffron Works Inc.,Saffron Works,Supplements,US,2021-09-17,Active,5,20%,9.79%,0.35,25,5122,Jo Matsuda,billing@saffronworks.com,2025-06-29 02:02:39,jsmith
+MRC-00148,Ivory Interactive B.V.,Ivory Interactive,Nutraceuticals,Netherlands,20250513,Active,T5,0.2,10.41,0.35,35,5122,Tom Haverford,billing@ivoryinteractive.com,2025-05-27 00:00:00,am_portal
+MRC-00087,Mirage Works Inc.,Mirage Works,SaaS / Software,US,2021-12-26,Pending Review,3,10%,6.76,0.25,35,5734,Sam Achterberg,billing@mirageworks.com,2021-12-26 00:00:00,admin
+MRC-00133,Velvet Digital LLC,Velvet Digital,Adult Entertainment,US,20251112,Onboarding,Medium,10%,0.0798,0.2,15,5967,Sam Achterberg,N/A,2025-11-12 00:00:00,am_portal
+MRC-00119,Echo Interactive Inc.,Echo Interactive,Streaming / Digital Media,United States,2021-05-23,Active,T2,0.05,0.0758,0.35,35,7841,Lena Kowalczyk,billing@echointeractive.com,2021-06-06 00:00:00,am_portal
+MRC-00020,Cobalt Studios LLC,Cobalt Studios,Nutra,US,2023-09-02,ACTIVE,T5,0.2,0.0953,0.25,35,5122,Dana Whitfield,billing@cobaltstudios.com,2023-09-16 00:00:00,jsmith
+MRC-00102,Marlin Works Inc.,Marlin Works,Dating,US,2021-06-03,Active,T4,0.15,0.0863,0.15,25,7273,Tom Haverford,billing@marlinworks.com,2026-05-24 03:01:51,SYSTEM
+MRC-00082,Mirage Digital LLC,Mirage Digital,ADULT ENT,us,2020-06-12,A,4,0.15,0.0841,0.15,15,5967,Rico Delgado,billing@miragedigital.com,06/26/2020 00:00,admin
+MRC-00148,Ivory Interactive B.V.,Ivory Interactive,Nutraceuticals,NL,13/05/2025,TERMINATED,Critical,0.2,10.41%,0.35,35,5122,Tom Haverford,billing@ivoryinteractive.com,2026-05-03 01:18:30,SYSTEM
+MRC-00042,Neon Interactive Inc.,Neon Interactive,Adult Entertainment,USA,2025-10-06,Pending Review,5,0.2,0.0929,0.25,25,5967,Rico Delgado,billing@neoninteractive.com,2025-10-06 00:00:00,boarding_svc
+MRC-00094,Pixel Labs Limited,Pixel Labs,FITNESS,HK,2025-12-29,Pending Review,Medium,0.1,0.0658,0.15,35,7997,Sam Achterberg,billing@pixellabs.com,2025-12-29 00:00:00,boarding_svc
+MRC-00027,Juniper Group Pty Ltd,Juniper Group,Streaming / Digital Media,Australia,20250822,A,2,5%,6.27,0.2,15,7841,Dana Whitfield,billing@junipergroup.com,2025-09-05 00:00:00,am_portal
+MRC-00093,Atlas Studios Ltd,Atlas Studios,Online Gaming,MT,"Dec 11, 2021",Active,VERY HIGH,20%,0.0872,0.25,35,5816,Tom Haverford,billing@atlasstudios.com,2021-12-25 00:00:00,boarding_svc
+MRC-00031,Neon Online Pty Ltd,Neon Online,dating,AU,2023-03-02,Pending Review,T3,10%,7.26%,0.15,35,7273,Marcus Oyelaran,billing@neononline.com,2023-03-02 00:00:00,boarding_svc
+MRC-00050,Willow Online Ltd,Willow Online,Adult Entertainment,GB,2023-05-12,active,Tier 3,0.1,0.0761,0.2,25,5967,Marcus Oyelaran,billing@willowonline.com,2023-12-25 04:38:25,boarding_svc
+MRC-00005,Harbor Interactive Corp.,Harbor Interactive,Adult Entertainment,US,06/11/2019,Pending Review,4,15%,0.0856,0.3,25,5967,Marcus Oyelaran,,2019-06-11 00:00:00,am_portal
+MRC-00121,Mirage Media Pty Ltd,Mirage Media,Dating,AU,2021-01-04,Active,4,15,8.43%,0.2,15,7273,Priya Nandakumar,billing@miragemedia.com,2021-01-18 00:00:00,SYSTEM
+MRC-00149,Lumen Media Ltd,Lumen Media,Streaming / Digital Media,Cyprus,2018-01-25,Term,MED,10%,7.84,0.3,35,7841,Marcus Oyelaran,billing@lumenmedia.com,2025-05-20 16:09:56,jsmith
+MRC-00105,Nova Networks LLC,Nova Networks,Streaming,US,2020-03-09,Pending Review,MED,10,0.0777,0.2,15,7841,Rico Delgado,billing@novanetworks.com,2020-03-09 00:00:00,am_portal
+MRC-00003,Aurora Media Ltd,Aurora Media,Software/SaaS,United Kingdom,2021-04-04,Active,3,0.1,0.0632,0.15,35,5734,Dana Whitfield,billing@auroramedia.com,2021-04-18 00:00:00,jsmith
+MRC-00055,Orbit Works Corp.,Orbit Works,E-Learning,US,2018-09-12,Active,Low-Med,5%,0.0634,0.35,15,8299,Jo Matsuda,billing@orbitworks.com,2018-09-26 00:00:00,jsmith
+MRC-00044,Mirage Studios Pty Ltd,Mirage Studios,SaaS / Software,AU,01/29/2020,Active,Low,5%,0.0565,0.35,15,5734,Jo Matsuda,billing@miragestudios.com,12/23/2021 16:02,SYSTEM
+MRC-00015,Summit Digital Ltd,Summit Digital,Nutra,gb,2019-05-07,Active,T4,15,0.0874,0.25,35,5122,Lena Kowalczyk,billing@summitdigital.com,2021-11-23 12:04:17,SYSTEM
+MRC-00069,Zenith Networks Limited,Zenith Networks,Streaming / Digital Media,HK,"Jul 26, 2025",Active,Tier 3,10,7.17,0.35,25,7841,Jo Matsuda,billing@zenithnetworks.com,2026-01-29 19:04:08,admin
+MRC-00052,Juniper Ventures B.V.,Juniper Ventures,Fitness & Wellness,NL,10-Aug-23,Active,3,10%,0.0799,0.3,15,7997,Rico Delgado, billing@juniperventures.com,2024-05-15 21:44:20,am_portal
+MRC-00086,Atlas Entertainment B.V.,Atlas Entertainment,adult entertainment,Netherlands,2022-08-08,Active,5,20%,9.54,0.35,35,5967,Sam Achterberg,billing@atlasentertainment.com,2022-08-22 00:00:00,jsmith
+MRC-00072,Polar Systems GmbH,Polar Systems,Adult Entertainment,DE,"Mar 23, 2019",Active,VERY HIGH,0.2,10.35%,0.15,35,5967,Dana Whitfield,billing@polarsystems.com,2019-04-06 00:00:00,am_portal
+MRC-00119,Echo Interactive Inc.,Echo Interactive,Streaming / Digital Media,US,20210523,Pending Review,Tier 2,5,7.58%,0.35,35,7841,Lena Kowalczyk, billing@echointeractive.com,2021-05-23 00:00:00,boarding_svc
+MRC-00023,Echo Media Ltd,Echo Media,SaaS / Software,CY,03-Feb-26,Active,1,5,5.41%,0.15,25,5734,Marcus Oyelaran,billing@echomedia.com,2026-02-17 00:00:00,jsmith
+MRC-00068,Nova Studios LLC,Nova Studios,Software,US,2019-08-29,Pending Review,Tier 2,5%,6.01%,0.2,35,5734,Lena Kowalczyk,billing@novastudios.com,2019-08-29 00:00:00,am_portal
+MRC-00204,willow online ltd,Willow Online,Adult Entertainment,GB,20230512,Pending Review,High,0.15,0.0761,0.2,25,5967,Sam Achterberg,billing@willowonline.com,2023-05-13 00:00:00,SYSTEM
+MRC-00007,Nova Interactive Inc.,Nova Interactive,Online Gaming,US,2019-05-16,Pending Review,3,0.1,8.39,0.35,35,5816,Jo Matsuda,billing@novainteractive.com,2019-05-16 00:00:00,SYSTEM
+MRC-00124,Ember Labs Corp.,Ember Labs,Streaming / Digital Media,US,2023-03-03,A,2,5%,0.064,0.3,35,7841,Jo Matsuda,,2023-03-17 00:00:00,am_portal
+MRC-00017,Delta Group Inc.,Delta Group,Streaming / Digital Media,US,2018-01-29,Pending Review,Tier 3,10,7.55%,0.2,35,7841,Marcus Oyelaran,billing@deltagroup.com,2018-01-29 00:00:00,boarding_svc
+MRC-00094,Pixel Labs Limited,Pixel Labs,Fitness & Wellness,HK,2025-12-29,Active,3,0.1,0.0658,0.15,35,7997,Sam Achterberg,billing@pixellabs.com,2026-01-12 00:00:00,boarding_svc
+MRC-00125,Willow Entertainment Corp.,Willow Entertainment,Online Gaming,US,2020-06-07,A,Tier 2,0.05,6.62%,0.3,35,5816,Dana Whitfield,billing@willowentertainment.com,2020-06-21 00:00:00,boarding_svc
+MRC-00111,Delta Ventures S.L.,Delta Ventures,Adult Entertainment,es,20251020,PENDING REVIEW,VERY HIGH,0.2,0.0981,0.15,35,5967,Tom Haverford,billing@deltaventures.com,2025-10-20 00:00:00,boarding_svc
+MRC-00050,Willow Online Ltd,Willow Online,ADULT ENT,GB,20230512,Active,HIGH,15,7.61,0.2,25,5967,Sam Achterberg,billing@willowonline.com,2023-05-26 00:00:00,jsmith
+MRC-00110,Saffron Group Ltd,Saffron Group,Adult Entertainment,CY,2024-12-28,Active,Tier 4,0.15,7.83%,0.25,35,5967,Dana Whitfield, billing@saffrongroup.com,2025-01-11 00:00:00,admin
+MRC-00052,Juniper Ventures B.V.,Juniper Ventures,FITNESS,NL,"Aug 10, 2023",PENDING REVIEW,MED,10,7.99%,0.3,15,7997,Rico Delgado,billing@juniperventures.com,2023-08-10 00:00:00,boarding_svc
+MRC-00145,Summit Systems GmbH,Summit Systems,NUTRACEUTICALS,DE,2019-03-14,Pending Review,4,15,9.13%,0.25,25,5122,Priya Nandakumar,billing@summitsystems.com,03/14/2019 00:00,jsmith
+MRC-00106,Aurora Networks Inc.,Aurora Networks,dating,US,2021-04-28,Active,4,0.15,8.42%,0.3,15,7273,Rico Delgado,billing@auroranetworks.com,05/12/2021 00:00,admin
+MRC-00078,Ivory Digital Inc.,Ivory Digital,Adult Content,United States,2024-11-06,Pending Review,High,15%,0.0922,0.3,15,5967,Rico Delgado,billing@ivorydigital.com,2024-11-06 00:00:00,boarding_svc
+MRC-00001,Ember Entertainment Inc.,Ember Entertainment,SaaS / Software,US,2023-04-10,Active,Low,5,0.0551,0.3,15,5734,Tom Haverford,billing@emberentertainment.com,2025-11-14 16:43:34,SYSTEM
+MRC-00131,Harbor Systems SRL,Harbor Systems ,SaaS,RO,2020-08-22,Active,1,5%,4.87%,0.2,25,5734,Tom Haverford,billing@harborsystems.com,2022-10-24 09:40:47,SYSTEM
+MRC-00030,Delta Labs GmbH,Delta Labs,Adult Entertainment,DE,2021-02-10,Act,High,15%,0.0839,0.2,15,5967,Priya Nandakumar,billing@deltalabs.com,2021-02-24 00:00:00,am_portal
+MRC-00092,Juniper Digital s.r.o.,Juniper Digital,Fitness & Wellness,CZECH REPUBLIC,2026-04-05,Closed,3,10%,7.15%,0.3,35,7997,Jo Matsuda,billing@juniperdigital.com,06/05/2026 20:15,admin
+MRC-00044,Mirage Studios Pty Ltd,Mirage Studios,SaaS / Software,AU,2020-01-29,Closed,T1,0.05,5.65%,0.35,15,5734,Jo Matsuda,billing@miragestudios.com,2025-08-31 14:57:55,admin
+MRC-00143,Ember Digital SRL,Ember Digital,dating,RO,2020-01-19,Pending Review,Tier 2,0.05,7.38%,0.3,35,7273,Dana Whitfield,billing@emberdigital.com,01/19/2020 00:00,SYSTEM
+MRC-00092,Juniper Digital s.r.o.,Juniper Digital,Fitness and Wellness,CZECH REPUBLIC,2026-04-05,Act,Medium,0.1,0.0715,0.3,35,7997,Jo Matsuda,billing@juniperdigital.com,2026-05-04 06:55:42,SYSTEM
+MRC-00026,Cobalt Works Ltd,Cobalt Works,Adult Entertainment,GB,2025-09-23,Onboarding,4,15%,7.43%,0.25,15,5967,Priya Nandakumar,billing@cobaltworks.com,09/23/2025 00:00,admin
+MRC-00136,Atlas Digital S.L.,Atlas Digital,Dating,ES,"Mar 26, 2022",Suspended,Tier 4,0.15,0.0767,0.25,35,7273,Rico Delgado,billing@atlasdigital.com,2026-08-10 00:00:00,SYSTEM
+MRC-00151,ECHO ONLINE LIMITED, Echo Online,Adult Entertainment,GB,2022-01-01,Onboarding,T5,0.2,9.75%,0.15,15,5967,Dana Whitfield,,2022-01-01 00:00:00,jsmith
+MRC-00076,Indigo Online Inc.,Indigo Online,Gaming,US,09/03/2025,pending review,3,0.1,7.63%,0.3,15,5816,Rico Delgado,billing@indigoonline.com,2025-03-09 00:00:00,boarding_svc
+MRC-00080,Ivory Group Corp.,Ivory Group,Supplements,US,2025-02-08,Pending,4,0.15,8.85%,0.3,35,5122,Jo Matsuda,billing@ivorygroup.com,2025-02-08 00:00:00,am_portal
+MRC-00025,Pixel Studios Inc.,Pixel Studios,Online Gaming,U.S.,01/06/2022,Active,4,15,0.0917,0.3,35,5816,Tom Haverford,BILLING@PIXELSTUDIOS.COM,2022-01-20 00:00:00,admin
+MRC-00088,Ivory Networks s.r.o.,Ivory Networks,Adult Entertainment,CZE,2026-03-11,Active,5,0.2,0.0886,0.2,35,5967,Sam Achterberg,,2026-03-25 00:00:00,jsmith
+MRC-00029,Juniper Media Corp., Juniper Media,Streaming / Digital Media,US,2025-12-30,Active,T2,0.05,0.0631,0.25,15,7841,Priya Nandakumar,billing@junipermedia.com,01/13/2026 00:00,SYSTEM
+MRC-00114,Zenith Entertainment Inc.,Zenith Entertainment,Adult Entertainment,us,2021-08-19,Active,MED,10%,8.08,0.25,15,5967,Jo Matsuda,billing@zenithentertainment.com,09/02/2021 00:00,boarding_svc
+MRC-00022,Nova Online Corp.,Nova Online,Streaming / Digital Media,US,2025-01-13,ACTIVE,4,15%,0.0761,0.3,35,7841,Dana Whitfield,billing@novaonline.com,2025-01-27 00:00:00,jsmith
+MRC-00047,Harbor Digital GmbH,Harbor Digital,Supplements,DE,"Jul 17, 2023",Active,T4,0.15,8.61,0.2,25,5122,Tom Haverford,billing@harbordigital.com,2023-07-31 00:00:00,jsmith
+MRC-00011, Mirage Online Ltd,Mirage Online,Software,CY,2022-11-03,Pending Review,2,5%,6.48%,0.15,35,5734,Jo Matsuda,billing@mirageonline.com,2022-11-03 00:00:00,boarding_svc
+MRC-00019,Marlin Interactive B.V.,Marlin Interactive,SaaS / Software,Netherlands,2021-04-08,Active,T2,5%,5.01,0.25,15,5734,Jo Matsuda,billing@marlininteractive.com,04/22/2021 00:00,am_portal
+MRC-00054,Atlas Systems Ltd,Atlas Systems,Adult Entertainment,Cyprus,06/29/2025,Active,VERY HIGH,0.2,9.6%,0.25,25,5967,Tom Haverford,billing@atlassystems.com,2026-07-22 13:00:55,am_portal
+MRC-00038,Delta Works Ltd,Delta Works,Adult Entertainment,MT,2025-12-13,ACTIVE,Tier 2,5%,7.55%,0.25,15,5967,Rico Delgado,billing@deltaworks.com,2026-03-20 03:41:03,jsmith
+MRC-00048,Onyx Labs LLC,Onyx Labs,DATING,US,2020-02-27,Active,3,0.1,0.0754,0.25,15,7273,Rico Delgado,billing@onyxlabs.com,03/12/2020 00:00,SYSTEM
+MRC-00130,Silk Studios Inc.,Silk Studios,SaaS / Software,US,2026-01-18,Active,T1,5,0.0553,0.25,25,5734,Rico Delgado,,2026-02-01 00:00:00,SYSTEM
+MRC-00117,Zenith Studios Ltd.,Zenith Studios,Streaming,CA,20250616,PENDING REVIEW,Low-Med,0.05,6.17%,0.35,25,7841,Rico Delgado,billing@zenithstudios.com,2025-06-16 00:00:00,admin
+MRC-00129,Quartz Labs Corp.,Quartz Labs,Nutraceuticals,USA,2022-02-01,Pending Review,5,20%,0.0961,0.15,35,5122,Sam Achterberg,billing@quartzlabs.com,02/01/2022 00:00,admin
+MRC-00120,Onyx Entertainment S.L.,Onyx Entertainment,Adult Ent.,ES,2026-04-02,Pending Review,4,15,0.0894,0.25,35,5967,Jo Matsuda,billing@onyxentertainment.com,2026-04-02 00:00:00,boarding_svc
+MRC-00140,Orbit Media S.L.,Orbit Media,SaaS / Software,ES,2023-02-06,Active,3,0.1,0.0655,0.2,35,5734,Jo Matsuda,billing@orbitmedia.com,2023-02-20 00:00:00,admin
+MRC-00082,Mirage Digital LLC,Mirage Digital,Adult Entertainment,US,2020-06-12,Pending Review,4,15%,8.41,0.15,15,5967,Rico Delgado,billing@miragedigital.com,2020-06-12 00:00:00,SYSTEM
+MRC-00096,Apex Interactive Inc.,Apex Interactive,Adult Content,US,2021-04-25,Pending Review,3,10,7.59,0.25,25,5967,Lena Kowalczyk,billing@apexinteractive.com,2021-04-25 00:00:00,SYSTEM
+MRC-00012,Nova Media Corp.,Nova Media,Streaming / Digital Media,US,2022-11-11,Pending Review,2,0.05,7.14%,0.35,35,7841,Rico Delgado,billing@novamedia.com,2022-11-11 00:00:00,admin
+MRC-00200,mirage digital llc,Mirage Digital,Adult Ent.,US,11-Jun-20,Active,Tier 4,0.15,8.41%,0.15,15,5967,Rico Delgado,billing@miragedigital.com,2020-06-29 00:00:00,jsmith
+MRC-00049,Willow Ventures Inc.,Willow Ventures,Streaming / Digital Media,US,2021-05-12,Act,MED,10%,7.4,0.25,25,7841,Jo Matsuda,billing@willowventures.com,05/26/2021 00:00,admin
+MRC-00072,Polar Systems GmbH,Polar Systems,Adult,DE,03/23/2019,Active,5,20%,0.1035,0.15,35,5967,Dana Whitfield,BILLING@POLARSYSTEMS.COM,2021-11-07 17:35:15,am_portal
+MRC-00067,Harbor Media B.V.,Harbor Media,Online Gaming,NL,2025-07-19,Pending Review,4,0.15,0.0867,0.15,35,5816,Lena Kowalczyk,billing@harbormedia.com,2025-07-19 00:00:00,am_portal
+MRC-00043,Polar Entertainment LLC,Polar Entertainment,Nutraceuticals,US,2018-01-25,Terminated,Very High,0.2,9.93%,0.2,25,5122,Jo Matsuda,billing@polarentertainment.com,02/27/2026 09:12,jsmith
+MRC-00098,Orbit Studios LLC,Orbit Studios,ELEARNING,US,09/19/2021,Active,T2,0.05,6.88,0.25,15,8299,Rico Delgado,billing@orbitstudios.com,2021-10-03 00:00:00,jsmith
+MRC-00013,Marlin Labs Inc.,Marlin Labs,Adult Entertainment,Canada,2018-10-24,active,5,0.2,10.43%,0.2,35,5967,Marcus Oyelaran,billing@marlinlabs.com,2018-11-07 00:00:00,SYSTEM
+MRC-00116,Lumen Interactive Ltd,Lumen Interactive,Adult Entertainment,United Kingdom,05/10/2025,Pending Review,T4,15,0.0889,0.15,25,5967,Priya Nandakumar,,2025-05-10 00:00:00,boarding_svc
+MRC-00153,Quartz Group Corp.,Quartz Group,ADULT ENT,US,2023-01-17,Active,3,0.1,0.0718,0.25,35,5967,Rico Delgado,billing@quartzgroup.com,2023-01-31 00:00:00,SYSTEM
+MRC-00037,Summit Group LLC,Summit Group,Dating,US,23-Feb-25,Active,5,20,0.072,0.35,15,7273,Jo Matsuda,billing@summitgroup.com,2025-03-09 00:00:00,am_portal
+MRC-00042,Neon Interactive Inc.,Neon Interactive,Adult,us,2025-10-06,Active,Tier 4,0.15,0.0929,0.25,25,5967,Rico Delgado,billing@neoninteractive.com,2026-01-04 06:40:51,boarding_svc
+MRC-00095,Silk Digital Corp.,Silk Digital,Adult Entertainment,United States,25-Aug-25,Onboarding,HIGH,0.15,9.14%,0.25,35,5967,Sam Achterberg,billing@silkdigital.com,2025-08-25 00:00:00,am_portal
+MRC-00087,Mirage Works Inc.,Mirage Works,saas / software,US,2021-12-26,Active,3,10%,0.0676,0.25,35,5734,Sam Achterberg,billing@mirageworks.com,2022-01-09 00:00:00,SYSTEM
+MRC-00094,Pixel Labs Limited,Pixel Labs,Fitness & Wellness,HONG KONG,2025-12-29,Active,2,0.05,0.0658,0.15,35,7997,Sam Achterberg,billing@pixellabs.com,2026-02-25 11:32:30,SYSTEM
+MRC-00021,Willow Digital Limited,Willow Digital,SaaS / Software,HK,2022-01-15,Active,Medium,0.1,6.55%,0.2,25,5734,Marcus Oyelaran,billing@willowdigital.com,2022-01-29 00:00:00,jsmith
+MRC-00010,Aurora Entertainment Ltd,Aurora Entertainment,Fitness & Wellness,CY,21-Jan-20,Active,4,0.15,7.35,0.25,25,7997,Marcus Oyelaran,billing@auroraentertainment.com,2020-02-04 00:00:00,boarding_svc
+MRC-00014,Harbor Ventures B.V.,Harbor Ventures,NUTRACEUTICALS,NLD,05/05/2026,Active,4,15,8.39,0.2,25,5122,Sam Achterberg,billing@harborventures.com,2026-05-19 00:00:00,am_portal
+MRC-00014,Harbor Ventures B.V.,Harbor Ventures,nutraceutical,NL,2026-05-05,Closed - Terminated,4,0.15,8.39%,0.2,25,5122,Sam Achterberg,billing@harborventures.com,2026-07-21 20:08:58,admin
+MRC-00079,Onyx Ventures SRL,Onyx Ventures,Education,RO,2020-02-29,Pending Review,2,0.05,6.79%,0.35,25,8299,Tom Haverford,billing@onyxventures.com,02/29/2020 00:00,SYSTEM
+MRC-00063,Juniper Labs s.r.o.,Juniper Labs,Online Dating,CZ,2020-08-14,Pending Review,Tier 4,15%,7.17,0.3,35,7273,Lena Kowalczyk,billing@juniperlabs.com,2020-08-14 00:00:00,am_portal
+MRC-00006,Nova Entertainment Ltd,Nova Entertainment,Dating & Social,GB,12/09/2020,Active,4,15%,8.64,0.25,35,7273,Dana Whitfield,billing@novaentertainment.com,2020-12-23 00:00:00,SYSTEM
+MRC-00007,Nova Interactive Inc.,Nova Interactive,ONLINE GAMING,US,2019-05-16,Active,4,0.15,8.39,0.35,35,5816,Jo Matsuda,billing@novainteractive.com,2022-03-26 12:24:56,jsmith
+MRC-00051,Marlin Entertainment Limited,Marlin Entertainment,Adult Entertainment,GB,2021-05-24,PENDING REVIEW,5,20%,10.22%,0.15,35,5967,Sam Achterberg,billing@marlinentertainment.com,2021-05-24 00:00:00,admin
+MRC-00151,Echo Online Limited,Echo Online,Adult Entertainment,GB,2022-01-01,Suspended,Very High,0.2,0.0975,0.15,15,5967,Lena Kowalczyk,billing@echoonline.com,12/22/2025 13:52,jsmith
+MRC-00042,Neon Interactive Inc.,Neon Interactive,ADULT ENT,US,2025-10-06,Active,Tier 5,20%,9.29,0.25,25,5967,Rico Delgado,billing@neoninteractive.com,2025-10-20 00:00:00,boarding_svc
+MRC-00026,Cobalt Works Ltd,Cobalt Works,Adult Entertainment,GB,2025-09-23,Active,3,0.1,0.0743,0.25,15,5967,Priya Nandakumar,billing@cobaltworks.com,2025-12-01 19:10:13,jsmith
+MRC-00140,Orbit Media S.L.,Orbit Media,SaaS / Software,ES,2023-02-06,Pending Review,3,0.1,6.55%,0.2,35,5734,Jo Matsuda,billing@orbitmedia.com,2023-02-06 00:00:00,am_portal
+MRC-00037,Summit Group LLC,Summit Group,Dating,US,2025-02-23,ACTIVE,4,0.15,0.072,0.35,15,7273,Jo Matsuda,billing@summitgroup.com,2025-07-06 05:00:10,admin
+MRC-00144,Velvet Media Ltd.,Velvet Media,Fitness & Wellness,CA,07/15/2025,Pending,T3,0.1,6.67,0.2,15,7997,Rico Delgado,billing@velvetmedia.com,07/15/2025 00:00,admin
+MRC-00035,Summit Interactive LLC,Summit Interactive,Adult Entertainment,US,2023-02-12,Pending Review,5,20,10.46,0.35,25,5967,Jo Matsuda,billing@summitinteractive.com,2023-02-12 00:00:00,jsmith
+MRC-00146,Summit Ventures Inc.,Summit Ventures,Adult Entertainment,CA,11/18/2022,A,Medium,10%,0.0794,0.3,25,5967,Jo Matsuda,billing@summitventures.com,2026-03-22 12:14:29,am_portal
+MRC-00016,Neon Ventures B.V.,Neon Ventures,Adult Ent.,NL,2021-10-29,Active,High,0.15,8.43,0.25,35,5967,Sam Achterberg,billing@neonventures.com,2025-11-04 10:47:00,SYSTEM
+MRC-00062,Apex Group B.V.,Apex Group,Online Gaming,NL,2021-05-29,Active,4,15%,0.0839,0.15,35,5816,Tom Haverford,billing@apexgroup.com,2023-07-22 20:05:39,am_portal
+MRC-00027,Juniper Group Pty Ltd,Juniper Group,Streaming / Digital Media,AU,20250822,Pending,Tier 2,0.05,6.27,0.2,15,7841,Dana Whitfield,billing@junipergroup.com,08/22/2025 00:00,jsmith
+MRC-00069,Zenith Networks Limited,Zenith Networks,Streaming / Digital Media,HK,2025-07-26,Active,Low-Med,0.05,7.17%,0.35,25,7841,Jo Matsuda,billing@zenithnetworks.com,2025-08-09 00:00:00,SYSTEM
+MRC-00019,Marlin Interactive B.V.,Marlin Interactive,SaaS / Software,NL,08/04/2021,Active,1,5%,5.01%,0.25,15,5734,Jo Matsuda,billing@marlininteractive.com,2026-02-18 19:15:36,jsmith
+MRC-00149,Lumen Media Ltd, Lumen Media,Streaming / Digital Media,CY,01/25/2018,Onboarding,2,0.05,7.84%,0.3,35,7841,Marcus Oyelaran,billing@lumenmedia.com,01/25/2018 00:00,jsmith
+MRC-00009,Orbit Online B.V.,Orbit Online,saas / software,NL,2020-06-21,Active,Tier 2,5%,0.0634,0.3,25,5734,Lena Kowalczyk,billing@orbitonline.com,2020-07-05 00:00:00,admin
+MRC-00135,Apex Networks Corp.,Apex Networks,dating,United States,2025-11-19,Active,T3,0.1,7.36,0.3,35,7273,Rico Delgado,billing@apexnetworks.com,2025-12-03 00:00:00,am_portal
+MRC-00039,Neon Media GmbH,Neon Media,E-Learning,DE,2018-01-20,ACTIVE,T2,0.05,5.95%,0.3,35,8299,Marcus Oyelaran,billing@neonmedia.com,2023-03-01 21:28:49,SYSTEM
+MRC-00138,Silk Entertainment LLC ,Silk Entertainment,Adult Entertainment,US,2026-07-23,Terminated,T4,15%,0.0841,0.25,15,5967,Jo Matsuda,billing@silkentertainment.com,2026-09-09 19:23:56,jsmith
+MRC-00050,Willow Online Ltd,Willow Online,Adult,GB,2023-05-12,Active,T4,0.15,7.61,0.2,25,5967,Marcus Oyelaran,billing@willowonline.com,2023-11-13 15:40:07,SYSTEM
+MRC-00138,Silk Entertainment LLC,Silk Entertainment,Adult Entertainment,US,2026-07-23,PENDING REVIEW,High,15%,8.41%,0.25,15,5967,Jo Matsuda, billing@silkentertainment.com,2026-07-23 00:00:00,am_portal
+MRC-00031,Neon Online Pty Ltd,Neon Online,Dating,AU,2023-03-02,Active,Tier 3,10,0.0726,0.15,35,7273,Marcus Oyelaran,billing@neononline.com,2023-03-16 00:00:00,SYSTEM
+MRC-00148,Ivory Interactive B.V.,Ivory Interactive,Nutraceuticals,NL,13-May-25,Pending,5,0.2,0.1041,0.35,35,5122,Tom Haverford,billing@ivoryinteractive.com,2025-05-13 00:00:00,am_portal
+MRC-00075,Lumen Labs GmbH,Lumen Labs,ADULT ENT,DEU,02/26/2023,Pending Review,Tier 4,0.15,8.73,0.2,15,5967,Lena Kowalczyk,billing@lumenlabs.com,2023-02-26 00:00:00,SYSTEM
+MRC-00003,Aurora Media Ltd,Aurora Media,SaaS / Software,Great Britain,2021-04-04,Active,Low-Med,0.05,6.32%,0.15,35,5734,Priya Nandakumar,billing@auroramedia.com,07/25/2023 01:15,SYSTEM
+MRC-00062,Apex Group B.V.,Apex Group,Online Gaming,NL,29-May-21,Active,High,15%,0.0839,0.15,35,5816,Tom Haverford,billing@apexgroup.com,2022-08-18 22:20:36,admin
+MRC-00058,Velvet Studios LLC,Velvet Studios,Adult Content,US,10/03/2022,Pending Review,4,0.15,8.04%,0.35,15,5967,Marcus Oyelaran,billing@velvetstudios.com,03/10/2022 00:00,SYSTEM
+MRC-00043,Polar Entertainment LLC,Polar Entertainment,Nutraceuticals,US,2018-01-25,Active,VERY HIGH,0.2,9.93,0.2,25,5122,Jo Matsuda,billing@polarentertainment.com,2018-02-08 00:00:00,jsmith
+MRC-00148,Ivory Interactive B.V.,Ivory Interactive,Nutraceuticals,NL,13/05/2025,Active,5,0.2,10.41%,0.35,35,5122,Tom Haverford,billing@ivoryinteractive.com,2025-11-17 03:41:58,SYSTEM
+MRC-00135,Apex Networks Corp.,Apex Networks,Dating,US,2025-11-19,Pending Review,Medium,0.1,0.0736,0.3,35,7273,Rico Delgado,N/A,2025-11-19 00:00:00,boarding_svc
+MRC-00004,Blue Ventures Ltd,Blue Ventures,SaaS / Software,GB,2024-12-21,Pending,1,5,5.23%,0.35,15,5734,Dana Whitfield,billing@blueventures.com,12/21/2024 00:00,jsmith
+MRC-00037,Summit Group LLC,Summit Group,Dating & Social,United States,2025-02-23,PENDING REVIEW,5,20%,0.072,0.35,15,7273,Jo Matsuda,billing@summitgroup.com,02/23/2025 00:00,SYSTEM
+MRC-00150,Pixel Networks Ltd,Pixel Networks,saas / software,CY,02/20/2020,Active,Tier 1,0.05,5.09%,0.25,35,5734,Rico Delgado,billing@pixelnetworks.com,2020-03-05 00:00:00,admin
+MRC-00098,Orbit Studios LLC,Orbit Studios,eLearning,US,2021-09-19,Pending Review,Tier 2,5,6.88%,0.25,15,8299,Rico Delgado,billing@orbitstudios.com,2021-09-19 00:00:00,boarding_svc
+MRC-00117,Zenith Studios Ltd., Zenith Studios,Streaming / Digital Media,CA,2025-06-16,ACTIVE,2,5%,6.17,0.35,25,7841,Rico Delgado,billing@zenithstudios.com,2025-06-30 00:00:00,SYSTEM
+MRC-00144,Velvet Media Ltd.,Velvet Media,Fitness,CA,15/07/2025,Terminated,2,0.05,0.0667,0.2,15,7997,Rico Delgado,billing@velvetmedia.com,2025-12-24 19:21:11,am_portal
+MRC-00058,Velvet Studios LLC,Velvet Studios,Adult Entertainment,United States,2022-03-10,Active,3,10%,8.04,0.35,15,5967,Marcus Oyelaran,billing@velvetstudios.com,2025-10-22 04:11:14,SYSTEM
+MRC-00033,Lumen Group B.V.,Lumen Group,SaaS / Software,NLD,2026-08-05,Active,1,0.05,0.0544,0.35,25,5734,Tom Haverford,billing@lumengroup.com,2026-08-19 00:00:00,admin
+MRC-00014,Harbor Ventures B.V.,Harbor Ventures,NUTRACEUTICALS,NL,05/05/2026,Pending Review,T4,15,0.0839,0.2,25,5122,Sam Achterberg,BILLING@HARBORVENTURES.COM,05/05/2026 00:00,SYSTEM
+MRC-00002,Willow Networks Ltd,Willow Networks,Adult,GB,04/05/2025,Pending Review,5,20%,9.51%,0.3,35,5967,Priya Nandakumar,billing@willownetworks.com,2025-04-05 00:00:00,am_portal
+MRC-00061,Saffron Media SRL,Saffron Media,STREAMING,RO,2020-03-13,Pending,1,0.05,0.0672,0.3,35,7841,Sam Achterberg,billing@saffronmedia.com,2020-03-13 00:00:00,boarding_svc
+MRC-00044,Mirage Studios Pty Ltd,Mirage Studios,Software/SaaS,AU,2020-01-29,Active,2,5%,0.0565,0.35,15,5734,Jo Matsuda,billing@miragestudios.com,2020-02-12 00:00:00,SYSTEM
+MRC-00047,Harbor Digital GmbH,Harbor Digital,Nutra,de,2023-07-17,SUSPENDED,HIGH,15%,0.0861,0.2,25,5122,Tom Haverford, billing@harbordigital.com,06/19/2026 00:00,am_portal
+MRC-00036,Cobalt Media S.L.,Cobalt Media,Adult Entertainment,ES,2019-01-17,Active,Tier 3,10%,7.89%,0.15,25,5967,Jo Matsuda,BILLING@COBALTMEDIA.COM,2019-01-31 00:00:00,jsmith
+MRC-00061,Saffron Media SRL,Saffron Media,Streaming / Digital Media,RO,13/03/2020,Active,1,5,0.0672,0.3,35,7841,Sam Achterberg,billing@saffronmedia.com,03/27/2020 00:00,admin
+MRC-00108,Indigo Interactive Inc.,Indigo Interactive,Streaming / Digital Media,US,07/03/2020,Act,Low-Med,5%,0.0618,0.3,25,7841,Sam Achterberg,,2020-07-17 00:00:00,boarding_svc
+MRC-00009,Orbit Online B.V.,Orbit Online,SaaS / Software,NL,2020-06-21,Pending Review,Tier 2,5%,0.0634,0.3,25,5734,Lena Kowalczyk,billing@orbitonline.com,2020-06-21 00:00:00,boarding_svc
+MRC-00074,Atlas Works B.V.,Atlas Works,Media/Streaming,NL,01/27/2023,Pending Review,2,0.05,0.0645,0.25,35,7841,Rico Delgado,billing@atlasworks.com,2023-01-27 00:00:00,boarding_svc
+MRC-00088,Ivory Networks s.r.o.,Ivory Networks,adult entertainment,CZ,2026-03-11,Active,T4,0.15,8.86%,0.2,35,5967,Sam Achterberg,N/A,07/09/2026 11:38,am_portal
+MRC-00090,Polar Media Inc.,POLAR MEDIA,Software,US,2019-07-23,Active,Low-Med,0.05,0.0659,0.35,15,5734,Rico Delgado,billing@polarmedia.com,08/06/2019 00:00,admin
+MRC-00106,Aurora Networks Inc.,Aurora Networks,dating,US,"Apr 28, 2021",Pending Review,Tier 4,0.15,0.0842,0.3,15,7273,Rico Delgado,billing@auroranetworks.com,04/28/2021 00:00,jsmith
+MRC-00103,Blue Entertainment Inc.,Blue Entertainment,Online Gaming,US,25/10/2019,Pending Review,T4,15,0.0906,0.2,35,5816,Priya Nandakumar,billing@blueentertainment.com,2019-10-25 00:00:00,admin
+MRC-00018,Polar Interactive Ltd.,Polar Interactive,Software,CA,25-Feb-25,Onboarding,2,0.05,0.0632,0.15,35,5734,Tom Haverford,billing@polarinteractive.com,2025-02-25 00:00:00,SYSTEM
+MRC-00147,Polar Networks Inc., Polar Networks,Streaming / Digital Media,USA,2022-05-10,Active,T3,10,0.0802,0.35,35,7841,Jo Matsuda,billing@polarnetworks.com,2022-05-24 00:00:00,jsmith
+MRC-00100,Indigo Systems Inc.,Indigo Systems,Dating,US,04-Jul-21,Pending Review,T3,10%,0.0924,0.2,25,7273,Tom Haverford,billing@indigosystems.com,2021-07-04 00:00:00,am_portal
+MRC-00153,Quartz Group Corp.,Quartz Group,Adult Entertainment,U.S.,01/17/2023,PENDING REVIEW,3,0.1,0.0718,0.25,35,5967,Rico Delgado,billing@quartzgroup.com,2023-01-17 00:00:00,SYSTEM
+MRC-00112,Zenith Systems GmbH,Zenith Systems,Adult Entertainment,DEU,2026-06-03,Active,4,15,9.02%,0.3,35,5967,Dana Whitfield,billing@zenithsystems.com,2026-08-04 19:15:00,SYSTEM
+MRC-00054,Atlas Systems Ltd,ATLAS SYSTEMS,Adult Content,CY,06/29/2025,Active,5,0.2,9.6,0.25,25,5967,Tom Haverford,billing@atlassystems.com,2025-07-13 00:00:00,am_portal
+MRC-00205,harbor labs llc,Harbor Labs,Online Gaming,US,21/01/2019,Pending Review,HIGH,0.15,0.0888,0.35,35,5816,Jo Matsuda,billing@harborlabs.com,2019-01-21 00:00:00,SYSTEM
+MRC-00151,Echo Online Limited,Echo Online,Adult Entertainment,GB,2022-01-01,Active,5,20%,0.0975,0.15,15,5967,Dana Whitfield,billing@echoonline.com,2022-01-15 00:00:00,admin
+MRC-00141,Saffron Systems Limited,Saffron Systems,E-Learning,UK,20-Jan-26,Active,Tier 2,0.05,5.95,0.35,25,8299,Priya Nandakumar,billing@saffronsystems.com,2026-02-03 00:00:00,SYSTEM
+MRC-00057,Falcon Systems LLC,Falcon Systems,Wellness,US,2018-12-10,Pending Review,2,5%,6.13,0.3,25,7997,Priya Nandakumar,billing@falconsystems.com,12/10/2018 00:00,jsmith
+MRC-00048,Onyx Labs LLC,Onyx Labs,Dating,US,2020-02-27,Onboarding,3,0.1,7.54,0.25,15,7273,Rico Delgado,billing@onyxlabs.com,2020-02-27 00:00:00,am_portal
+MRC-00086,Atlas Entertainment B.V.,Atlas Entertainment,Adult Content,NL,2022-08-08,Pending Review,5,20,9.54,0.35,35,5967,Sam Achterberg,billing@atlasentertainment.com,2022-08-08 00:00:00,boarding_svc
+MRC-00129, Quartz Labs Corp.,Quartz Labs,NUTRACEUTICALS,United States,2022-02-01,Active,5,20,0.0961,0.15,35,5122,Sam Achterberg,billing@quartzlabs.com,2022-02-15 00:00:00,jsmith
+MRC-00121,Mirage Media Pty Ltd,Mirage Media,Dating,AU,2021-01-04,Pending Review,HIGH,15,8.43%,0.2,15,7273,Priya Nandakumar,billing@miragemedia.com,2021-01-04 00:00:00,SYSTEM
+MRC-00079,Onyx Ventures SRL,Onyx Ventures,E-Learning,RO,2020-02-29,Active,2,5,0.0679,0.35,25,8299,Tom Haverford,billing@onyxventures.com,2020-03-14 00:00:00,boarding_svc
+MRC-00047,Harbor Digital GmbH,Harbor Digital,Nutraceuticals,DE,2023-07-17,Pending Review,T4,0.15,8.61,0.2,25,5122,Tom Haverford,billing@harbordigital.com,2023-07-17 00:00:00,am_portal
+MRC-00002,Willow Networks Ltd,Willow Networks,Adult Entertainment,GB,04/05/2025,Active,5,20%,9.51%,0.3,35,5967,Priya Nandakumar,billing@willownetworks.com,04/19/2025 00:00,am_portal
+MRC-00022,Nova Online Corp.,Nova Online,Streaming / Digital Media,US,2025-01-13,Suspended,3,10%,0.0761,0.3,35,7841,Dana Whitfield,billing@novaonline.com,2025-10-17 16:55:24,admin
+MRC-00135,Apex Networks Corp.,Apex Networks,Dating,United States,2025-11-19,Active,3,10%,0.0736,0.3,35,7273,Priya Nandakumar,billing@apexnetworks.com,2026-05-09 15:19:34,boarding_svc
+MRC-00201,silk studios inc.,Silk Studios,SaaS / Software,US,01/19/2026,Pending Review,Tier 1,0.05,0.0553,0.25,25,5734,Rico Delgado,billing@silkstudios.com,2026-01-20 00:00:00,SYSTEM
+MRC-00039,Neon Media GmbH,Neon Media,E-Learning,DE,2018-01-20,Active,Tier 2,5%,0.0595,0.3,35,8299,Jo Matsuda,billing@neonmedia.com,2018-02-03 00:00:00,SYSTEM
+MRC-00090,Polar Media Inc.,Polar Media,SaaS / Software,US,2019-07-23,Pending Review,Low-Med,0.05,0.0659,0.35,15,5734,Rico Delgado,billing@polarmedia.com,2019-07-23 00:00:00,admin
+MRC-00075,Lumen Labs GmbH,Lumen Labs,Adult Entertainment,DE,"Feb 26, 2023",Active,Tier 4,0.15,8.73%,0.2,15,5967,Lena Kowalczyk,BILLING@LUMENLABS.COM,2023-03-12 00:00:00,admin
+MRC-00012,Nova Media Corp.,Nova Media,Streaming / Digital Media,US,2022-11-11,A,3,0.1,7.14%,0.35,35,7841,Rico Delgado,billing@novamedia.com,2025-10-13 08:31:40,boarding_svc
+MRC-00028,Saffron Works Inc.,Saffron Works,Nutra,United States,09/17/2021,Pending Review,Tier 4,0.15,0.0979,0.35,25,5122,Jo Matsuda,billing@saffronworks.com,2021-09-17 00:00:00,am_portal
+MRC-00091,Neon Works Corp.,Neon Works,Adult Entertainment,US,2020-04-06,Pending Review,4,15,8.4,0.3,25,5967,Lena Kowalczyk, billing@neonworks.com,2020-04-06 00:00:00,SYSTEM
+MRC-00114,Zenith Entertainment Inc.,Zenith Entertainment,Adult Entertainment,US,08/19/2021,PENDING REVIEW,3,10,0.0808,0.25,15,5967,Jo Matsuda,billing@zenithentertainment.com,08/19/2021 00:00,jsmith
+MRC-00132,Velvet Labs Inc.,Velvet Labs,ONLINE GAMING,United States,10/23/2024,Active,2,5%,6.41,0.3,35,5816,Rico Delgado,billing@velvetlabs.com,11/06/2024 00:00,boarding_svc
+MRC-00151,Echo Online Limited,Echo Online,Adult Entertainment,GB,2022-01-01,active,5,20%,0.0975,0.15,15,5967,Lena Kowalczyk,billing@echoonline.com,2023-08-29 15:17:57,admin
+MRC-00126,Aurora Labs LLC,Aurora Labs,Supplements,United States,2019-03-21,Pending Review,5,0.2,9.86%,0.3,15,5122,Tom Haverford,billing@auroralabs.com,2019-03-21 00:00:00,jsmith
+MRC-00085,Summit Online Inc.,SUMMIT ONLINE,SaaS / Software,U.S.,2018-04-30,Active,1,0.05,0.0565,0.2,25,5734,Jo Matsuda,billing@summitonline.com,05/14/2018 00:00,admin
+MRC-00020,Cobalt Studios LLC,Cobalt Studios,Nutra,United States of America,09/02/2023,Pending,5,0.2,0.0953,0.25,35,5122,Dana Whitfield,billing@cobaltstudios.com,2023-09-02 00:00:00,admin
+MRC-00066,Apex Labs B.V.,Apex Labs,SaaS / Software,NL,2021-01-15,Active,2,5%,6.12,0.2,15,5734,Jo Matsuda,billing@apexlabs.com,2026-02-12 14:55:14,jsmith
+MRC-00137,Indigo Entertainment GmbH,Indigo Entertainment,Dating,DE,04/09/2021,Pending Review,3,0.1,0.0744,0.2,25,7273,Marcus Oyelaran,billing@indigoentertainment.com,2021-04-09 00:00:00,am_portal
+MRC-00004,Blue Ventures Ltd,Blue Ventures,SaaS / Software,GB,2024-12-21,Active,Low,0.05,0.0523,0.35,15,5734,Dana Whitfield,billing@blueventures.com,2025-01-04 00:00:00,am_portal
+MRC-00063,Juniper Labs s.r.o. ,Juniper Labs,Dating,CZ,08/14/2020,Active,Medium,10%,7.17,0.3,35,7273,Lena Kowalczyk,billing@juniperlabs.com,2021-02-27 07:19:08,admin
+MRC-00097,Silk Online B.V.,Silk Online,Dating,NL,2025-11-17,Pending Review,Medium,10%,7.68,0.2,35,7273,Sam Achterberg,billing@silkonline.com,2025-11-17 00:00:00,jsmith
+MRC-00078,Ivory Digital Inc.,Ivory Digital,Adult Entertainment,USA,2024-11-06,Active,T4,15%,9.22,0.3,15,5967,Rico Delgado,billing@ivorydigital.com,2024-11-20 00:00:00,admin
+MRC-00022,Nova Online Corp.,Nova Online,Streaming / Digital Media,US,2025-01-13,Act,MED,0.1,0.0761,0.3,35,7841,Dana Whitfield,billing@novaonline.com,07/26/2025 11:37,admin
+MRC-00108,Indigo Interactive Inc.,Indigo Interactive,Streaming / Digital Media,US,2020-07-03,Active,2,0.05,6.18%,0.3,25,7841,Lena Kowalczyk,billing@indigointeractive.com,2022-12-04 06:23:15,SYSTEM
+MRC-00038,Delta Works Ltd,Delta Works,Adult Entertainment,MT,12/13/2025,Active,MED,0.1,7.55,0.25,15,5967,Rico Delgado,billing@deltaworks.com,2026-03-26 05:04:36,admin
+MRC-00134,Falcon Interactive Inc.,Falcon Interactive,ADULT ENT,US,11/14/2021,Pending Review,Critical,20%,0.0965,0.2,35,5967,Sam Achterberg,billing@falconinteractive.com,2021-11-14 00:00:00,am_portal
+MRC-00084,Silk Group Inc.,Silk Group,Adult Ent.,CA,2018-07-02,Active,3,10%,7.93%,0.15,15,5967,Sam Achterberg,billing@silkgroup.com,2018-07-16 00:00:00,am_portal
+MRC-00113,Crimson Ventures GmbH,Crimson Ventures,Adult Content,Germany,2023-07-12,PENDING REVIEW,5,20%,10.15%,0.15,15,5967,Tom Haverford,billing@crimsonventures.com,2023-07-12 00:00:00,admin
+MRC-00144,Velvet Media Ltd.,Velvet Media,Fitness & Wellness,CA,2025-07-15,Active,3,10,6.67,0.2,15,7997,Rico Delgado,billing@velvetmedia.com,2025-07-29 00:00:00,SYSTEM
+MRC-00036,Cobalt Media S.L.,Cobalt Media,Adult Entertainment,ES,17-Jan-19,Terminated,3,0.1,0.0789,0.15,25,5967,Jo Matsuda,billing@cobaltmedia.com,2026-09-13 03:09:19,jsmith
+MRC-00205,harbor labs llc,Harbor Labs,Online Gaming,us,21-Jan-19,Active,4,0.15,0.0888,0.35,35,5816,Jo Matsuda,billing@harborlabs.com,2019-02-05 00:00:00,am_portal
+MRC-00105,Nova Networks LLC,Nova Networks,Streaming / Digital Media,U.S.A.,2020-03-09,Active,3,10%,7.77%,0.2,15,7841,Rico Delgado,billing@novanetworks.com,2020-03-23 00:00:00,jsmith
+MRC-00016,Neon Ventures B.V.,Neon Ventures,Adult Entertainment,NL,29/10/2021,Pending Review,5,20,0.0843,0.25,35,5967,Sam Achterberg,billing@neonventures.com,2021-10-29 00:00:00,SYSTEM
+MRC-00009,Orbit Online B.V.,Orbit Online,SaaS / Software,NL,06/21/2020,Active,2,5,6.34%,0.3,25,5734,Rico Delgado,billing@orbitonline.com,2020-09-26 18:22:42,SYSTEM
+MRC-00107,Aurora Interactive Corp.,Aurora Interactive,Dating,US,2020-10-11,Active,4,15,0.0888,0.3,15,7273,Lena Kowalczyk,billing@aurorainteractive.com,2020-10-25 00:00:00,boarding_svc
+MRC-00102,Marlin Works Inc.,Marlin Works,Dating,US,2021-06-03,Active,3,10%,8.63,0.15,25,7273,Tom Haverford,billing@marlinworks.com,2021-06-17 00:00:00,admin
+MRC-00076,Indigo Online Inc. ,Indigo Online,Online Gaming,us,2025-03-09,Active,MED,10,0.0763,0.3,15,5816,Rico Delgado,billing@indigoonline.com,2025-09-04 06:35:56,SYSTEM
+MRC-00016,Neon Ventures B.V.,Neon Ventures,Adult Entertainment,NL,10/29/2021,Terminated,HIGH,0.15,0.0843,0.25,35,5967,Sam Achterberg, billing@neonventures.com,2026-04-18 19:03:36,boarding_svc
+MRC-00030,Delta Labs GmbH,Delta Labs,Adult Entertainment,Germany,2021-02-10,Pending Review,4,0.15,8.39%,0.2,15,5967,Priya Nandakumar,billing@deltalabs.com,2021-02-10 00:00:00,am_portal
+MRC-00057,Falcon Systems LLC,Falcon Systems,Fitness & Wellness,us,2018-12-10,Active,T2,0.05,6.13,0.3,25,7997,Priya Nandakumar,BILLING@FALCONSYSTEMS.COM,2018-12-24 00:00:00,am_portal
+MRC-00149,Lumen Media Ltd,Lumen Media,STREAMING,CY,25/01/2018,Active,2,0.05,0.0784,0.3,35,7841,Marcus Oyelaran,billing@lumenmedia.com,2018-02-08 00:00:00,boarding_svc
+MRC-00060,Atlas Media LLC,Atlas Media,SaaS / Software,United States,2026-05-06,Pending,Tier 1,5%,5.2%,0.35,15,5734,Marcus Oyelaran,billing@atlasmedia.com,2026-05-06 00:00:00,jsmith
+MRC-00063,Juniper Labs s.r.o.,Juniper Labs,Dating,CZECH REPUBLIC,2020-08-14,Terminated,3,10,7.17%,0.3,35,7273,Lena Kowalczyk,billing@juniperlabs.com,2025-11-18 10:06:03,boarding_svc
+MRC-00112,Zenith Systems GmbH,Zenith Systems,Adult Entertainment,DE,2026-06-03,Onboarding,5,0.2,9.02,0.3,35,5967,Dana Whitfield,billing@zenithsystems.com,06/03/2026 00:00,am_portal

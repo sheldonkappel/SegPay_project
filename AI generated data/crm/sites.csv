@@ -1,0 +1,328 @@
+site_id,merchant_id,site_name,site_url,category,launch_date,status,billing_descriptor,support_email
+5003,MRC-00001,Ember Pro,www.emberpro.com,VPN,2023-08-07,Closed,SEGPAY*EMBERPRO,support@emberpro.com
+5004,MRC-00001,Ember Pro,www.emberpro.com,Productivity,2023-06-06,CLOSED,SEGPAY*EMBERPRO,support@emberpro.com
+5005,MRC-00001,Ember Hub,https://emberhub.com/,VPN,2023-07-10,Inactive,SEGPAY*EMBERHUB,support@emberhub.com
+5009,MRC-00001,Ember Live,www.emberlive.com,Productivity,2023-05-29,Closed,SEGPAY*EMBERLIVE,support@emberlive.com
+5012,MRC-00001,Ember Vault,www.embervault.com,Design Software,30-Jun-23,CLOSED,SEGPAY*EMBERVAULT,
+5016,MRC-00002,Willow Online,www.willowonline.com,Video Membership,2025-04-22,live,SEGPAY*WILLOWONLINE,support@willowonline.com
+5017,MRC-00003,Aurora Cams,www.auroracams.com,Productivity,2021-05-13,Active,SEGPAY*AURORACAMS,support@auroracams.com
+5021,MRC-00004,Blue Plus,www.blueplus.com,VPN,04/13/2025,Closed,SEGPAY*BLUEPLUS,support@blueplus.com
+5024,MRC-00004,Blue Academy,www.blueacademy.com,VPN,2025-02-25,Closed,SEGPAY*BLUEACADEMY,support@blueacademy.com
+5028,MRC-00004,Blue Hub,www.bluehub.com,Dev Tools,2025-02-18,Inactive,Segpay *Bluehub,support@bluehub.com
+5029,MRC-00005,Harbor Online,www.harboronline.com,Fan Platform,2019-10-17,Live,SEGPAY*HARBORONLINE,support@harboronline.com
+5032,MRC-00006,Nova Vault,www.novavault.com,Hookup App,17-Jan-21,Active,SEGPAY*NOVAVAULT,support@novavault.com
+5035,MRC-00007,Nova Plus,www.novaplus.com,MMO,2019-06-07,Closed,Segpay.Com*Novaplus,support@novaplus.com
+5039,MRC-00008, Pixel Pass,www.pixelpass.com,Workout App,2020-01-24,Live,SEGPAY*PIXELPASS,support@pixelpass.com
+5040,MRC-00009,Orbit Cams,www.orbitcams.com,Dev Tools,"Jul 14, 2020",Live,Segpay *Orbitcams,support@orbitcams.com
+5041,MRC-00009,Orbit Online,www.orbitonline.com,Design Software,20200917,Live,SEGPAY*ORBITONLINE,support@orbitonline.com
+5045,MRC-00010,Aurora Academy,www.auroraacademy.com,Coaching,15-May-20,Live,SEGPAY*AURORAACADEMY,support@auroraacademy.com
+5047,MRC-00010,Aurora Fit,www.aurorafit.com,Meditation,2020-04-04,Live,SEGPAY*AURORAFIT,support@aurorafit.com
+5050,MRC-00011,Mirage Vault,www.miragevault.com,Dev Tools,03/11/2023,Live,SEGPAY*MIRAGEVAULT,support@miragevault.com
+5054,MRC-00012,Nova Plus,https://novaplus.com/,Podcasts,2022-12-24,Live,SEGPAY*NOVAPLUS,support@novaplus.com
+5056,MRC-00012,Nova Match,www.novamatch.com,Podcasts,12/22/2022,Live,Segpay.Com*Novamatch,support@novamatch.com
+5060,MRC-00013,Marlin Hub,https://marlinhub.com/,Video Membership,2019-01-18,Live,SEGPAY*MARLINHUB,support@marlinhub.com
+5062,MRC-00013,Marlin Live,www.marlinlive.com,Video Membership,2019-02-01,Live,SEGPAY*MARLINLIVE,support@marlinlive.com
+5064,MRC-00013,Marlin Vault,www.marlinvault.com,Fan Platform,2018-11-21,live,SEGPAY*MARLINVAULT,support@marlinvault.com
+5067,MRC-00014,Harbor Pro,https://harborpro.com/,Weight Management,2026-06-03,Closed,SEGPAY*HARBORPRO,support@harborpro.com
+5069,MRC-00014,Harbor Vault,www.harborvault.com,Weight Management,07/18/2026,Closed,SEGPAY*HARBORVAULT,support@harborvault.com
+5070,MRC-00014,Harbor Pass,www.harborpass.com,Supplements,2026-05-30,Closed,SEGPAY*HARBORPASS,support@harborpass.com
+5074,MRC-00015,Summit Club,www.summitclub.com,Supplements,08/25/2019,Closed,Segpay.Com*Summitclub,support@summitclub.com
+5076,MRC-00015,Summit Plus,www.summitplus.com,Weight Management,2019-06-22,CLOSED,SEGPAY*SUMMITPLUS,support@summitplus.com
+5078,MRC-00016,Neon Plus,www.neonplus.com,Live Cams,12/08/2021,Closed,SEGPAY*NEONPLUS,support@neonplus.com
+5079,MRC-00017,Delta Live,www.deltalive.com,Podcasts,2018-04-20,Closed,SEGPAY*DELTALIVE,support@deltalive.com
+5083,MRC-00017,Delta Fit,https://deltafit.com/,Podcasts,03/25/2018,Active,SEGPAY*DELTAFIT,support@deltafit.com
+5086,MRC-00018,Polar Club,www.polarclub.com,Productivity,2025-06-11,Paused,SEGPAY*POLARCLUB,support@polarclub.com
+5087,MRC-00018,Polar Direct,https://polardirect.com/,Design Software,2025-06-01,Live,Segpay*Polardirect,support@polardirect.com
+5090,MRC-00018,Polar Direct,www.polardirect.com,Dev Tools,04/24/2025,Live,SEGPAY*POLARDIRECT,support@polardirect.com
+5094,MRC-00019,Marlin Academy,https://marlinacademy.com/,Dev Tools,2021-05-26,Live,SEGPAY*MARLINACADEMY,support@marlinacademy.com
+5098,MRC-00019,Marlin Plus,www.marlinplus.com,Design Software,06/13/2021,Live,SEGPAY*MARLINPLUS,support@marlinplus.com
+5101,MRC-00019,Marlin Club,www.marlinclub.com,Design Software,06/12/2021,Live,Segpay.Com*Marlinclub,support@marlinclub.com
+5104,MRC-00020,Cobalt Pass,www.cobaltpass.com,Weight Management,11/13/2023,Closed,SEGPAY*COBALTPASS,support@cobaltpass.com
+5108,MRC-00020,Cobalt Cams,www.cobaltcams.com,Weight Management,2023-12-31,Closed,Segpay*Cobaltcams,support@cobaltcams.com
+5112,MRC-00021,Willow Cams,www.willowcams.com,Productivity,2022-02-19,CLOSED,Segpay *Willowcams,support@willowcams.com
+5114,MRC-00021,Willow Pro,www.willowpro.com,Dev Tools,24-Mar-22,Closed,Segpay.Com*Willowpro,support@willowpro.com
+5118,MRC-00022,Nova Direct,www.novadirect.com,Video Streaming,2025-02-08,Live,SEGPAY*NOVADIRECT,support@novadirect.com
+5122,MRC-00022,Nova Play,www.novaplay.com,Video Streaming,03/17/2025,Active,SEGPAY*NOVAPLAY,support@novaplay.com
+5125,MRC-00022,Nova Cams,www.novacams.com,Podcasts,04/03/2025,Live,SEGPAY*NOVACAMS,support@novacams.com
+5129,MRC-00023,Echo Plus,www.echoplus.com,Design Software,02/25/2026,Live,Segpay *Echoplus,support@echoplus.com
+5132,MRC-00023,Echo Club,www.echoclub.com,Dev Tools,"Mar 25, 2026",Live,SEGPAY*ECHOCLUB,
+5136,MRC-00023,Echo Plus,www.echoplus.com,Dev Tools,2026-05-19,Live,SEGPAY*ECHOPLUS,support@echoplus.com
+5139,MRC-00024,Quartz Vault,www.quartzvault.com,Weight Management,03-Apr-21,Active,SEGPAY*QUARTZVAULT,support@quartzvault.com
+5142,MRC-00024,Quartz Pass,www.quartzpass.com,Weight Management,02/24/2021,Live,Segpay *Quartzpass,support@quartzpass.com
+5143,MRC-00025,Pixel Hub,www.pixelhub.com,Casino-style Social Game,2022-05-08,Active,SEGPAY*PIXELHUB,support@pixelhub.com
+5145,MRC-00025,Pixel Zone,www.pixelzone.com,MMO,2022-04-16,Live,Segpay*Pixelzone,support@pixelzone.com
+5147,MRC-00025,Pixel Zone,www.pixelzone.com,Casino-style Social Game,2022-04-16,Live,SEGPAY*PIXELZONE,support@pixelzone.com
+5148,MRC-00026,Cobalt Pass,www.cobaltpass.com,Fan Platform,01/12/2026,Live,SEGPAY*COBALTPASS,support@cobaltpass.com
+5151,MRC-00026,Cobalt Direct,www.cobaltdirect.com,Video Membership,2025-12-21,Live,SEGPAY*COBALTDIRECT,support@cobaltdirect.com
+5154,MRC-00026,Cobalt Pro,www.cobaltpro.com,Photo Gallery,29/12/2025,Live,SEGPAY*COBALTPRO,support@cobaltpro.com
+5157,MRC-00027,Juniper Vault,https://junipervault.com/,Podcasts,10/17/2025,Closed,SEGPAY*JUNIPERVAULT,support@junipervault.com
+5160,MRC-00027,Juniper Academy,www.juniperacademy.com,Music,2025-12-08,live,SEGPAY*JUNIPERACADEMY,support@juniperacademy.com
+5162,MRC-00027,Juniper Cams,www.junipercams.com,Podcasts,09/12/2025,Live,SEGPAY*JUNIPERCAMS,support@junipercams.com
+5164,MRC-00027,Juniper Club,www.juniperclub.com,Podcasts,2025-11-13,live,SEGPAY*JUNIPERCLUB,
+5168,MRC-00028,Saffron TV,www.saffrontv.com,Supplements,2021-11-18,Live,SEGPAY*SAFFRONTV,support@saffrontv.com
+5170,MRC-00029,Juniper Plus,www.juniperplus.com,Video Streaming,2026-02-12,Live,SEGPAY*JUNIPERPLUS,support@juniperplus.com
+5173,MRC-00029,Juniper Pass,www.juniperpass.com,Podcasts,2026-01-14,Live,Segpay *Juniperpass,support@juniperpass.com
+5176,MRC-00030,Delta Live,www.deltalive.com,Photo Gallery,2021-05-08,Live,Segpay.Com*Deltalive,support@deltalive.com
+5178,MRC-00030,Delta Play,www.deltaplay.com,Video Membership,2021-04-10,Live,SEGPAY*DELTAPLAY,support@deltaplay.com
+5180,MRC-00030,DELTA TV,www.deltatv.com,Live Cams,02/28/2021,Live,SEGPAY*DELTATV,support@deltatv.com
+5183,MRC-00031,Neon Direct,www.neondirect.com,Hookup App,2023-06-27,Active,SEGPAY*NEONDIRECT,support@neondirect.com
+5187,MRC-00031,Neon Match,www.neonmatch.com,Hookup App,"May 25, 2023",Live,SEGPAY*NEONMATCH,
+5188,MRC-00205,Harbor Fit,www.harborfit.com,MMO,05/03/2019,Live,SEGPAY*HARBORFIT,support@harborfit.com
+5189,MRC-00205,Harbor Direct,https://harbordirect.com/,MMO,2019-04-30,live,SEGPAY*HARBORDIRECT,support@harbordirect.com
+5193,MRC-00205,Harbor TV,www.harbortv.com,MMO,2019-05-02,Live,Segpay.Com*Harbortv,support@harbortv.com
+5194,MRC-00033,Lumen Plus,www.lumenplus.com,VPN,2026-12-02,Inactive,SEGPAY*LUMENPLUS,support@lumenplus.com
+5198,MRC-00033,Lumen Direct,www.lumendirect.com,Productivity,2026-11-27,Closed,SEGPAY*LUMENDIRECT,support@lumendirect.com
+5200,MRC-00033,Lumen Pass,www.lumenpass.com,Productivity,2026-08-22,Closed,SEGPAY*LUMENPASS,support@lumenpass.com
+5204,MRC-00034,Falcon Play,www.falconplay.com,Video Membership,2018-09-14,Closed,SEGPAY*FALCONPLAY,support@falconplay.com
+5208,MRC-00035,Summit Pro,www.summitpro.com,Live Cams,25-Apr-23,Live,SEGPAY*SUMMITPRO,support@summitpro.com
+5212,MRC-00035,Summit Academy,www.summitacademy.com,Photo Gallery,04/06/2023,Live,SEGPAY*SUMMITACADEMY,support@summitacademy.com
+5214,MRC-00036,Cobalt Match,www.cobaltmatch.com,Fan Platform,04/27/2019,Closed,SEGPAY*COBALTMATCH,
+5217,MRC-00036,Cobalt Cams,www.cobaltcams.com,Live Cams,2019-05-01,Closed,Segpay*Cobaltcams,support@cobaltcams.com
+5221,MRC-00037,Summit Vault,www.summitvault.com,Dating Site,2025-04-14,Live,Segpay.Com*Summitvault,support@summitvault.com
+5224,MRC-00037,Summit Match,www.summitmatch.com,Dating Site,26-May-25,Live,SEGPAY*SUMMITMATCH,support@summitmatch.com
+5228,MRC-00038,Delta Club,www.deltaclub.com,Photo Gallery,2026-04-11,Live,SEGPAY*DELTACLUB,support@deltaclub.com
+5231,MRC-00038,Delta Vault,www.deltavault.com,Photo Gallery,02/08/2026,Active,Segpay *Deltavault,support@deltavault.com
+5234,MRC-00039,Neon Cams,www.neoncams.com,Courses,2018-06-01,Paused,SEGPAY*NEONCAMS,support@neoncams.com
+5235,MRC-00039,Neon Match,www.neonmatch.com,Certification,2018-05-08,Live,SEGPAY*NEONMATCH,support@neonmatch.com
+5237,MRC-00039,Neon Club,www.neonclub.com,Certification,2018-06-02,Paused,SEGPAY*NEONCLUB,support@neonclub.com
+5240,MRC-00041,Blue Live,www.bluelive.com,Productivity,2020-07-18,Live,SEGPAY*BLUELIVE,
+5241,MRC-00041,Blue Club,www.blueclub.com,Productivity,14-Jul-20,Live,SEGPAY*BLUECLUB,support@blueclub.com
+5244,MRC-00042,Neon Play,www.neonplay.com,Fan Platform,02/10/2026,Live,SEGPAY*NEONPLAY,support@neonplay.com
+5248,MRC-00042,Neon Play,www.neonplay.com,Video Membership,01/10/2026,Live,SEGPAY*NEONPLAY,support@neonplay.com
+5252,MRC-00043,Polar Club,www.polarclub.com,Supplements,2018-05-01,Closed,SEGPAY*POLARCLUB,support@polarclub.com
+5256,MRC-00043,Polar Hub,www.polarhub.com,Supplements,2018-05-17,CLOSED,SEGPAY*POLARHUB,
+5257,MRC-00044,Mirage TV,www.miragetv.com,Design Software,20-Apr-20,Closed,SEGPAY*MIRAGETV,support@miragetv.com
+5258,MRC-00044,Mirage Pass,www.miragepass.com,Productivity,2020-06-02,Inactive,SEGPAY*MIRAGEPASS,support@miragepass.com
+5261,MRC-00044,Mirage Cams,www.miragecams.com,VPN,2020-03-30,Closed,SEGPAY*MIRAGECAMS,support@miragecams.com
+5265,MRC-00044,Mirage Fit,www.miragefit.com,Dev Tools,2020-04-10,Closed,SEGPAY*MIRAGEFIT,support@miragefit.com
+5269,MRC-00045,Apex Direct,www.apexdirect.com,Hookup App,"Jan 18, 2021",Live,Segpay*Apexdirect,support@apexdirect.com
+5272,MRC-00045,Apex Pass,www.apexpass.com,Matchmaking,01/09/2021,LIVE,SEGPAY*APEXPASS,support@apexpass.com
+5273,MRC-00046,Neon Plus,www.neonplus.com,Fan Platform,02/12/2023,Live,SEGPAY*NEONPLUS,
+5274,MRC-00046,Neon Vault,www.neonvault.com,Video Membership,2023-01-05,Live,SEGPAY*NEONVAULT,support@neonvault.com
+5275,MRC-00047,Harbor Hub,www.harborhub.com,Supplements,2023-09-27,Paused,SEGPAY*HARBORHUB,support@harborhub.com
+5277,MRC-00047,Harbor Academy,www.harboracademy.com,Weight Management,2023-11-19,Live,SEGPAY*HARBORACADEMY,support@harboracademy.com
+5279,MRC-00048,Onyx Hub,www.onyxhub.com,Hookup App,20200510,Inactive,Segpay *Onyxhub,support@onyxhub.com
+5282,MRC-00048,Onyx Fit,www.onyxfit.com,Matchmaking,20200614,Closed,SEGPAY*ONYXFIT,
+5286,MRC-00048,Onyx Academy,www.onyxacademy.com,Dating Site,20200330,Closed,SEGPAY*ONYXACADEMY,support@onyxacademy.com
+5287,MRC-00049,Willow Academy,www.willowacademy.com,Music,2021-07-06,live,SEGPAY*WILLOWACADEMY,support@willowacademy.com
+5289,MRC-00049,Willow Vault,www.willowvault.com,Music,2021-06-07,Live,SEGPAY*WILLOWVAULT,support@willowvault.com
+5292,MRC-00050,Willow Zone,https://willowzone.com/,Fan Platform,2023-06-02,Closed,SEGPAY*WILLOWZONE,support@willowzone.com
+5295,MRC-00051,Marlin Match,www.marlinmatch.com,Live Cams,2021-09-16,Live,SEGPAY*MARLINMATCH,support@marlinmatch.com
+5299,MRC-00052,Juniper Academy ,www.juniperacademy.com,Meditation,2023-10-19,live,Segpay.Com*Juniperacademy,support@juniperacademy.com
+5303,MRC-00052,Juniper Academy,www.juniperacademy.com,Meditation,2023-09-20,Live,Segpay.Com*Juniperacademy,support@juniperacademy.com
+5306,MRC-00052,Juniper Online,www.juniperonline.com,Coaching,2023-12-05,LIVE,SEGPAY*JUNIPERONLINE,support@juniperonline.com
+5307,MRC-00053,Cobalt Pass,www.cobaltpass.com,Podcasts,03/14/2025,Live,SEGPAY*COBALTPASS,support@cobaltpass.com
+5309,MRC-00054, Atlas Cams,www.atlascams.com,Video Membership,20250720,Live,Segpay.Com*Atlascams,support@atlascams.com
+5310,MRC-00055,Orbit Online,www.orbitonline.com,Language Learning,10/07/2018,live,SEGPAY*ORBITONLINE,support@orbitonline.com
+5314,MRC-00055,Orbit Match,www.orbitmatch.com,Certification,12/25/2018,Closed,SEGPAY*ORBITMATCH,support@orbitmatch.com
+5315,MRC-00056,Ember Cams,www.embercams.com,Music,2023-05-07,Live,SEGPAY*EMBERCAMS,support@embercams.com
+5317,MRC-00057, Falcon Vault,www.falconvault.com,Meditation,2019-01-12,Live,SEGPAY*FALCONVAULT,support@falconvault.com
+5319,MRC-00203, Velvet Vault,www.velvetvault.com,Fan Platform,20220523,Live,SEGPAY*VELVETVAULT,support@velvetvault.com
+5321,MRC-00059,Orbit Fit,www.orbitfit.com,Supplements,2019-11-17,Live,SEGPAY*ORBITFIT,support@orbitfit.com
+5323,MRC-00059,Orbit Pro,www.orbitpro.com,Supplements,2019-10-06,LIVE,SEGPAY*ORBITPRO,support@orbitpro.com
+5327,MRC-00059,Orbit Cams,www.orbitcams.com,Supplements,2019-09-12,Live,SEGPAY*ORBITCAMS,support@orbitcams.com
+5328,MRC-00060,Atlas Direct,www.atlasdirect.com,Design Software,08/21/2026,Live,SEGPAY*ATLASDIRECT,
+5331,MRC-00060,Atlas Live,www.atlaslive.com,Productivity,07/09/2026,Live,SEGPAY*ATLASLIVE,support@atlaslive.com
+5333,MRC-00061,Saffron Club,www.saffronclub.com,Podcasts,2020-07-01,Live,SEGPAY*SAFFRONCLUB,support@saffronclub.com
+5336,MRC-00061,Saffron TV,www.saffrontv.com,Video Streaming,2020-06-20,Active,Segpay *Saffrontv,support@saffrontv.com
+5337,MRC-00062,Apex Pro,www.apexpro.com,Mobile Game,07/29/2021,Live,Segpay *Apexpro,support@apexpro.com
+5338,MRC-00062,Apex Match,www.apexmatch.com,Mobile Game,2021-08-11,Active,SEGPAY*APEXMATCH,support@apexmatch.com
+5340,MRC-00062,Apex Match,www.apexmatch.com,MMO,16/08/2021,Live,Segpay *Apexmatch,support@apexmatch.com
+5344,MRC-00063,Juniper Pass ,www.juniperpass.com,Matchmaking,2020-12-06,CLOSED,Segpay *Juniperpass,support@juniperpass.com
+5345,MRC-00063,Juniper Pass ,https://juniperpass.com/,Matchmaking,2020-09-07,Closed,SEGPAY*JUNIPERPASS,support@juniperpass.com
+5346,MRC-00063,Juniper Pro,www.juniperpro.com,Dating Site,2020-12-06,Closed,SEGPAY*JUNIPERPRO,
+5349,MRC-00064,Orbit Cams,www.orbitcams.com,Casino-style Social Game,2022-10-14,Live,SEGPAY*ORBITCAMS,support@orbitcams.com
+5353,MRC-00064,Orbit Academy,www.orbitacademy.com,MMO,"Nov 06, 2022",Live,Segpay *Orbitacademy,support@orbitacademy.com
+5356,MRC-00064,Orbit Plus,https://orbitplus.com/,MMO,2022-10-23,live,SEGPAY*ORBITPLUS,support@orbitplus.com
+5360,MRC-00065,Ember Plus,www.emberplus.com,Casino-style Social Game,2018-08-20,Live,SEGPAY*EMBERPLUS,support@emberplus.com
+5361,MRC-00066,Apex Vault,www.apexvault.com,Design Software,2021-04-11,Live,Segpay *Apexvault,support@apexvault.com
+5363,MRC-00066,Apex Plus,www.apexplus.com,Design Software,2021-02-04,Live,SEGPAY*APEXPLUS,support@apexplus.com
+5366,MRC-00066,Apex Online,www.apexonline.com,VPN,2021-05-05,Live,Segpay.Com*Apexonline,support@apexonline.com
+5370,MRC-00067,Harbor Pro,www.harborpro.com,MMO,2025-08-14,Paused,SEGPAY*HARBORPRO,support@harborpro.com
+5374,MRC-00067,Harbor TV ,www.harbortv.com,Casino-style Social Game,2025-08-10,Live,SEGPAY*HARBORTV,support@harbortv.com
+5377,MRC-00067,Harbor Live,www.harborlive.com,Casino-style Social Game,2025-09-11,Live,SEGPAY*HARBORLIVE,support@harborlive.com
+5381,MRC-00068,Nova TV,www.novatv.com,VPN,20191128,Live,SEGPAY*NOVATV,support@novatv.com
+5383,MRC-00069,Zenith Zone,www.zenithzone.com,Video Streaming,2025-09-13,Live,SEGPAY*ZENITHZONE,
+5385,MRC-00070,Velvet Vault ,www.velvetvault.com,Music,09/25/2022,Live,SEGPAY*VELVETVAULT,support@velvetvault.com
+5389,MRC-00070,Velvet Plus,www.velvetplus.com,Podcasts,11/11/2022,LIVE,Segpay *Velvetplus,support@velvetplus.com
+5390,MRC-00070,Velvet Vault,www.velvetvault.com,Music,12/08/2022,Live,Segpay.Com*Velvetvault,support@velvetvault.com
+5391,MRC-00071,Falcon Play,www.falconplay.com,Coaching,2021-03-05,Live,SEGPAY*FALCONPLAY,support@falconplay.com
+5393,MRC-00072,Polar Play,www.polarplay.com,Video Membership,07/06/2019,Live,Segpay *Polarplay,support@polarplay.com
+5397,MRC-00073,Atlas Live,www.atlaslive.com,Weight Management,03/06/2020,Live,Segpay.Com*Atlaslive,support@atlaslive.com
+5398,MRC-00073,Atlas Plus,www.atlasplus.com,Supplements,2020-05-18,Live,SEGPAY*ATLASPLUS,support@atlasplus.com
+5401,MRC-00074,Atlas Plus,www.atlasplus.com,Podcasts,02/15/2023,live,SEGPAY*ATLASPLUS,support@atlasplus.com
+5405,MRC-00074,Atlas Club,www.atlasclub.com,Video Streaming,2023-04-24,Live,Segpay *Atlasclub,support@atlasclub.com
+5407,MRC-00074,Atlas TV,www.atlastv.com,Podcasts,2023-02-11,Live,Segpay.Com*Atlastv,support@atlastv.com
+5410,MRC-00075,Lumen Zone,www.lumenzone.com,Photo Gallery,2023-04-14,Live,SEGPAY*LUMENZONE,support@lumenzone.com
+5412,MRC-00076,Indigo Play,www.indigoplay.com,MMO,2025-07-03,LIVE,Segpay.Com*Indigoplay,support@indigoplay.com
+5413,MRC-00076,Indigo Pass,www.indigopass.com,MMO,2025-05-18,Live,SEGPAY*INDIGOPASS,support@indigopass.com
+5416,MRC-00076,Indigo Plus,www.indigoplus.com,Mobile Game,2025-05-29,Live,Segpay*Indigoplus,support@indigoplus.com
+5420,MRC-00077,Lumen Pass,www.lumenpass.com,Matchmaking,10-Mar-23,Closed,SEGPAY*LUMENPASS,support@lumenpass.com
+5422,MRC-00078,Ivory Zone,https://ivoryzone.com/,Live Cams,2024-11-28,Closed,Segpay *Ivoryzone,
+5424,MRC-00078,Ivory Play,www.ivoryplay.com,Live Cams,12/24/2024,Closed,SEGPAY*IVORYPLAY,support@ivoryplay.com
+5428,MRC-00079,Onyx Zone,www.onyxzone.com,Certification,2020-04-22,Live,SEGPAY*ONYXZONE,support@onyxzone.com
+5430,MRC-00079,Onyx Play,https://onyxplay.com/,Courses,2020-06-11,Live,Segpay*Onyxplay,support@onyxplay.com
+5434,MRC-00080,Ivory TV,www.ivorytv.com,Supplements,2025-04-05,LIVE,SEGPAY*IVORYTV,support@ivorytv.com
+5437,MRC-00080,Ivory Direct,www.ivorydirect.com,Supplements,04/03/2025,Live,Segpay.Com*Ivorydirect,support@ivorydirect.com
+5438,MRC-00080,Ivory Academy,www.ivoryacademy.com,Supplements,2025-05-12,Live,SEGPAY*IVORYACADEMY,support@ivoryacademy.com
+5440,MRC-00080,Ivory Academy,www.ivoryacademy.com,Weight Management,2025-04-23,live,Segpay.Com*Ivoryacademy,support@ivoryacademy.com
+5443,MRC-00080,Ivory Online,www.ivoryonline.com,Weight Management,06/09/2025,Live,Segpay.Com*Ivoryonline,support@ivoryonline.com
+5445,MRC-00200,Mirage Pro,www.miragepro.com,Photo Gallery,2020-08-14,Live,Segpay*Miragepro,support@miragepro.com
+5449,MRC-00082,Mirage Match,www.miragematch.com,Photo Gallery,07/22/2020,Live,SEGPAY*MIRAGEMATCH,support@miragematch.com
+5452,MRC-00082,Mirage Cams,www.miragecams.com,Fan Platform,09/03/2020,Live,SEGPAY*MIRAGECAMS,support@miragecams.com
+5454,MRC-00083,Silk Pro,www.silkpro.com,Video Streaming,2025-07-24,Live,SEGPAY*SILKPRO,support@silkpro.com
+5455,MRC-00084,Silk Zone ,www.silkzone.com,Fan Platform,2018-10-29,Live,SEGPAY*SILKZONE,support@silkzone.com
+5456,MRC-00084,Silk Fit,www.silkfit.com,Photo Gallery,2018-08-10,Live,SEGPAY*SILKFIT,support@silkfit.com
+5459,MRC-00084,Silk Online,www.silkonline.com,Fan Platform,2018-09-23,live,Segpay *Silkonline,support@silkonline.com
+5461,MRC-00085,Summit Play,www.summitplay.com,Dev Tools,17-Aug-18,Closed,SEGPAY*SUMMITPLAY,support@summitplay.com
+5465,MRC-00085,Summit Online,www.summitonline.com,Productivity,2018-09-07,Live,SEGPAY*SUMMITONLINE,support@summitonline.com
+5469,MRC-00086,Atlas Academy,www.atlasacademy.com,Live Cams,08/22/2022,Closed,SEGPAY*ATLASACADEMY,support@atlasacademy.com
+5473,MRC-00087,Mirage Online,www.mirageonline.com,VPN,2022-02-28,live,SEGPAY*MIRAGEONLINE,support@mirageonline.com
+5477,MRC-00088,Ivory Direct,www.ivorydirect.com,Video Membership,2026-03-27,Live,SEGPAY*IVORYDIRECT,support@ivorydirect.com
+5478,MRC-00089,Nova TV,www.novatv.com,Productivity,2023-02-19,Closed,SEGPAY*NOVATV,support@novatv.com
+5481,MRC-00089,Nova TV,www.novatv.com,Productivity,2023-03-04,Closed,SEGPAY*NOVATV,support@novatv.com
+5485,MRC-00090,Polar Academy,www.polaracademy.com,VPN,2019-08-29,Live,SEGPAY*POLARACADEMY,support@polaracademy.com
+5486,MRC-00090,Polar Play,www.polarplay.com,Design Software,2019-08-28,Live,Segpay.Com*Polarplay,support@polarplay.com
+5490,MRC-00090,Polar Fit,www.polarfit.com,Productivity,2019-11-02,Active,SEGPAY*POLARFIT,support@polarfit.com
+5494,MRC-00091,Neon Cams,www.neoncams.com,Fan Platform,2020-06-15,Live,Segpay *Neoncams,support@neoncams.com
+5498,MRC-00091,Neon Zone,www.neonzone.com,Video Membership,2020-06-06,Live,SEGPAY*NEONZONE,support@neonzone.com
+5499,MRC-00091,Neon Cams,www.neoncams.com,Fan Platform,2020-07-08,Closed,Segpay*Neoncams,support@neoncams.com
+5501,MRC-00092,Juniper Vault,www.junipervault.com,Meditation,2026-05-22,Closed,SEGPAY*JUNIPERVAULT,support@junipervault.com
+5503,MRC-00093,Atlas Direct,www.atlasdirect.com,Casino-style Social Game,2022-03-23,Live,SEGPAY*ATLASDIRECT,support@atlasdirect.com
+5504,MRC-00093,Atlas Online,www.atlasonline.com,MMO,2021-12-30,LIVE,Segpay *Atlasonline,support@atlasonline.com
+5507,MRC-00094,Pixel Match,www.pixelmatch.com,Workout App,2026-02-16,Live,SEGPAY*PIXELMATCH,support@pixelmatch.com
+5509,MRC-00095,Silk Match,www.silkmatch.com,Live Cams,2026-01-04,Live,SEGPAY*SILKMATCH,support@silkmatch.com
+5512,MRC-00095,Silk Live,www.silklive.com,Live Cams,2025-12-04,Live,Segpay *Silklive,support@silklive.com
+5513,MRC-00202,Apex Vault,www.apexvault.com,Fan Platform,2021-06-12,Live,SEGPAY*APEXVAULT,support@apexvault.com
+5515,MRC-00202,Apex Online,www.apexonline.com,Fan Platform,05-Aug-21,Live,SEGPAY*APEXONLINE,
+5519,MRC-00202,Apex TV,www.apextv.com,Video Membership,08/17/2021,Live,SEGPAY*APEXTV,support@apextv.com
+5522,MRC-00202,Apex Match,www.apexmatch.com,Live Cams,2021-08-03,Live,SEGPAY*APEXMATCH,
+5524,MRC-00097,Silk Academy,www.silkacademy.com,Matchmaking,2026-03-12,Active,SEGPAY*SILKACADEMY,support@silkacademy.com
+5527,MRC-00098,Orbit Club,www.orbitclub.com,Courses,30-Jan-22,Live,SEGPAY*ORBITCLUB,support@orbitclub.com
+5531,MRC-00099,Ember Match,www.embermatch.com,Coaching,2025-12-12,Active,SEGPAY*EMBERMATCH,
+5532,MRC-00099,Ember Online,www.emberonline.com,Meditation,01/04/2026,Live,Segpay *Emberonline,support@emberonline.com
+5535,MRC-00099,Ember Plus,www.emberplus.com,Workout App,2026-02-05,Live,SEGPAY*EMBERPLUS,support@emberplus.com
+5538,MRC-00100, Indigo Cams,www.indigocams.com,Matchmaking,2021-11-07,Live,SEGPAY*INDIGOCAMS,support@indigocams.com
+5541,MRC-00101,Onyx Plus,www.onyxplus.com,Matchmaking,12/17/2023,Live,Segpay.Com*Onyxplus,support@onyxplus.com
+5544,MRC-00101,Onyx Vault,https://onyxvault.com/,Dating Site,2023-09-25,Live,SEGPAY*ONYXVAULT,support@onyxvault.com
+5548,MRC-00101,ONYX ONLINE,www.onyxonline.com,Matchmaking,12/13/2023,Live,SEGPAY*ONYXONLINE,support@onyxonline.com
+5550,MRC-00102,Marlin Play,www.marlinplay.com,Dating Site,2021-09-23,Live,SEGPAY*MARLINPLAY,support@marlinplay.com
+5551,MRC-00102,Marlin Online,www.marlinonline.com,Matchmaking,09/03/2021,Live,SEGPAY*MARLINONLINE,support@marlinonline.com
+5554,MRC-00102,Marlin Direct,www.marlindirect.com,Hookup App,2021-06-30,Live,SEGPAY*MARLINDIRECT,support@marlindirect.com
+5555,MRC-00103,Blue Fit,www.bluefit.com,MMO,2020-01-15,Closed,Segpay.Com*Bluefit,support@bluefit.com
+5557,MRC-00104,Pixel Pass,www.pixelpass.com,Workout App,2021-12-22,Live,SEGPAY*PIXELPASS,support@pixelpass.com
+5559,MRC-00104,Pixel Cams,www.pixelcams.com,Coaching,2021-12-04,live,SEGPAY*PIXELCAMS,support@pixelcams.com
+5560,MRC-00104,Pixel Pass,https://pixelpass.com/,Coaching,2021-09-26,Live,Segpay *Pixelpass,support@pixelpass.com
+5564,MRC-00105,Nova TV,www.novatv.com,Video Streaming,2020-04-24,Live,Segpay.Com*Novatv,
+5566,MRC-00105,Nova Hub,www.novahub.com,Music,2020-04-11,Live,SEGPAY*NOVAHUB,support@novahub.com
+5569,MRC-00105,Nova Direct,www.novadirect.com,Video Streaming,2020-05-16,Live,SEGPAY*NOVADIRECT,support@novadirect.com
+5570,MRC-00105,Nova Pro,www.novapro.com,Video Streaming,13-May-20,Live,SEGPAY*NOVAPRO,
+5572,MRC-00105,Nova Pro,www.novapro.com,Music,2020-05-21,Live,Segpay.Com*Novapro,support@novapro.com
+5573,MRC-00106,Aurora Direct,www.auroradirect.com,Hookup App,2021-08-02,Live,Segpay *Auroradirect,support@auroradirect.com
+5574,MRC-00106,Aurora Fit,www.aurorafit.com,Dating Site,2021-05-12,Live,SEGPAY*AURORAFIT,support@aurorafit.com
+5576,MRC-00106,Aurora Zone,www.aurorazone.com,Matchmaking,2021-07-12,Live,SEGPAY*AURORAZONE,
+5578,MRC-00107,Aurora Pro,www.aurorapro.com,Matchmaking,2020-11-21,Live,SEGPAY*AURORAPRO,support@aurorapro.com
+5581,MRC-00107,Aurora Academy,www.auroraacademy.com,Hookup App,2020-12-29,Closed,SEGPAY*AURORAACADEMY,support@auroraacademy.com
+5583,MRC-00108,Indigo Pass,www.indigopass.com,Video Streaming,28-Sep-20,Closed,SEGPAY*INDIGOPASS,support@indigopass.com
+5587,MRC-00108,Indigo Play,www.indigoplay.com,Music,2020-09-18,Closed,SEGPAY*INDIGOPLAY,support@indigoplay.com
+5590,MRC-00109,Saffron Online,www.saffrononline.com,Live Cams,2018-12-03,Live,Segpay.Com*Saffrononline,support@saffrononline.com
+5591,MRC-00109,Saffron Direct,www.saffrondirect.com,Photo Gallery,2018-12-05,Live,SEGPAY*SAFFRONDIRECT,support@saffrondirect.com
+5594,MRC-00109,Saffron Pass,www.saffronpass.com,Video Membership,2018-12-30,Live,SEGPAY*SAFFRONPASS,support@saffronpass.com
+5595,MRC-00109,Saffron Direct,https://saffrondirect.com/,Live Cams,2018-09-26,Active,SEGPAY*SAFFRONDIRECT,support@saffrondirect.com
+5597,MRC-00109,Saffron Hub,www.saffronhub.com,Video Membership,2018-11-24,Closed,SEGPAY*SAFFRONHUB,support@saffronhub.com
+5598,MRC-00110,Saffron Plus,www.saffronplus.com,Photo Gallery,2025-02-22,Live,SEGPAY*SAFFRONPLUS,support@saffronplus.com
+5601,MRC-00110,Saffron Vault,www.saffronvault.com,Fan Platform,01/12/2025,Live,Segpay*Saffronvault,support@saffronvault.com
+5602,MRC-00110,Saffron Fit,www.saffronfit.com,Live Cams,01/12/2025,Live,SEGPAY*SAFFRONFIT,
+5603,MRC-00110,Saffron Pass,www.saffronpass.com,Fan Platform,14/04/2025,Live,Segpay *Saffronpass,support@saffronpass.com
+5604,MRC-00110,Saffron Zone,www.saffronzone.com,Fan Platform,2025-01-11,Live,SEGPAY*SAFFRONZONE,support@saffronzone.com
+5607,MRC-00111,Delta TV,www.deltatv.com,Video Membership,2025-11-15,LIVE,Segpay*Deltatv,support@deltatv.com
+5610,MRC-00111,Delta Zone,https://deltazone.com/,Video Membership,11/21/2025,Live,SEGPAY*DELTAZONE,support@deltazone.com
+5614,MRC-00111,Delta Pass,www.deltapass.com,Fan Platform,2026-02-04,LIVE,SEGPAY*DELTAPASS,support@deltapass.com
+5618,MRC-00112,Zenith Direct,www.zenithdirect.com,Photo Gallery,07/15/2026,Under Review,SEGPAY*ZENITHDIRECT,support@zenithdirect.com
+5622,MRC-00113,Crimson Zone,www.crimsonzone.com,Live Cams,2023-11-09,Live,Segpay*Crimsonzone,
+5626,MRC-00113,Crimson Direct,www.crimsondirect.com,Photo Gallery,2023-08-07,Live,SEGPAY*CRIMSONDIRECT,support@crimsondirect.com
+5627,MRC-00114,Zenith Pro,www.zenithpro.com,Photo Gallery,12/03/2021,Live,SEGPAY*ZENITHPRO,support@zenithpro.com
+5629,MRC-00115,Onyx Academy,www.onyxacademy.com,Hookup App,2026-06-01,Live,SEGPAY*ONYXACADEMY,support@onyxacademy.com
+5633,MRC-00116,Lumen Zone,www.lumenzone.com,Photo Gallery,08/21/2025,Live,SEGPAY*LUMENZONE,support@lumenzone.com
+5634,MRC-00117,Zenith Match,www.zenithmatch.com,Video Streaming,09/23/2025,Live,Segpay *Zenithmatch,
+5637,MRC-00117,Zenith Play,www.zenithplay.com,Video Streaming,2025-10-18,Live,Segpay*Zenithplay,support@zenithplay.com
+5639,MRC-00118,Willow Pro,www.willowpro.com,Courses,20200204,Live,SEGPAY*WILLOWPRO,support@willowpro.com
+5642,MRC-00119,Echo Pro,www.echopro.com,Video Streaming,07/01/2021,Live,SEGPAY*ECHOPRO,support@echopro.com
+5646,MRC-00119,Echo Play,www.echoplay.com,Music,2021-07-14,LIVE,SEGPAY*ECHOPLAY,support@echoplay.com
+5647,MRC-00120,Onyx Club,www.onyxclub.com,Video Membership,2026-05-27,Live,SEGPAY*ONYXCLUB,support@onyxclub.com
+5648,MRC-00120,Onyx Academy,www.onyxacademy.com,Live Cams,06/22/2026,Live,SEGPAY*ONYXACADEMY,support@onyxacademy.com
+5649,MRC-00121,Mirage Live,www.miragelive.com,Matchmaking,2021-02-16,Paused,SEGPAY*MIRAGELIVE,support@miragelive.com
+5650,MRC-00121,Mirage Live,www.miragelive.com,Matchmaking,2021-03-30,Live,SEGPAY*MIRAGELIVE,support@miragelive.com
+5651,MRC-00121,Mirage Zone,https://miragezone.com/,Hookup App,2021-03-21,Closed,SEGPAY*MIRAGEZONE,support@miragezone.com
+5655,MRC-00121,Mirage Hub,www.miragehub.com,Dating Site,2021-03-26,Live,SEGPAY*MIRAGEHUB,support@miragehub.com
+5659,MRC-00123,Velvet Pass,www.velvetpass.com,Certification,2020-12-04,Active,SEGPAY*VELVETPASS,support@velvetpass.com
+5661,MRC-00123,Velvet Pro,www.velvetpro.com,Courses,2020-09-09,Live,SEGPAY*VELVETPRO,support@velvetpro.com
+5664,MRC-00123,Velvet Play,www.velvetplay.com,Certification,25-Aug-20,Live,SEGPAY*VELVETPLAY,
+5665,MRC-00124,Ember Live,www.emberlive.com,Music,2023-05-07,Live,SEGPAY*EMBERLIVE,support@emberlive.com
+5669,MRC-00124,Ember Pass ,www.emberpass.com,Music,2023-04-01,Live,SEGPAY*EMBERPASS,support@emberpass.com
+5671,MRC-00124,Ember Play,https://emberplay.com/,Video Streaming,10-Jul-23,LIVE,SEGPAY*EMBERPLAY,
+5674,MRC-00125, Willow Vault,www.willowvault.com,Mobile Game,"Sep 05, 2020",Closed,SEGPAY*WILLOWVAULT,support@willowvault.com
+5676,MRC-00125,Willow Academy,www.willowacademy.com,Casino-style Social Game,07/24/2020,Live,SEGPAY*WILLOWACADEMY,support@willowacademy.com
+5677,MRC-00126,Aurora Fit,https://aurorafit.com/,Weight Management,2019-07-05,Live,SEGPAY*AURORAFIT,
+5681,MRC-00126,Aurora Play,www.auroraplay.com,Weight Management,"Jun 04, 2019",LIVE,SEGPAY*AURORAPLAY,
+5683,MRC-00126,Aurora Cams,www.auroracams.com,Weight Management,2019-07-11,Live,SEGPAY*AURORACAMS,support@auroracams.com
+5684,MRC-00126,Aurora Live,https://auroralive.com/,Supplements,18-May-19,Live,SEGPAY*AURORALIVE,support@auroralive.com
+5687,MRC-00126,Aurora Online,www.auroraonline.com,Supplements,2019-05-28,Live,SEGPAY*AURORAONLINE,support@auroraonline.com
+5690,MRC-00127,Echo Direct,www.echodirect.com,Photo Gallery,02/12/2019,Live,SEGPAY*ECHODIRECT,support@echodirect.com
+5692,MRC-00127,Echo Cams,www.echocams.com,Live Cams,03/11/2019,Live,SEGPAY*ECHOCAMS,support@echocams.com
+5694,MRC-00128,Zenith Pro,www.zenithpro.com,VPN,04/05/2018,Active,SEGPAY*ZENITHPRO,support@zenithpro.com
+5698,MRC-00129,Quartz Cams,www.quartzcams.com,Weight Management,06/14/2022,Active,SEGPAY*QUARTZCAMS,support@quartzcams.com
+5701,MRC-00201,Silk Play,https://silkplay.com/,Dev Tools,2026-02-18,Closed,Segpay.Com*Silkplay,
+5703,MRC-00201,Silk Hub,https://silkhub.com/,Productivity,2026-05-13,Closed,SEGPAY*SILKHUB,support@silkhub.com
+5706,MRC-00201,Silk Academy,www.silkacademy.com,Design Software,03/14/2026,CLOSED,SEGPAY*SILKACADEMY,support@silkacademy.com
+5710,MRC-00131,Harbor Pro,www.harborpro.com,VPN,09/13/2020,Live,SEGPAY*HARBORPRO,support@harborpro.com
+5712,MRC-00132,Velvet Pro,www.velvetpro.com,Casino-style Social Game,20/01/2025,Active,SEGPAY*VELVETPRO,support@velvetpro.com
+5716,MRC-00133,Velvet TV,www.velvettv.com,Fan Platform,03/14/2026,Live,SEGPAY*VELVETTV,support@velvettv.com
+5717,MRC-00133,Velvet Vault,www.velvetvault.com,Photo Gallery,2026-01-24,Live,SEGPAY*VELVETVAULT,support@velvetvault.com
+5721,MRC-00134,Falcon Online,www.falcononline.com,Photo Gallery,2021-12-10,Live,SEGPAY*FALCONONLINE,
+5725,MRC-00134,Falcon Pro,www.falconpro.com,Live Cams,2022-02-19,Live,SEGPAY*FALCONPRO,
+5728,MRC-00134,Falcon Pass,www.falconpass.com,Video Membership,10-Jan-22,Live,Segpay *Falconpass,support@falconpass.com
+5730,MRC-00135,Apex TV,www.apextv.com,Matchmaking,03/02/2026,Live,SEGPAY*APEXTV,support@apextv.com
+5734,MRC-00135,Apex Pass,www.apexpass.com,Hookup App,12/03/2026,Live,Segpay *Apexpass,support@apexpass.com
+5735,MRC-00135,Apex Fit,www.apexfit.com,Dating Site,2026-02-03,Live,Segpay.Com*Apexfit,support@apexfit.com
+5739,MRC-00136,Atlas Match,www.atlasmatch.com,Dating Site,2022-05-11,Active,SEGPAY*ATLASMATCH,
+5741,MRC-00136,Atlas Pro,www.atlaspro.com,Hookup App,2022-04-16,Live,SEGPAY*ATLASPRO,support@atlaspro.com
+5745,MRC-00136,Atlas Live,www.atlaslive.com,Dating Site,2022-05-07,Closed,SEGPAY*ATLASLIVE,support@atlaslive.com
+5748,MRC-00137,Indigo Academy ,https://indigoacademy.com/,Matchmaking,2021-05-19,Live,SEGPAY*INDIGOACADEMY,support@indigoacademy.com
+5749,MRC-00137,Indigo Vault,www.indigovault.com,Dating Site,06/14/2021,Live,SEGPAY*INDIGOVAULT,support@indigovault.com
+5751,MRC-00137,Indigo Zone,www.indigozone.com,Hookup App,2021-06-15,CLOSED,Segpay*Indigozone,support@indigozone.com
+5754,MRC-00138,Silk Hub,www.silkhub.com,Live Cams,2026-09-17,Closed,SEGPAY*SILKHUB,support@silkhub.com
+5757,MRC-00138,Silk Club,www.silkclub.com,Fan Platform,11/10/2026,Closed,SEGPAY*SILKCLUB,support@silkclub.com
+5758,MRC-00138,Silk Hub,www.silkhub.com,Photo Gallery,2026-08-08,Closed,SEGPAY*SILKHUB,support@silkhub.com
+5759,MRC-00139,Ivory Online,www.ivoryonline.com,Weight Management,2025-02-05,Live,Segpay *Ivoryonline,support@ivoryonline.com
+5762,MRC-00140,Orbit Match,www.orbitmatch.com,Productivity,2023-03-28,Live,Segpay.Com*Orbitmatch,support@orbitmatch.com
+5764,MRC-00140,Orbit Online,www.orbitonline.com,Design Software,2023-05-21,Live,SEGPAY*ORBITONLINE,support@orbitonline.com
+5767,MRC-00141,Saffron Cams,https://saffroncams.com/,Courses,06/01/2026,Active,SEGPAY*SAFFRONCAMS,support@saffroncams.com
+5771,MRC-00141,Saffron Live,www.saffronlive.com,Certification,2026-03-01,Live,Segpay *Saffronlive,support@saffronlive.com
+5774,MRC-00141,Saffron TV,www.saffrontv.com,Language Learning,15-May-26,Live,SEGPAY*SAFFRONTV,support@saffrontv.com
+5776,MRC-00142,Cobalt Plus,www.cobaltplus.com,Music,2019-01-29,Live,SEGPAY*COBALTPLUS,
+5779,MRC-00142,Cobalt Fit,www.cobaltfit.com,Video Streaming,2018-12-20,Live,SEGPAY*COBALTFIT,support@cobaltfit.com
+5783,MRC-00143,Ember Pass,www.emberpass.com,Matchmaking,21/03/2020,LIVE,SEGPAY*EMBERPASS,support@emberpass.com
+5787,MRC-00144,Velvet Zone,www.velvetzone.com,Workout App,2025-11-25,CLOSED,SEGPAY*VELVETZONE,
+5791,MRC-00145,SUMMIT TV,www.summittv.com,Supplements,2019-04-22,Live,SEGPAY*SUMMITTV,support@summittv.com
+5793,MRC-00145,Summit Pass,www.summitpass.com,Supplements,05/13/2019,Live,SEGPAY*SUMMITPASS,
+5797,MRC-00145,Summit Cams,https://summitcams.com/,Supplements,20190716,Live,SEGPAY*SUMMITCAMS,support@summitcams.com
+5799,MRC-00146,Summit Online,www.summitonline.com,Live Cams,2023-02-26,Live,Segpay*Summitonline,support@summitonline.com
+5803,MRC-00146,Summit Play,www.summitplay.com,Video Membership,2023-02-05,LIVE,SEGPAY*SUMMITPLAY,support@summitplay.com
+5806,MRC-00146,Summit Online,www.summitonline.com,Video Membership,11-Feb-23,Active,SEGPAY*SUMMITONLINE,support@summitonline.com
+5808,MRC-00147,Polar Live,www.polarlive.com,Music,2022-09-09,Closed,SEGPAY*POLARLIVE,support@polarlive.com
+5812,MRC-00148,Ivory Cams,www.ivorycams.com,Weight Management,2025-09-02,Closed,SEGPAY*IVORYCAMS,support@ivorycams.com
+5814,MRC-00148,Ivory Club,www.ivoryclub.com,Supplements,2025-06-22,Closed,Segpay.Com*Ivoryclub,support@ivoryclub.com
+5815,MRC-00148,Ivory Play,www.ivoryplay.com,Weight Management,2025-06-17,Closed,SEGPAY*IVORYPLAY,support@ivoryplay.com
+5819,MRC-00148,Ivory Club,www.ivoryclub.com,Weight Management,2025-07-10,Closed,Segpay*Ivoryclub,support@ivoryclub.com
+5821,MRC-00149,Lumen Match,www.lumenmatch.com,Podcasts,04/24/2018,Closed,Segpay *Lumenmatch,support@lumenmatch.com
+5823,MRC-00150,Pixel Academy,www.pixelacademy.com,Productivity,2020-04-18,Live,SEGPAY*PIXELACADEMY,support@pixelacademy.com
+5827,MRC-00150,Pixel Match,www.pixelmatch.com,Design Software,2020-06-26,Live,SEGPAY*PIXELMATCH,support@pixelmatch.com
+5831,MRC-00150,Pixel Online,www.pixelonline.com,Productivity,04/10/2020,Live,Segpay *Pixelonline,support@pixelonline.com
+5835,MRC-00151,Echo TV,www.echotv.com,Live Cams,2022-03-13,Live,SEGPAY*ECHOTV,support@echotv.com
+5838,MRC-00152,Indigo Vault,www.indigovault.com,Matchmaking,2020-06-07,Live,SEGPAY*INDIGOVAULT,support@indigovault.com
+5841,MRC-00152,Indigo Vault,www.indigovault.com,Matchmaking,2020-06-04,Active,Segpay*Indigovault,support@indigovault.com
+5845,MRC-00152,Indigo Match,www.indigomatch.com,Dating Site,20200325,Live,SEGPAY*INDIGOMATCH,support@indigomatch.com
+5847,MRC-00153,Quartz Play,www.quartzplay.com,Photo Gallery,02/13/2023,Live,Segpay*Quartzplay,support@quartzplay.com
+4001,MRC-99999, QA Sandbox A,www.qasandboxa.com,Test,2017-07-01,LIVE,Segpay *Testsite,support@qasandboxa.com
+4002,MRC-99999,QA Sandbox B,www.qasandboxb.com,Test,2017-07-01,Live,SEGPAY*TESTSITE2,
