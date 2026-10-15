@@ -39,6 +39,7 @@ This runs all 20 load procedures in dependency order (about 1 minute) and return
 - **Mapping tables:**
   - `ref.country_alias`, `ref.card_brand_alias` and `ref.acquirer_alias`. Add a row when a new spelling appears.
   - `ref.test_merchant` and `ref.v_test_site` define the test data, which every procedure excludes.
+  - Every insert, update and delete in a `ref` table is logged to `audit.data_change_log` by a trigger: who, when, and the row before and after (see `SQL\audit\README.md`).
 - **Inferred values are flagged.** `transactions.merchant_id_inferred` marks old-gateway merchants mapped through the risk engine. `transactions.site_id_inferred` marks sites taken from the package.
 - **Lineage.** Every row keeps `source_system`, `source_file_name`, `batch_id`, `bronze_ingested_at` and `ingested_by` from bronze. It also gets `load_run_id` (the silver run) and `silver_loaded_at`.
 - **Personal data.** Emails, IPs and postal codes are masked for users without the `UNMASK` permission. Sensitive columns carry SQL Server sensitivity labels.

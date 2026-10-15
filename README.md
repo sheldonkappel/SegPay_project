@@ -10,12 +10,13 @@ This project builds a complete data warehouse and reporting solution for **SegPa
 | **Volume** | About 804,000 raw rows, covering October 2024 to October 2026 |
 | **Design** | Medallion architecture: **bronze** (raw copy) → **silver** (cleaned and standardized) → **gold** (star schema for reporting) |
 | **Built with** | SQL Server 2025 (T-SQL stored procedures), PowerShell, Power BI (DAX, Power BI project format), Git and GitHub |
-| **Deliverables** | 21 bronze tables; 21 cleaned silver tables with load logging; a gold star schema with 10 dimensions, 2 fact tables and a chargeback-monitoring view; a Power BI report with 28 measures |
+| **Deliverables** | 21 bronze tables; 21 cleaned silver tables with load logging; a gold star schema with 10 dimensions, 2 fact tables and a chargeback-monitoring view; a Power BI report with 28 measures; change auditing with SQL Server triggers |
 
 **What this project demonstrates:**
 - **Data cleaning at scale:** two payment-gateway layouts merged into one, eight date formats, inconsistent spellings, duplicates and test data, every fix counted and logged.
 - **Dimensional modeling:** a star schema with merchant history (slowly changing dimension type 2) and an "Unknown" member, so no transaction drops out of a total.
 - **Reliable loading:** one command refreshes everything in order, re-running is safe, and every step records what it loaded, removed and why.
+- **Audit trail:** SQL Server triggers record every hand-made change to the business rules and every change to the database code: who, when, and what it was before.
 - **Business reporting:** chargeback ratios defined the way the card networks measure them, and a dashboard that shows which disputes are worth fighting.
 
 > The data in this project is synthetic. It imitates the data a payment processor receives from its systems and partners. It contains no real customers or card numbers.
@@ -235,6 +236,18 @@ flowchart LR
 
 Every step is logged: start and end time, rows loaded, rows removed and why, and any error. If a step fails, the steps after it don't run, so reports keep showing the last good data instead of half-loaded data.
 
+### Every change is on record
+
+Some numbers depend on rules people maintain by hand: which spellings mean the same country, which merchants are test accounts, and the card networks' chargeback thresholds. Changing one of those rules changes the reports, so the database records each change automatically, using **triggers** (small programs SQL Server runs whenever a table changes):
+
+| What changed | What's recorded |
+|---|---|
+| A business rule (added, edited or removed) | Who, when, from which application, and the rule before and after |
+| The database's code or structure (a table, report view or procedure created, changed or removed) | Who, when, and the exact change |
+| A refresh | Rows loaded, rows removed and why, and any error |
+
+So if a merchant's chargeback warning appears or disappears, it's possible to tell whether the merchant's numbers changed or the threshold did.
+
 ---
 
 ## Good to know
@@ -252,6 +265,7 @@ Every step is logged: start and end time, rows loaded, rows removed and why, and
 | `AI generated data\` | The original source files, exactly as received |
 | `PowerShell scripts\` | The loader that brings files into bronze and runs every layer |
 | `SQL\bronze`, `SQL\silver`, `SQL\gold` | The database code for each layer, each with its own technical README |
+| `SQL\audit` | The triggers and tables that record every change (technical README included) |
 | `Power BI\` | The Power BI report and the SegPay color theme |
 | `docs\images\` | Screenshots used in this README |
 | `logs\` | A log of every refresh (not stored in GitHub) |

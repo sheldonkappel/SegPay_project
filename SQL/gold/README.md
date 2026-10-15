@@ -49,7 +49,7 @@ Facts point to the **merchant version in effect on the event date**, so a March 
 
 Summaries are views, so they are always in step with the facts and pick up a change to the rules in `ref.chargeback_monitoring_program` immediately, with no reload. The full view returns in under 0.1 s today; if it ever becomes slow, it can be turned back into a table.
 
-**The thresholds in `ref.chargeback_monitoring_program` are illustrative.** Confirm the networks' current rules with the acquirers and update the rows.
+**The thresholds in `ref.chargeback_monitoring_program` are illustrative.** Confirm the networks' current rules with the acquirers and update the rows. Every change to them is logged to `audit.data_change_log`, with the old and new values, so it's always possible to see which thresholds a past warning was based on (see `SQL\audit\README.md`).
 
 ## Loading
 

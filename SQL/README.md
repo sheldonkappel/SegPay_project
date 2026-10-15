@@ -10,7 +10,8 @@ Segpay Project\
 └── SQL\
     ├── bronze\            raw layer: files loaded as received (all text)
     ├── silver\            cleaned layer: typed, de-duplicated, one table per source
-    └── gold\              reporting layer: star schema (dimensions, facts, summaries)
+    ├── gold\              reporting layer: star schema (dimensions, facts, summaries)
+    └── audit\             change auditing: triggers that log hand-made changes
 ```
 
 ## Layers
@@ -20,6 +21,18 @@ Segpay Project\
 | Bronze | `bronze` | `PowerShell scripts\Load-All.ps1` | Each source file as received, plus load metadata |
 | Silver | `silver` (plus `util`, `ref`, `audit`) | `EXEC silver.usp_load_all` | Cleaned, typed, de-duplicated data, with test data removed |
 | Gold | `gold` | `EXEC gold.usp_load_all` | Star schema for reporting: dimensions, facts, chargeback monitoring |
+
+## What is logged
+
+Every change to the database leaves a record. Each kind of change is recorded in one place:
+
+| Change | Recorded by | Table |
+|---|---|---|
+| A load procedure run: rows read, loaded, removed and why | Each load procedure | `audit.load_log` |
+| A row inserted, updated or deleted in a `ref` table (business rules edited by hand) | A trigger on each `ref` table | `audit.data_change_log` |
+| A table, view, procedure, function, trigger, index or schema created, altered or dropped | A database-level trigger | `audit.schema_change_log` (read it through `audit.v_schema_change_log`) |
+
+Bronze, silver and gold tables have no triggers: they're written only by the load procedures, which already log every run. See `audit\README.md` for the details and example queries.
 
 ## Everyday use
 
@@ -41,6 +54,10 @@ cd ..\silver
 sqlcmd -S <server> -E -C -d SegPay -b -i deploy_silver.sql     # silver objects + first load
 cd ..\gold
 sqlcmd -S <server> -E -C -d SegPay -b -i deploy_gold.sql       # gold objects + first load
+cd ..\audit
+sqlcmd -S <server> -E -C -d SegPay -b -I -i deploy_audit.sql   # audit tables + triggers
 ```
 
-See `bronze\README.md`, `silver\README.md` and `gold\README.md` for details of each layer.
+Deploy `audit` last: its triggers attach to the `ref` tables, which the silver and gold foundation scripts create. Re-run it whenever a table is added to the `ref` schema.
+
+See `bronze\README.md`, `silver\README.md`, `gold\README.md` and `audit\README.md` for details of each layer.

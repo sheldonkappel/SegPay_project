@@ -1,0 +1,168 @@
+/* =====================================================================
+   Script    : 01_audit_triggers.sql
+   Purpose   : Triggers that write to the audit tables.
+               Safe to re-run (CREATE OR ALTER).
+
+   1. Data-change triggers on every table in the ref schema
+      ------------------------------------------------------
+      The ref tables hold business rules maintained by hand - spelling
+      mappings, test merchants, response-code classes and chargeback
+      monitoring thresholds. Changing a row changes report numbers
+      straight away (a new threshold changes which merchants are flagged),
+      so every insert, update and delete is logged to
+      audit.data_change_log with who, when, from which application, and
+      the row before and after.
+
+      audit.usp_create_change_trigger builds the trigger for one table
+      from its primary key. This script runs it for EVERY table in ref,
+      so a new ref table is audited as soon as this script is re-run.
+      A ref table without a primary key is reported and skipped.
+
+   2. Schema-change trigger on the database
+      -------------------------------------
+      trg_audit_schema_changes logs every CREATE / ALTER / DROP of a
+      table, view, procedure, function, trigger, index or schema to
+      audit.schema_change_log (deploys included).
+
+   Why the load tables have no triggers
+   ------------------------------------
+   bronze, silver and gold are written only by the load procedures, and
+   every run is already logged (rows read / loaded / removed and why) in
+   audit.load_log. Row triggers there would add ~1.6 million audit rows
+   per refresh and slow every load - and silver and gold are rebuilt with
+   TRUNCATE, which does not fire triggers, so the trail would be
+   incomplete anyway. gold.dim_merchant keeps its own change history.
+
+   Requires   : 00_audit_tables.sql, and the ref tables
+                (SQL\silver\00_foundation.sql, SQL\gold\00_gold_foundation.sql).
+   ===================================================================== */
+SET NOCOUNT ON;
+SET QUOTED_IDENTIFIER ON;   -- stored with the triggers; sqlcmd defaults to OFF
+SET ANSI_NULLS ON;
+GO
+
+/* ---------------------------------------------------------------------
+   audit.usp_create_change_trigger
+   ---------------------------------------------------------------------
+   Creates (or replaces) trigger <schema>.trg_<table>_audit on one table.
+
+   The trigger matches the rows before (deleted) and after (inserted) the
+   statement on the primary key:
+       only after   -> INSERT
+       only before  -> DELETE
+       both         -> UPDATE, logged only if a value actually changed
+   An update that changes the primary key is logged as a DELETE of the old
+   key plus an INSERT of the new one.
+
+   Usage
+   -----
+     EXEC audit.usp_create_change_trigger @schema = N'ref', @table = N'test_merchant';
+   --------------------------------------------------------------------- */
+CREATE OR ALTER PROCEDURE audit.usp_create_change_trigger
+    @schema SYSNAME,
+    @table  SYSNAME
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @object_id INT = OBJECT_ID(QUOTENAME(@schema) + N'.' + QUOTENAME(@table), N'U');
+    IF @object_id IS NULL
+        THROW 50001, N'Table not found.', 1;
+
+    -- Primary-key columns, in key order
+    DECLARE @keys TABLE (ord INT, col SYSNAME);
+    INSERT @keys (ord, col)
+    SELECT ic.key_ordinal, c.name
+    FROM sys.indexes i
+    JOIN sys.index_columns ic ON ic.object_id = i.object_id AND ic.index_id = i.index_id AND ic.key_ordinal > 0
+    JOIN sys.columns c        ON c.object_id = ic.object_id AND c.column_id = ic.column_id
+    WHERE i.object_id = @object_id AND i.is_primary_key = 1;
+
+    IF NOT EXISTS (SELECT 1 FROM @keys)
+    BEGIN
+        PRINT N'  skipped ' + @schema + N'.' + @table + N' - no primary key';
+        RETURN;
+    END
+
+    DECLARE @key_select NVARCHAR(MAX) = (SELECT STRING_AGG(N'x.' + QUOTENAME(col), N', ') WITHIN GROUP (ORDER BY ord) FROM @keys);
+    DECLARE @key_join   NVARCHAR(MAX) = (SELECT STRING_AGG(N'a.' + QUOTENAME(col) + N' = b.' + QUOTENAME(col), N' AND ') WITHIN GROUP (ORDER BY ord) FROM @keys);
+    DECLARE @first_key  NVARCHAR(300) = (SELECT QUOTENAME(col) FROM @keys WHERE ord = 1);
+    DECLARE @full_name  NVARCHAR(300) = @schema + N'.' + @table;
+    DECLARE @trigger    NVARCHAR(300) = QUOTENAME(@schema) + N'.' + QUOTENAME(N'trg_' + @table + N'_audit');
+
+    -- Each side: key columns + key as JSON + whole row as JSON
+    DECLARE @side NVARCHAR(MAX) = N'SELECT ' + @key_select + N',
+                   (SELECT ' + @key_select + N' FOR JSON PATH, WITHOUT_ARRAY_WRAPPER, INCLUDE_NULL_VALUES) AS key_json,
+                   (SELECT x.* FOR JSON PATH, WITHOUT_ARRAY_WRAPPER, INCLUDE_NULL_VALUES) AS row_json
+            FROM {source} x';
+
+    DECLARE @sql NVARCHAR(MAX) = N'
+CREATE OR ALTER TRIGGER ' + @trigger + N'
+ON ' + QUOTENAME(@schema) + N'.' + QUOTENAME(@table) + N'
+AFTER INSERT, UPDATE, DELETE
+AS
+/* Generated by audit.usp_create_change_trigger (SQL\audit\01_audit_triggers.sql).
+   Logs every change to this table in audit.data_change_log. Do not edit by hand. */
+BEGIN
+    SET NOCOUNT ON;
+    IF NOT EXISTS (SELECT 1 FROM inserted) AND NOT EXISTS (SELECT 1 FROM deleted) RETURN;
+
+    INSERT audit.data_change_log (table_name, operation, key_values, old_values, new_values)
+    SELECT N''' + REPLACE(@full_name, N'''', N'''''') + N''',
+           CASE WHEN b.' + @first_key + N' IS NULL THEN ''INSERT''
+                WHEN a.' + @first_key + N' IS NULL THEN ''DELETE''
+                ELSE ''UPDATE'' END,
+           COALESCE(a.key_json, b.key_json),
+           b.row_json,
+           a.row_json
+    FROM (' + REPLACE(@side, N'{source}', N'inserted') + N') a          -- after
+    FULL JOIN (' + REPLACE(@side, N'{source}', N'deleted') + N') b      -- before
+      ON ' + @key_join + N'
+    WHERE a.row_json IS NULL OR b.row_json IS NULL OR a.row_json <> b.row_json;
+END';
+
+    EXEC sys.sp_executesql @sql;
+    PRINT N'  audited ' + @full_name;
+END
+GO
+
+/* ---------------------------------------------------------------------
+   Apply to every table in the ref schema
+   --------------------------------------------------------------------- */
+PRINT N'Data-change triggers:';
+DECLARE @t SYSNAME;
+DECLARE ref_tables CURSOR LOCAL FAST_FORWARD FOR
+    SELECT name FROM sys.tables WHERE schema_id = SCHEMA_ID(N'ref') ORDER BY name;
+OPEN ref_tables;
+FETCH NEXT FROM ref_tables INTO @t;
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    EXEC audit.usp_create_change_trigger @schema = N'ref', @table = @t;
+    FETCH NEXT FROM ref_tables INTO @t;
+END
+CLOSE ref_tables;
+DEALLOCATE ref_tables;
+GO
+
+/* ---------------------------------------------------------------------
+   trg_audit_schema_changes (database-level DDL trigger)
+   ---------------------------------------------------------------------
+   Stores EVENTDATA() as XML without reading it (reading XML needs session
+   settings that sqlcmd does not use by default, and a failing DDL trigger
+   would block the deploy). If the audit table is missing - e.g. it is the
+   object being dropped - the change is let through unlogged.
+   Temporary (#) tables live in tempdb and are not logged.
+   --------------------------------------------------------------------- */
+CREATE OR ALTER TRIGGER trg_audit_schema_changes
+ON DATABASE
+FOR DDL_TABLE_EVENTS, DDL_VIEW_EVENTS, DDL_PROCEDURE_EVENTS, DDL_FUNCTION_EVENTS,
+    DDL_TRIGGER_EVENTS, DDL_INDEX_EVENTS, DDL_SCHEMA_EVENTS
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF OBJECT_ID(N'audit.schema_change_log', N'U') IS NOT NULL
+        INSERT audit.schema_change_log (event_data) VALUES (EVENTDATA());
+END
+GO
+PRINT N'Schema-change trigger: trg_audit_schema_changes';
+GO
