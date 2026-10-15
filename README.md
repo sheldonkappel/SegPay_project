@@ -6,6 +6,25 @@ One trusted place to answer business questions about SegPay's payment processing
 
 ---
 
+## The result: a Power BI report
+
+The end result of the warehouse is a Power BI report. The screenshot below is the report's **Chargeback Defense** page, taken in Power BI Desktop. It answers one question: **which chargebacks are worth fighting?**
+
+![Power BI report: Chargeback Defense page](docs/images/power-bi-chargeback-defense.png)
+
+- **Top row:** how often merchants contest a chargeback (79.8%), how often they win when they do (32.0%), and the dollars recovered vs. lost.
+- **Charts:** win rate and outcome by reason category. Processing-error disputes are contested most often but won least (19.4%), so fighting them is mostly wasted effort.
+- **Tables:** the same measures for each reason code and each merchant, sorted by dollars lost.
+- **Filters:** card network, reason category and merchant.
+
+The colors follow SegPay's brand, and the chart colors are checked to stay distinguishable for colorblind readers.
+
+> **Note:** Unfortunately, the report isn't available online yet; I wasn't able to publish it to the Power BI service for now. Until it is, the screenshot shows what it looks like. The full report is in this repository (`Power BI\SegPay.pbip`) and opens in Power BI Desktop for anyone with access to the database.
+
+The rest of this page explains how the data behind the report is collected, cleaned and organized.
+
+---
+
 ## The problem it solves
 
 SegPay's data arrives from **11 different systems**, each in its own format and with its own quirks:
@@ -182,23 +201,6 @@ Gold totals are checked against silver on every build: **$7.38M** in transaction
 - **Affiliate quality:** which traffic sources bring fraud or chargebacks?
 - **Risk engine:** does the risk score predict chargebacks? Which rules work?
 - **Support:** do support tickets predict chargebacks or churn?
-
----
-
-## Power BI report
-
-The gold layer feeds a Power BI report. The screenshot below is the report's **Chargeback Defense** page, taken in Power BI Desktop. It answers one question: **which chargebacks are worth fighting?**
-
-![Power BI report: Chargeback Defense page](docs/images/power-bi-chargeback-defense.png)
-
-- **Top row:** how often merchants contest a chargeback (79.8%), how often they win when they do (32.0%), and the dollars recovered vs. lost.
-- **Charts:** win rate and outcome by reason category. Processing-error disputes are contested most often but won least (19.4%), so fighting them is mostly wasted effort.
-- **Tables:** the same measures for each reason code and each merchant, sorted by dollars lost.
-- **Filters:** card network, reason category and merchant.
-
-The colors follow SegPay's brand, and the chart colors are checked to stay distinguishable for colorblind readers.
-
-> **Note:** Unfortunately, the report isn't available online yet; I wasn't able to publish it to the Power BI service for now. Until it is, the screenshot shows what it looks like. The full report is in this repository (`Power BI\SegPay.pbip`) and opens in Power BI Desktop for anyone with access to the database.
 
 ---
 
