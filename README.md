@@ -233,7 +233,7 @@ Every step is logged: start and end time, rows loaded, rows removed and why, and
 
 | Folder | Contents |
 |---|---|
-| `AI generated data\` | The source files (not stored in GitHub) |
+| `AI generated data\` | The original source files, exactly as received |
 | `PowerShell scripts\` | The loader that brings files into bronze and runs every layer |
 | `SQL\bronze`, `SQL\silver`, `SQL\gold` | The database code for each layer, each with its own technical README |
 | `Power BI\` | The Power BI report and the SegPay color theme |
