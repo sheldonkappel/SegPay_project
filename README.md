@@ -6,7 +6,7 @@ One trusted place to answer business questions about SegPay's payment processing
 
 ---
 
-## The result: a Power BI report
+## See it in action: which chargebacks are worth fighting?
 
 The end result of the warehouse is a Power BI report. The screenshot below is the report's **Chargeback Defense** page, taken in Power BI Desktop. It answers one question: **which chargebacks are worth fighting?**
 
