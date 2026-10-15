@@ -185,6 +185,23 @@ Gold totals are checked against silver on every build: **$7.38M** in transaction
 
 ---
 
+## Power BI report
+
+The gold layer feeds a Power BI report. The screenshot below is the report's **Chargeback Defense** page, taken in Power BI Desktop. It answers one question: **which chargebacks are worth fighting?**
+
+![Power BI report: Chargeback Defense page](docs/images/power-bi-chargeback-defense.png)
+
+- **Top row:** how often merchants contest a chargeback (79.8%), how often they win when they do (32.0%), and the dollars recovered vs. lost.
+- **Charts:** win rate and outcome by reason category. Processing-error disputes are contested most often but won least (19.4%), so fighting them is mostly wasted effort.
+- **Tables:** the same measures for each reason code and each merchant, sorted by dollars lost.
+- **Filters:** card network, reason category and merchant.
+
+The colors follow SegPay's brand, and the chart colors are checked to stay distinguishable for colorblind readers.
+
+> **Note:** Unfortunately, the report isn't available online yet; I wasn't able to publish it to the Power BI service for now. Until it is, the screenshot shows what it looks like. The full report is in this repository (`Power BI\SegPay.pbip`) and opens in Power BI Desktop for anyone with access to the database.
+
+---
+
 ## Keeping it up to date
 
 A single command refreshes everything, in order:
@@ -217,6 +234,8 @@ Every step is logged: start and end time, rows loaded, rows removed and why, and
 | `AI generated data\` | The source files (not stored in GitHub) |
 | `PowerShell scripts\` | The loader that brings files into bronze and runs every layer |
 | `SQL\bronze`, `SQL\silver`, `SQL\gold` | The database code for each layer, each with its own technical README |
+| `Power BI\` | The Power BI report and the SegPay color theme |
+| `docs\images\` | Screenshots used in this README |
 | `logs\` | A log of every refresh (not stored in GitHub) |
 
 **Want more detail?** [Data and Transformations in Detail](DATA_DETAILS.md) describes every source file, the problems found in each, how each is cleaned, how many rows are kept or removed and why, and the known data issues.
