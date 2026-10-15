@@ -13,6 +13,7 @@
            Import-ClearingFiles.ps1     acquirer_clearing\*.xml
            Import-RiskEvents.ps1        risk\*.jsonl
       3. Optional (-LoadSilver): EXEC silver.usp_load_all.
+      4. Optional (-LoadGold): silver, then EXEC gold.usp_load_all.
 
     Every bronze procedure replaces the rows of the file it loads (matched by
     file name), so re-running is safe and never duplicates data.
@@ -33,6 +34,10 @@
     Empty each multi-file bronze table before loading it (passed on to the
     import scripts). Single-file tables are always fully replaced anyway.
 
+.PARAMETER LoadGold
+    After bronze succeeds, rebuild silver and then gold (gold reads silver,
+    so this implies -LoadSilver).
+
 .PARAMETER LoadSilver
     After bronze succeeds, rebuild silver with silver.usp_load_all.
 
@@ -43,6 +48,8 @@
     .\Load-All.ps1                         # load all bronze tables
 .EXAMPLE
     .\Load-All.ps1 -LoadSilver             # bronze, then silver
+.EXAMPLE
+    .\Load-All.ps1 -LoadGold               # bronze, silver, then gold (the full pipeline)
 .EXAMPLE
     .\Load-All.ps1 -Only sites, packages   # just two tables
 .EXAMPLE
@@ -56,6 +63,7 @@ param(
     [string[]] $Only,
     [switch]   $FullRefresh,
     [switch]   $LoadSilver,
+    [switch]   $LoadGold,
     [switch]   $StopOnError
 )
 
@@ -194,29 +202,32 @@ foreach ($table in $multiFile.Keys) {
     }
 }
 
-# ----------------------------------------------------------------- 3. optional silver
-$failed = @($results | Where-Object Status -eq 'Failed')
-if ($LoadSilver) {
-    Write-Host "`n== Silver ==" -ForegroundColor Cyan
-    if ($failed) {
-        Write-Host "Skipped: bronze had failures, so silver was not rebuilt." -ForegroundColor Yellow
-        Add-Result 'silver (all)' 'silver.usp_load_all' 'Skipped' $null 0 'bronze failures'
+# ----------------------------------------------------------------- 3 + 4. optional silver and gold
+# Each layer runs only if everything before it succeeded (it reads the layer below).
+function Invoke-Layer([string]$layer) {
+    Write-Host "`n== $((Get-Culture).TextInfo.ToTitleCase($layer)) ==" -ForegroundColor Cyan
+    $proc = "$layer.usp_load_all"
+    if (@($results | Where-Object { $_.Status -in 'Failed', 'Skipped' })) {
+        Write-Host "Skipped: an earlier step failed, so $layer was not rebuilt." -ForegroundColor Yellow
+        Add-Result "$layer (all)" $proc 'Skipped' $null 0 'earlier failures'
+        return
     }
-    else {
-        $sw = [Diagnostics.Stopwatch]::StartNew()
-        try {
-            $log = Invoke-Sql 'EXEC silver.usp_load_all;'
-            $total = $log.Rows | Where-Object { $_.proc_name -eq 'TOTAL' }
-            Add-Result 'silver (all)' 'silver.usp_load_all' $total.status $null $sw.Elapsed.TotalSeconds ''
-            Write-Host ("silver.usp_load_all: {0} ({1:N1}s) - run_id {2}" -f $total.status, $sw.Elapsed.TotalSeconds, $total.run_id) -ForegroundColor Green
-        }
-        catch {
-            $msg = if ($_.Exception.InnerException) { $_.Exception.InnerException.Message } else { $_.Exception.Message }
-            Add-Result 'silver (all)' 'silver.usp_load_all' 'Failed' $null $sw.Elapsed.TotalSeconds $msg
-            Write-Host "FAILED: $msg" -ForegroundColor Red
-        }
+    $sw = [Diagnostics.Stopwatch]::StartNew()
+    try {
+        $log = Invoke-Sql "EXEC $proc;"
+        $total = $log.Rows | Where-Object { $_.proc_name -eq 'TOTAL' }
+        Add-Result "$layer (all)" $proc $total.status $null $sw.Elapsed.TotalSeconds ''
+        Write-Host ("{0}: {1} ({2:N1}s) - run_id {3}" -f $proc, $total.status, $sw.Elapsed.TotalSeconds, $total.run_id) -ForegroundColor Green
+    }
+    catch {
+        $msg = if ($_.Exception.InnerException) { $_.Exception.InnerException.Message } else { $_.Exception.Message }
+        Add-Result "$layer (all)" $proc 'Failed' $null $sw.Elapsed.TotalSeconds $msg
+        Write-Host "FAILED: $msg" -ForegroundColor Red
     }
 }
+
+if ($LoadSilver -or $LoadGold) { Invoke-Layer 'silver' }   # gold reads silver, so -LoadGold rebuilds silver first
+if ($LoadGold)                 { Invoke-Layer 'gold' }
 
 # ----------------------------------------------------------------- summary
 Write-Host "`n== Summary ==" -ForegroundColor Cyan

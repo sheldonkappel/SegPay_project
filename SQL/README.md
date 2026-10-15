@@ -9,7 +9,8 @@ Segpay Project\
 ├── logs\                  one log file per Load-All.ps1 run
 └── SQL\
     ├── bronze\            raw layer: files loaded as received (all text)
-    └── silver\            cleaned layer: typed, de-duplicated, one table per source
+    ├── silver\            cleaned layer: typed, de-duplicated, one table per source
+    └── gold\              reporting layer: star schema (dimensions, facts, summaries)
 ```
 
 ## Layers
@@ -18,11 +19,15 @@ Segpay Project\
 |---|---|---|---|
 | Bronze | `bronze` | `PowerShell scripts\Load-All.ps1` | Each source file as received, plus load metadata |
 | Silver | `silver` (plus `util`, `ref`, `audit`) | `EXEC silver.usp_load_all` | Cleaned, typed, de-duplicated data, with test data removed |
+| Gold | `gold` | `EXEC gold.usp_load_all` | Star schema for reporting: dimensions, facts, chargeback monitoring |
 
 ## Everyday use
 
 ```powershell
-# Load new files into bronze, then rebuild silver
+# Load new files into bronze, then rebuild silver and gold
+& "C:\Users\Sheldon\Desktop\Segpay Project\PowerShell scripts\Load-All.ps1" -LoadGold
+
+# Bronze + silver only
 & "C:\Users\Sheldon\Desktop\Segpay Project\PowerShell scripts\Load-All.ps1" -LoadSilver
 ```
 
@@ -34,6 +39,8 @@ sqlcmd -S <server> -E -C -d SegPay -b -i deploy_bronze.sql     # bronze tables +
 <run PowerShell scripts\Load-All.ps1>                          # load the files
 cd ..\silver
 sqlcmd -S <server> -E -C -d SegPay -b -i deploy_silver.sql     # silver objects + first load
+cd ..\gold
+sqlcmd -S <server> -E -C -d SegPay -b -i deploy_gold.sql       # gold objects + first load
 ```
 
-See `bronze\README.md` and `silver\README.md` for details of each layer.
+See `bronze\README.md`, `silver\README.md` and `gold\README.md` for details of each layer.
