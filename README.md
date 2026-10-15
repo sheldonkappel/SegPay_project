@@ -1,6 +1,22 @@
 # SegPay Data Warehouse
 
-One trusted place to answer business questions about SegPay's payment processing: how much we process, how much we earn, how often payments are approved, and which merchants are at risk from chargebacks.
+## Project overview
+
+This project builds a complete data warehouse and reporting solution for **SegPay**, a payment processor for subscription businesses. It takes raw exports from 11 source systems, cleans and combines them in SQL Server, and turns them into a Power BI report. The result is one trusted place to answer business questions: how much SegPay processes, how much it earns, how often payments are approved, and which merchants are at risk from chargebacks.
+
+| | |
+|---|---|
+| **Sources** | 11 systems (payment gateway, merchant CRM, billing, risk engine, chargeback feed, acquirer clearing files, finance, affiliate tracker, support desk, reference lists); 147 files in CSV, pipe-delimited, TSV, XML and JSON Lines formats |
+| **Volume** | About 804,000 raw rows, covering October 2024 to October 2026 |
+| **Design** | Medallion architecture: **bronze** (raw copy) → **silver** (cleaned and standardized) → **gold** (star schema for reporting) |
+| **Built with** | SQL Server 2025 (T-SQL stored procedures), PowerShell, Power BI (DAX, Power BI project format), Git and GitHub |
+| **Deliverables** | 21 bronze tables; 21 cleaned silver tables with load logging; a gold star schema with 10 dimensions, 2 fact tables and a chargeback-monitoring view; a Power BI report with 28 measures |
+
+**What this project demonstrates:**
+- **Data cleaning at scale:** two payment-gateway layouts merged into one, eight date formats, inconsistent spellings, duplicates and test data, every fix counted and logged.
+- **Dimensional modeling:** a star schema with merchant history (slowly changing dimension type 2) and an "Unknown" member, so no transaction drops out of a total.
+- **Reliable loading:** one command refreshes everything in order, re-running is safe, and every step records what it loaded, removed and why.
+- **Business reporting:** chargeback ratios defined the way the card networks measure them, and a dashboard that shows which disputes are worth fighting.
 
 > The data in this project is synthetic. It imitates the data a payment processor receives from its systems and partners. It contains no real customers or card numbers.
 
