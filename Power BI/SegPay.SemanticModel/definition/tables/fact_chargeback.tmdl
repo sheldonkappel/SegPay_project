@@ -1,0 +1,326 @@
+table fact_chargeback
+	lineageTag: 593ad8cd-4dc4-46b7-96ef-096a016e734e
+
+	column 'Case ID'
+		dataType: string
+		lineageTag: 98d109ca-79ec-46fc-a8fb-80b3a9ba1bdb
+		summarizeBy: none
+		sourceColumn: case_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Received Date Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 663429d9-fe0b-4a0d-bd62-6a211068c1ad
+		summarizeBy: none
+		sourceColumn: received_date_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Original Sale Date Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 086a6269-f101-40d4-804d-0e29bed6e02e
+		summarizeBy: sum
+		sourceColumn: orig_txn_date_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Resolution Date Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 76da0997-b2f1-4cc2-9b47-8aa0d1a465bb
+		summarizeBy: sum
+		sourceColumn: resolution_date_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Merchant Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6a35fd0e-ee3f-472e-9d33-34cfaa073421
+		summarizeBy: none
+		sourceColumn: merchant_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Merchant Account Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 41cca31d-bc24-4bed-a40c-880681a96d7c
+		summarizeBy: none
+		sourceColumn: merchant_account_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Chargeback Reason Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ac100657-c5c8-4b8d-823e-0139a0ed348e
+		summarizeBy: none
+		sourceColumn: chargeback_reason_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Card BIN Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 26376b0b-12ad-42bc-9639-d0cc12bee026
+		summarizeBy: none
+		sourceColumn: card_bin_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ec60dd0d-1958-456c-a938-1a90752a492a
+		summarizeBy: none
+		sourceColumn: site_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Package Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6bd639f5-c63a-4a16-810a-3438e2deb3ae
+		summarizeBy: none
+		sourceColumn: package_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b636f30f-ce6d-4aa1-beba-ffe07ee18e2a
+		summarizeBy: none
+		sourceColumn: customer_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Affiliate Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 61b839f8-c90c-4ded-a9d3-de3b08e42940
+		summarizeBy: none
+		sourceColumn: affiliate_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transaction ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f8cf99a-7f63-4d31-adb8-4630e36aa26d
+		summarizeBy: sum
+		sourceColumn: txn_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ARN
+		dataType: string
+		lineageTag: 431dc6d6-56cb-4bfe-bd4d-707e2ba56a15
+		summarizeBy: none
+		sourceColumn: arn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Network
+		dataType: string
+		lineageTag: 9ee97fbe-ce66-45f8-a770-298b038afd4e
+		summarizeBy: none
+		sourceColumn: network
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason Code'
+		dataType: string
+		lineageTag: c8cf297a-bc04-4881-88d1-4fbfeef5f4ba
+		summarizeBy: none
+		sourceColumn: reason_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: e30b9b70-02f5-4970-b157-6734505a0bfa
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Outcome
+		dataType: string
+		lineageTag: fffaab77-1f2f-494d-9bd8-a6407a07059c
+		summarizeBy: none
+		sourceColumn: outcome
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dispute Amount'
+		dataType: double
+		lineageTag: 49c2f69f-b6de-46bd-91c6-0ad126fe18b2
+		summarizeBy: sum
+		sourceColumn: dispute_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Dispute Currency'
+		dataType: string
+		lineageTag: a2b6f938-642b-47b4-8126-177e1acf5ce9
+		summarizeBy: none
+		sourceColumn: dispute_ccy
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dispute Amount USD'
+		dataType: double
+		lineageTag: e8fc9ac4-d7e0-4581-9686-9535edda5366
+		summarizeBy: sum
+		sourceColumn: dispute_amount_usd
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Is Open'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 77f8d946-26b1-4226-a528-c7c4341660ec
+		summarizeBy: none
+		sourceColumn: is_open
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Won'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c22af218-2b9b-40cd-8b52-5c73c62e95b3
+		summarizeBy: none
+		sourceColumn: is_won
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Lost'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3738222a-dae3-4dc1-a613-e45c062fea85
+		summarizeBy: none
+		sourceColumn: is_lost
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Representment Sent'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d2a18765-23a5-4dd3-9b6b-efc18f2a7dd0
+		summarizeBy: none
+		sourceColumn: is_representment_sent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Linked to Transaction'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4eb34f68-0064-4795-927d-8588cc973de4
+		summarizeBy: none
+		sourceColumn: is_linked_to_txn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days Sale to Dispute'
+		dataType: int64
+		formatString: 0
+		lineageTag: f86c45ac-b92a-45a5-a1df-3e94d8bfe841
+		summarizeBy: sum
+		sourceColumn: days_sale_to_dispute
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days to Respond'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7be8320a-dfe0-436f-b2e6-7bad2b3d744d
+		summarizeBy: sum
+		sourceColumn: days_to_respond
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days to Resolution'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3de98090-155e-4df5-93cb-604ec210d7ed
+		summarizeBy: sum
+		sourceColumn: days_to_resolution
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: c56767fb-0846-4640-8340-f2f1711a2fa6
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gold Loaded At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 07ac45a6-32e2-4824-99fa-7a47c287dde6
+		summarizeBy: none
+		sourceColumn: gold_loaded_at
+
+		variation Variation
+			isDefault
+			relationship: 80239582-0efc-4c16-b1ea-85263fe2496d
+			defaultHierarchy: LocalDateTable_8ef8c2e0-0107-4ab4-95fa-ed981544af10.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_chargeback = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_fact_chargeback = SegPay{[Schema="gold",Item="fact_chargeback"]}[Data]
+				in
+				    gold_fact_chargeback
+
+	annotation PBI_ResultType = Table
+

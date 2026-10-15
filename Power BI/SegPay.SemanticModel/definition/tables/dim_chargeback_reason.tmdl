@@ -1,0 +1,103 @@
+table dim_chargeback_reason
+	lineageTag: c80066f2-7142-42b0-9cee-11c08780b664
+
+	column 'Chargeback Reason Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d6141c7-a441-4ea2-9bd8-1e5f81be4a72
+		summarizeBy: none
+		sourceColumn: chargeback_reason_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column Network
+		dataType: string
+		lineageTag: 819dc81e-dfdd-4950-8d6d-a95f27610544
+		summarizeBy: none
+		sourceColumn: network
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason Code'
+		dataType: string
+		lineageTag: 7ffc5bd5-512e-40a0-aefa-de6507ad77fa
+		summarizeBy: none
+		sourceColumn: reason_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 4791f51e-7d6f-4657-a0cf-855775c5decc
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 8e3b6bc1-9b9e-47f1-ba3c-4eefc3e7f4b1
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5e95969e-218a-454b-b899-fae2cba1de9c
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fa1f5bf1-1c08-4387-99ed-c04f569bbcaf
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 9d2c5bcc-e919-4eda-9513-5c48b0ab358c
+			defaultHierarchy: LocalDateTable_3c7e76a0-0f98-47ac-ab55-d0bb55d11c92.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e2e8eaf6-cf1b-4310-945c-438eb15c0271
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: d3e0e016-44fd-4c25-b8f6-12fb81a28f2b
+			defaultHierarchy: LocalDateTable_947fb371-098d-44a5-82df-7a6670ef99b1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: 28a85e13-52f1-4fd4-8744-3b9401bcbd71
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_chargeback_reason = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_chargeback_reason = SegPay{[Schema="gold",Item="dim_chargeback_reason"]}[Data]
+				in
+				    gold_dim_chargeback_reason
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

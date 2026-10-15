@@ -1,0 +1,63 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_affiliate","dim_card_bin","dim_chargeback_reason","dim_customer","dim_date","dim_merchant","dim_merchant_account","dim_package","dim_response_code","dim_site","fact_chargeback","fact_transaction","Measures Table"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_affiliate
+ref table DateTableTemplate_bef34b85-146c-4680-8c00-afe55c127670
+ref table LocalDateTable_bd5383d9-8d95-4458-a4aa-485184b25064
+ref table LocalDateTable_1f58dab0-f433-4150-99ec-87ea5f9c8987
+ref table LocalDateTable_195c7c4a-f6af-471e-875a-8a04efcb9a22
+ref table dim_card_bin
+ref table LocalDateTable_acd97153-9298-4604-9008-e2c4bd8af25f
+ref table LocalDateTable_ff429900-8ae0-49aa-bc58-3e42b3f15ef0
+ref table dim_chargeback_reason
+ref table LocalDateTable_3c7e76a0-0f98-47ac-ab55-d0bb55d11c92
+ref table LocalDateTable_947fb371-098d-44a5-82df-7a6670ef99b1
+ref table dim_customer
+ref table LocalDateTable_692e62f4-1cf7-485a-ae24-2d3f31b6e90c
+ref table LocalDateTable_abc205a9-3faf-493d-9760-a70f77aa7855
+ref table LocalDateTable_88e174b7-ca75-482c-8735-63975b9bc348
+ref table dim_date
+ref table LocalDateTable_7db4d211-bbc2-4714-a835-422a12cdf865
+ref table LocalDateTable_5b56b7fa-53a5-4604-aabc-61809d9520f8
+ref table LocalDateTable_c5085567-d834-4d55-a08f-94dfbcc1ad91
+ref table dim_merchant
+ref table LocalDateTable_774bc003-2f7f-4509-90c9-60791cb46ae3
+ref table LocalDateTable_0aacaa51-66c6-42b9-8e42-750451cb9cd3
+ref table LocalDateTable_03e43cb6-35e5-4b09-b7b5-493541aaa176
+ref table LocalDateTable_42dd83fd-6b7d-4f96-aa1d-62322381aed1
+ref table LocalDateTable_a9fc0a7d-0659-40f6-bae4-71125744c717
+ref table dim_merchant_account
+ref table LocalDateTable_c0fbec9e-5cc1-4805-9f17-0ccdb5c55b53
+ref table LocalDateTable_13faac2b-43ae-4b81-a68b-f0f9dbebdc4b
+ref table LocalDateTable_b81390e3-d7ab-4faa-9e96-f4424d24acae
+ref table dim_package
+ref table LocalDateTable_6cbfb418-f917-40b1-8c4d-c76a82e3f7cf
+ref table LocalDateTable_6c852137-d142-4401-ab2f-45452fb8b86b
+ref table dim_response_code
+ref table LocalDateTable_91923ab2-8332-45eb-9a2c-1e194f24ba5a
+ref table LocalDateTable_ff4325fc-a115-4593-b568-9b4ed9927b88
+ref table dim_site
+ref table LocalDateTable_c09a2f5d-81c1-4324-b752-5cd17ab0a5f8
+ref table LocalDateTable_64355ccc-3da2-4bbd-adc7-af8fbd96b1f7
+ref table LocalDateTable_04751315-4d35-4607-b944-d717111a9859
+ref table fact_chargeback
+ref table LocalDateTable_8ef8c2e0-0107-4ab4-95fa-ed981544af10
+ref table fact_transaction
+ref table LocalDateTable_7e27edd6-2d1a-4059-8efe-3491e989b6e2
+ref table LocalDateTable_684e027d-f0f4-447d-bf0b-cb91de8b6790
+ref table 'Measures Table'
+
+ref cultureInfo en-US
+

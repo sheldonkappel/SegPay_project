@@ -1,0 +1,184 @@
+table dim_date
+	lineageTag: fde7fcbd-03df-4304-9889-32fda23cb568
+
+	column 'Date Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: 75e1967e-10fa-49e1-80f1-c68ea1173a12
+		summarizeBy: none
+		sourceColumn: date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bcefa6ba-b0cf-4c7b-94b2-5da083dd7296
+		summarizeBy: none
+		sourceColumn: full_date
+
+		variation Variation
+			isDefault
+			relationship: f42d7b8a-e16e-4205-b1d4-6ec057b58c93
+			defaultHierarchy: LocalDateTable_7db4d211-bbc2-4714-a835-422a12cdf865.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: d07b3dc2-93b9-4f25-85e7-05260e276e44
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 59930c51-0784-4d6a-be37-b65946d9b785
+		summarizeBy: sum
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Quarter Name'
+		dataType: string
+		lineageTag: c52dab27-96d6-41b4-b8a1-41443b3f4d26
+		summarizeBy: none
+		sourceColumn: quarter_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: 449a8412-39f2-4756-81f7-edc443a58f64
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 6ea48410-200a-4ad6-a8ff-1d28a1ed5443
+		summarizeBy: none
+		sourceColumn: month_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month (Short)'
+		dataType: string
+		lineageTag: 01c2bba6-2c16-4544-bd0f-00a580cab169
+		summarizeBy: none
+		sourceColumn: month_short
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Month
+		dataType: string
+		lineageTag: 89c88998-a309-456a-b5ed-6ce20e03c9b7
+		summarizeBy: none
+		sourceColumn: year_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ac09b089-3430-47f1-bd4a-2b36169291dd
+		summarizeBy: none
+		sourceColumn: month_start_date
+
+		variation Variation
+			isDefault
+			relationship: d5193083-04ab-44d9-8b4f-f129ef4db574
+			defaultHierarchy: LocalDateTable_5b56b7fa-53a5-4604-aabc-61809d9520f8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Month End Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d71085d1-ca15-4295-829a-a23454f8ebc5
+		summarizeBy: none
+		sourceColumn: month_end_date
+
+		variation Variation
+			isDefault
+			relationship: c1ab2d7d-fb76-423c-89ad-372790375dc6
+			defaultHierarchy: LocalDateTable_c5085567-d834-4d55-a08f-94dfbcc1ad91.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'ISO Week'
+		dataType: int64
+		formatString: 0
+		lineageTag: 58e4d9cc-2a42-4131-bd45-87ab761633ff
+		summarizeBy: sum
+		sourceColumn: iso_week
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day of Month'
+		dataType: int64
+		formatString: 0
+		lineageTag: bdc3bcba-0ac3-4bb2-abc9-6f26daf96340
+		summarizeBy: sum
+		sourceColumn: day_of_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day of Week'
+		dataType: int64
+		formatString: 0
+		lineageTag: cb6412e8-a2b3-4788-8793-69252c6c98bb
+		summarizeBy: sum
+		sourceColumn: day_of_week
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day Name'
+		dataType: string
+		lineageTag: c2a15ebf-5ae8-48d3-ba84-b27fc91aedc9
+		summarizeBy: none
+		sourceColumn: day_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Weekend'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ac629b5c-c1b5-4eb9-8074-7522f7efd911
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Month End'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d15eb95f-358e-4aff-b326-e1e70536582d
+		summarizeBy: none
+		sourceColumn: is_month_end
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_date = SegPay{[Schema="gold",Item="dim_date"]}[Data]
+				in
+				    gold_dim_date
+
+	annotation PBI_ResultType = Table
+

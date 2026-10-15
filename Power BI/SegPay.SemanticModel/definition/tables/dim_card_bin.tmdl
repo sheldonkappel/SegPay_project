@@ -1,0 +1,117 @@
+table dim_card_bin
+	lineageTag: e0598bba-a2aa-4e8e-b5e4-85980023f021
+
+	column 'Card BIN Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f00d4db-a954-46b0-aecf-71d8ca3199f0
+		summarizeBy: none
+		sourceColumn: card_bin_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column BIN
+		dataType: string
+		lineageTag: 21b6c57f-e11d-4fce-9ac0-e9dc9c68e365
+		summarizeBy: none
+		sourceColumn: bin
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Card Brand'
+		dataType: string
+		lineageTag: 9829c29c-308f-44a0-8a61-ae5b708516dc
+		summarizeBy: none
+		sourceColumn: card_brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Card Type'
+		dataType: string
+		lineageTag: 060bc790-4a59-4cef-9720-f184bf6ccf4d
+		summarizeBy: none
+		sourceColumn: card_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Card Category'
+		dataType: string
+		lineageTag: 7c7a61e5-0c07-4f63-809b-944e4b63d5e0
+		summarizeBy: none
+		sourceColumn: card_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Issuer Name'
+		dataType: string
+		lineageTag: 4498731b-22a8-4407-a2cd-b216ca8f77a1
+		summarizeBy: none
+		sourceColumn: issuer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Issuer Country'
+		dataType: string
+		lineageTag: c1523981-9b9e-49b0-993e-4b36fc40f1e1
+		summarizeBy: none
+		sourceColumn: issuer_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4e57f3e6-7925-48f0-a8b6-5ae477c02ae7
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 68a9e73c-9322-47df-87f9-3cb546e0af92
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: efd3b4df-b579-473e-8437-5150bafc7441
+			defaultHierarchy: LocalDateTable_acd97153-9298-4604-9008-e2c4bd8af25f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fdbd795f-1eab-4184-948f-e0f43f562294
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: 0c67c88c-cc4a-462b-93db-c5cfbed50583
+			defaultHierarchy: LocalDateTable_ff429900-8ae0-49aa-bc58-3e42b3f15ef0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: 5fcb98fc-f836-40ba-a3a9-b6e48e7b9304
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_card_bin = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_card_bin = SegPay{[Schema="gold",Item="dim_card_bin"]}[Data]
+				in
+				    gold_dim_card_bin
+
+	annotation PBI_ResultType = Table
+

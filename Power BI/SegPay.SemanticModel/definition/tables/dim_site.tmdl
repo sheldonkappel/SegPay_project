@@ -1,0 +1,145 @@
+table dim_site
+	lineageTag: 0203cfa5-cf33-42ec-8f2a-f699ce13377d
+
+	column 'Site Key'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 494fd15a-f520-49b1-8538-c5fe136b3d55
+		summarizeBy: none
+		sourceColumn: site_key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 50552021-984b-4034-8208-e9d628fa7aa8
+		summarizeBy: sum
+		sourceColumn: site_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site Name'
+		dataType: string
+		lineageTag: 0fea7dbd-9bb5-4513-95c3-903b7c623fd6
+		summarizeBy: none
+		sourceColumn: site_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site URL'
+		dataType: string
+		lineageTag: c11f2711-b05e-4f84-81eb-34a868ef68f4
+		summarizeBy: none
+		sourceColumn: site_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 35a685a0-61b6-4011-b066-6e423ceb30d9
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 2e45a023-fd76-4ab4-b46d-9213a4da1fe2
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Launch Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ed182881-6dfc-4118-b624-6f6094d7284d
+		summarizeBy: none
+		sourceColumn: launch_date
+
+		variation Variation
+			isDefault
+			relationship: 71496aa9-18b8-409e-a1f2-f70df487d3a1
+			defaultHierarchy: LocalDateTable_c09a2f5d-81c1-4324-b752-5cd17ab0a5f8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Billing Descriptor'
+		dataType: string
+		lineageTag: b37f1846-12c0-4e4b-b0c7-4f1884e2e1e5
+		summarizeBy: none
+		sourceColumn: billing_descriptor
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Merchant ID'
+		dataType: string
+		lineageTag: 93ab96b2-6262-4781-9040-62403c2ce880
+		summarizeBy: none
+		sourceColumn: merchant_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4e7823ec-3e87-4051-9309-6ca5065e6340
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a58ad986-7a3a-415d-8a7e-aedf9cbbc609
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: b2a44a95-ad38-4815-b1ad-3f5d0772be03
+			defaultHierarchy: LocalDateTable_64355ccc-3da2-4bbd-adc7-af8fbd96b1f7.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 04926760-ff41-45d9-bcdb-1c64937474d2
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: f37afc70-1919-4a49-9023-48dc12154e70
+			defaultHierarchy: LocalDateTable_04751315-4d35-4607-b944-d717111a9859.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: 1fba9cce-8b94-45d5-8f8a-f2d6dcd39233
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_site = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_site = SegPay{[Schema="gold",Item="dim_site"]}[Data]
+				in
+				    gold_dim_site
+
+	annotation PBI_ResultType = Table
+

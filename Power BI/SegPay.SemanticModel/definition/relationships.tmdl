@@ -1,0 +1,232 @@
+relationship a32a9e8d-b4bc-4a4f-96d1-005174ef5491
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_affiliate.'Join Date'
+	toColumn: LocalDateTable_bd5383d9-8d95-4458-a4aa-485184b25064.Date
+
+relationship 0d335435-3530-456d-b40f-19abbb741f08
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_affiliate.'Created At'
+	toColumn: LocalDateTable_1f58dab0-f433-4150-99ec-87ea5f9c8987.Date
+
+relationship edb23478-d850-4b38-90ad-bb790e10b01e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_affiliate.'Updated At'
+	toColumn: LocalDateTable_195c7c4a-f6af-471e-875a-8a04efcb9a22.Date
+
+relationship efd3b4df-b579-473e-8437-5150bafc7441
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_card_bin.'Created At'
+	toColumn: LocalDateTable_acd97153-9298-4604-9008-e2c4bd8af25f.Date
+
+relationship 0c67c88c-cc4a-462b-93db-c5cfbed50583
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_card_bin.'Updated At'
+	toColumn: LocalDateTable_ff429900-8ae0-49aa-bc58-3e42b3f15ef0.Date
+
+relationship 9d2c5bcc-e919-4eda-9513-5c48b0ab358c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_chargeback_reason.'Created At'
+	toColumn: LocalDateTable_3c7e76a0-0f98-47ac-ab55-d0bb55d11c92.Date
+
+relationship d3e0e016-44fd-4c25-b8f6-12fb81a28f2b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_chargeback_reason.'Updated At'
+	toColumn: LocalDateTable_947fb371-098d-44a5-82df-7a6670ef99b1.Date
+
+relationship 164a52a7-a316-467f-94ba-f494f53d13a7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_customer.'Created Date'
+	toColumn: LocalDateTable_692e62f4-1cf7-485a-ae24-2d3f31b6e90c.Date
+
+relationship 1d51b16c-b668-4fa0-b4af-829e44d3f269
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_customer.'Created At'
+	toColumn: LocalDateTable_abc205a9-3faf-493d-9760-a70f77aa7855.Date
+
+relationship 630bf181-848c-457d-81cc-a28ac0af04a0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_customer.'Updated At'
+	toColumn: LocalDateTable_88e174b7-ca75-482c-8735-63975b9bc348.Date
+
+relationship f42d7b8a-e16e-4205-b1d4-6ec057b58c93
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.Date
+	toColumn: LocalDateTable_7db4d211-bbc2-4714-a835-422a12cdf865.Date
+
+relationship d5193083-04ab-44d9-8b4f-f129ef4db574
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.'Month Start Date'
+	toColumn: LocalDateTable_5b56b7fa-53a5-4604-aabc-61809d9520f8.Date
+
+relationship c1ab2d7d-fb76-423c-89ad-372790375dc6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.'Month End Date'
+	toColumn: LocalDateTable_c5085567-d834-4d55-a08f-94dfbcc1ad91.Date
+
+relationship 4b4f1b5d-c4e9-4481-8c7f-7ca04eebff01
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant.'Onboard Date'
+	toColumn: LocalDateTable_774bc003-2f7f-4509-90c9-60791cb46ae3.Date
+
+relationship 99723f73-1d6d-4a23-b733-3994a56ba5c6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant.'Valid From'
+	toColumn: LocalDateTable_0aacaa51-66c6-42b9-8e42-750451cb9cd3.Date
+
+relationship 79806825-fd76-493b-8589-a1d1f6a75665
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant.'Valid To'
+	toColumn: LocalDateTable_03e43cb6-35e5-4b09-b7b5-493541aaa176.Date
+
+relationship 03eec5b0-8110-423d-80e5-2bfd124b0790
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant.'Created At'
+	toColumn: LocalDateTable_42dd83fd-6b7d-4f96-aa1d-62322381aed1.Date
+
+relationship 05ecf109-7bc8-47df-8b9d-c34292cb6353
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant.'Updated At'
+	toColumn: LocalDateTable_a9fc0a7d-0659-40f6-bae4-71125744c717.Date
+
+relationship 5724bc7c-1438-4ee5-8804-4fe99d26ee80
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant_account.'Effective From'
+	toColumn: LocalDateTable_c0fbec9e-5cc1-4805-9f17-0ccdb5c55b53.Date
+
+relationship 609482f2-31b7-4e72-b8e8-9f8593c39f8e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant_account.'Created At'
+	toColumn: LocalDateTable_13faac2b-43ae-4b81-a68b-f0f9dbebdc4b.Date
+
+relationship 92171dac-3718-46a4-a8ae-e7777902b769
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_merchant_account.'Updated At'
+	toColumn: LocalDateTable_b81390e3-d7ab-4faa-9e96-f4424d24acae.Date
+
+relationship 14f48a7f-0b2d-4b56-9630-598ae429d6e4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_package.'Created At'
+	toColumn: LocalDateTable_6cbfb418-f917-40b1-8c4d-c76a82e3f7cf.Date
+
+relationship f7c73b1b-38b1-4d19-a46a-9b27ebf5c227
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_package.'Updated At'
+	toColumn: LocalDateTable_6c852137-d142-4401-ab2f-45452fb8b86b.Date
+
+relationship 76aa16b4-1374-4169-baf6-955b88fd6900
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_response_code.'Created At'
+	toColumn: LocalDateTable_91923ab2-8332-45eb-9a2c-1e194f24ba5a.Date
+
+relationship c6717b1f-202b-4ff8-9f78-0bb9ab5f27b3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_response_code.'Updated At'
+	toColumn: LocalDateTable_ff4325fc-a115-4593-b568-9b4ed9927b88.Date
+
+relationship 71496aa9-18b8-409e-a1f2-f70df487d3a1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_site.'Launch Date'
+	toColumn: LocalDateTable_c09a2f5d-81c1-4324-b752-5cd17ab0a5f8.Date
+
+relationship b2a44a95-ad38-4815-b1ad-3f5d0772be03
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_site.'Created At'
+	toColumn: LocalDateTable_64355ccc-3da2-4bbd-adc7-af8fbd96b1f7.Date
+
+relationship f37afc70-1919-4a49-9023-48dc12154e70
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_site.'Updated At'
+	toColumn: LocalDateTable_04751315-4d35-4607-b944-d717111a9859.Date
+
+relationship 80239582-0efc-4c16-b1ea-85263fe2496d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_chargeback.'Gold Loaded At'
+	toColumn: LocalDateTable_8ef8c2e0-0107-4ab4-95fa-ed981544af10.Date
+
+relationship 8ac4d49e-ad90-4a50-ad3a-78c566a46d03
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_transaction.'Transaction Time (UTC)'
+	toColumn: LocalDateTable_7e27edd6-2d1a-4059-8efe-3491e989b6e2.Date
+
+relationship e33248ad-289f-4df5-a1fa-5411bc508523
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_transaction.'Gold Loaded At'
+	toColumn: LocalDateTable_684e027d-f0f4-447d-bf0b-cb91de8b6790.Date
+
+relationship 3a054b41-ae61-7b1f-687c-9839b71c1099
+	fromColumn: fact_chargeback.'Chargeback Reason Key'
+	toColumn: dim_chargeback_reason.'Chargeback Reason Key'
+
+relationship 7167cf48-63f2-727f-bfb7-ec7ee6bc28ba
+	fromColumn: fact_chargeback.'Affiliate Key'
+	toColumn: dim_affiliate.'Affiliate Key'
+
+relationship 59b9dcea-8d43-c657-cf9d-b1d3acace565
+	fromColumn: fact_chargeback.'Received Date Key'
+	toColumn: dim_date.'Date Key'
+
+relationship 2b34d8c2-2272-7e79-8734-c7bf3aa5b95f
+	isActive: false
+	fromColumn: fact_chargeback.'Resolution Date Key'
+	toColumn: dim_date.'Date Key'
+
+relationship 38da286c-79a2-32db-fa43-0b508bf59b44
+	fromColumn: fact_chargeback.'Merchant Key'
+	toColumn: dim_merchant.'Merchant Key'
+
+relationship ea7c559a-4612-4365-4f3d-c7fa0a5d29e9
+	fromColumn: fact_chargeback.'Merchant Account Key'
+	toColumn: dim_merchant_account.'Merchant Account Key'
+
+relationship 9be497ec-94a1-9fb7-37cd-10be34593c7a
+	fromColumn: fact_chargeback.'Card BIN Key'
+	toColumn: dim_card_bin.'Card BIN Key'
+
+relationship 6599be3e-2734-e3b3-6919-5eef7eb21459
+	fromColumn: fact_chargeback.'Site Key'
+	toColumn: dim_site.'Site Key'
+
+relationship a6a2941e-54ce-f87e-bce9-4d33cdfd4508
+	fromColumn: fact_chargeback.'Package Key'
+	toColumn: dim_package.'Package Key'
+
+relationship 4ceeb7a1-318d-7817-cf8e-30de5d21d192
+	fromColumn: fact_chargeback.'Customer Key'
+	toColumn: dim_customer.'Customer Key'
+
+relationship fact_transaction_date_key
+	fromColumn: fact_transaction.'Date Key'
+	toColumn: dim_date.'Date Key'
+
+relationship fact_transaction_merchant_key
+	fromColumn: fact_transaction.'Merchant Key'
+	toColumn: dim_merchant.'Merchant Key'
+
+relationship fact_transaction_merchant_account_key
+	fromColumn: fact_transaction.'Merchant Account Key'
+	toColumn: dim_merchant_account.'Merchant Account Key'
+
+relationship fact_transaction_site_key
+	fromColumn: fact_transaction.'Site Key'
+	toColumn: dim_site.'Site Key'
+
+relationship fact_transaction_package_key
+	fromColumn: fact_transaction.'Package Key'
+	toColumn: dim_package.'Package Key'
+
+relationship fact_transaction_customer_key
+	fromColumn: fact_transaction.'Customer Key'
+	toColumn: dim_customer.'Customer Key'
+
+relationship fact_transaction_affiliate_key
+	fromColumn: fact_transaction.'Affiliate Key'
+	toColumn: dim_affiliate.'Affiliate Key'
+
+relationship fact_transaction_card_bin_key
+	fromColumn: fact_transaction.'Card BIN Key'
+	toColumn: dim_card_bin.'Card BIN Key'
+
+relationship fact_transaction_response_code_key
+	fromColumn: fact_transaction.'Response Code Key'
+	toColumn: dim_response_code.'Response Code Key'
+

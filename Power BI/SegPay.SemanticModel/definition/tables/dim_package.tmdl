@@ -1,0 +1,157 @@
+table dim_package
+	lineageTag: 3bf8d11e-f61d-4b08-87bb-f871f38a8dbc
+
+	column 'Package Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: aa0be12d-a4a9-4ed4-94a4-90eb2081422c
+		summarizeBy: none
+		sourceColumn: package_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Package ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 62890695-d1aa-4d8d-934e-85462af6fa8a
+		summarizeBy: sum
+		sourceColumn: package_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Package Name'
+		dataType: string
+		lineageTag: fcc8dc7f-df93-4e8a-970b-2831e0ba97ce
+		summarizeBy: none
+		sourceColumn: package_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: a8f380c7-2898-4ebc-97bd-c938e173bff0
+		summarizeBy: sum
+		sourceColumn: site_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Billing Model'
+		dataType: string
+		lineageTag: a4f7248a-130d-42a5-9bef-9f57c98f19fd
+		summarizeBy: none
+		sourceColumn: billing_model
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Initial Price'
+		dataType: double
+		lineageTag: d41a0e29-4513-43fe-910d-ddb337dfbf1e
+		summarizeBy: sum
+		sourceColumn: initial_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Rebill Price'
+		dataType: double
+		lineageTag: 09e13e43-b241-4f37-a3ff-e0ddd8995ebf
+		summarizeBy: sum
+		sourceColumn: rebill_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Currency
+		dataType: string
+		lineageTag: 8aec71d1-76ec-404b-8c94-b5f0d5e242b7
+		summarizeBy: none
+		sourceColumn: currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trial Days'
+		dataType: int64
+		formatString: 0
+		lineageTag: 91c990f1-f856-46ca-9a78-59a7f609e5d6
+		summarizeBy: sum
+		sourceColumn: trial_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rebill Period (Days)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6638449e-0043-48f2-8944-1b26974548d3
+		summarizeBy: sum
+		sourceColumn: rebill_period_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: e720b78c-8aa9-4dfa-ab67-3f0e5c0fc1c0
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8f279974-26c7-4cfa-bd5a-122b187b2ebf
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e0a185bc-387e-456f-b263-2b0f2bf3a015
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 14f48a7f-0b2d-4b56-9630-598ae429d6e4
+			defaultHierarchy: LocalDateTable_6cbfb418-f917-40b1-8c4d-c76a82e3f7cf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 80ae07c6-9c33-4813-8553-eb5ea3f28163
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: f7c73b1b-38b1-4d19-a46a-9b27ebf5c227
+			defaultHierarchy: LocalDateTable_6c852137-d142-4401-ab2f-45452fb8b86b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: dbd7e5f5-0ec1-4140-9834-2251a8c772c9
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_package = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_package = SegPay{[Schema="gold",Item="dim_package"]}[Data]
+				in
+				    gold_dim_package
+
+	annotation PBI_ResultType = Table
+

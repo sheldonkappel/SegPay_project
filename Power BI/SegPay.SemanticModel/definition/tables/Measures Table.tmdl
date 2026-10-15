@@ -1,0 +1,191 @@
+table 'Measures Table'
+	lineageTag: ffebb68e-522b-4ef0-957b-f31b4cd29e25
+
+	/// Number of chargeback cases (by received date unless another date view is used).
+	measure Chargebacks = COUNTROWS ( fact_chargeback )
+		formatString: #,0
+		displayFolder: Chargebacks\1 Volume
+		lineageTag: 45545811-6854-4557-ba4b-7460a518b8ae
+
+	/// Disputed amount in USD (US Treasury rate on the original sale date).
+	measure 'Chargeback Amount USD' = SUM ( fact_chargeback[Dispute Amount USD] )
+		formatString: \$#,0.00
+		displayFolder: Chargebacks\1 Volume
+		lineageTag: f8c5c635-e5f5-4372-85fc-4ec00089dfc9
+
+	/// Average disputed amount per case, in USD.
+	measure 'Avg Chargeback USD' = DIVIDE ( [Chargeback Amount USD], [Chargebacks] )
+		formatString: \$#,0.00
+		displayFolder: Chargebacks\1 Volume
+		lineageTag: e1ff57b5-8fa5-475b-a0bc-1328c21b693c
+
+	/// Cases whose reason code is in the Fraud category.
+	measure 'Fraud Chargebacks' = CALCULATE ( [Chargebacks], dim_chargeback_reason[Category] = "Fraud" )
+		formatString: #,0
+		displayFolder: Chargebacks\1 Volume
+		lineageTag: fbe38ecf-80f1-46e7-b4b4-86ea46f3eb6c
+
+	/// Share of cases with a Fraud reason code.
+	measure 'Fraud Chargeback %' = DIVIDE ( [Fraud Chargebacks], [Chargebacks] )
+		formatString: 0.0%
+		displayFolder: Chargebacks\1 Volume
+		lineageTag: 25fe604f-6c8a-48b3-a6e6-1de50c8c8158
+
+	/// Cases whose network + reason code is not in the reason-code list (data-quality check).
+	measure 'Unknown Reason Chargebacks' = CALCULATE ( [Chargebacks], fact_chargeback[Chargeback Reason Key] = -1 )
+		formatString: #,0
+		displayFolder: Chargebacks\1 Volume
+		lineageTag: 03184044-ac13-4226-b24f-d8166f584305
+
+	/// Cases with no outcome yet.
+	measure 'Open Cases' = CALCULATE ( [Chargebacks], fact_chargeback[Is Open] = TRUE () )
+		formatString: #,0
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: a7175bbd-eb1b-4dab-809d-99b0ea3bbb74
+
+	/// Cases won by the merchant after a representment.
+	measure 'Won Cases' = CALCULATE ( [Chargebacks], fact_chargeback[Is Won] = TRUE () )
+		formatString: #,0
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: bcb7e801-1f28-4c0f-9c9c-460a0025a086
+
+	/// Cases lost, including cases the merchant accepted without contesting.
+	measure 'Lost Cases' = CALCULATE ( [Chargebacks], fact_chargeback[Is Lost] = TRUE () )
+		formatString: #,0
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: 64bd6ef0-8202-414b-8d6a-9414ed1db030
+
+	/// Cases the merchant accepted without sending a representment.
+	measure 'Accepted Cases' = CALCULATE ( [Chargebacks], fact_chargeback[Outcome] = "Accepted" )
+		formatString: #,0
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: 552c051b-d2d6-4462-b2b3-917d4fc38758
+
+	/// Cases where the merchant sent evidence to fight the dispute.
+	measure 'Representments Sent' = CALCULATE ( [Chargebacks], fact_chargeback[Is Representment Sent] = TRUE () )
+		formatString: #,0
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: 5db2a807-d079-4f16-a102-88d8a96b77cb
+
+	/// Share of cases the merchant contested.
+	measure 'Representment Rate %' = DIVIDE ( [Representments Sent], [Chargebacks] )
+		formatString: 0.0%
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: 3f56237f-353b-46ce-93bc-3d2270542e44
+
+	/// Won / (Won + Lost) among contested cases that have an outcome. Accepted and open cases are excluded.
+	measure 'Win Rate %' =
+			VAR _won  = [Won Cases]
+			VAR _lost = CALCULATE ( [Chargebacks], fact_chargeback[Outcome] = "Lost" )
+			RETURN DIVIDE ( _won, _won + _lost )
+		formatString: 0.0%
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: bb71f2fc-8b98-4fbb-a519-9aa7b21ed2b2
+
+	/// Disputed USD on cases the merchant won.
+	measure 'Recovered USD' = CALCULATE ( [Chargeback Amount USD], fact_chargeback[Is Won] = TRUE () )
+		formatString: \$#,0.00
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: 495c712d-084e-4f20-9f1f-cb4efc784b40
+
+	/// Disputed USD on cases lost or accepted.
+	measure 'Lost USD' = CALCULATE ( [Chargeback Amount USD], fact_chargeback[Is Lost] = TRUE () )
+		formatString: \$#,0.00
+		displayFolder: Chargebacks\2 Outcomes
+		lineageTag: 9d3bc40f-5471-4154-897a-4c542d492df0
+
+	/// Average days from the original sale to the chargeback being received.
+	measure 'Avg Days Sale to Dispute' = AVERAGE ( fact_chargeback[Days Sale to Dispute] )
+		formatString: #,0.0
+		displayFolder: Chargebacks\3 Timing
+		lineageTag: 18b77433-9d0a-4754-86e4-24ae0d87b82a
+
+	/// Median days from the original sale to the chargeback being received.
+	measure 'Median Days Sale to Dispute' = MEDIAN ( fact_chargeback[Days Sale to Dispute] )
+		formatString: #,0.0
+		displayFolder: Chargebacks\3 Timing
+		lineageTag: 388228f3-ddd9-4a00-8ef9-58e27498c77f
+
+	/// Average days allowed to respond (respond-by date minus received date).
+	measure 'Avg Response Window Days' = AVERAGE ( fact_chargeback[Days to Respond] )
+		formatString: #,0.0
+		displayFolder: Chargebacks\3 Timing
+		lineageTag: 999cb5b5-1f1f-4ffb-9277-54f794de77bb
+
+	/// Average days from received to resolved (resolved cases only).
+	measure 'Avg Days to Resolution' = AVERAGE ( fact_chargeback[Days to Resolution] )
+		formatString: #,0.0
+		displayFolder: Chargebacks\3 Timing
+		lineageTag: 1826217a-0cda-4787-b8a0-b988a581cb37
+
+	/// Chargebacks counted on the ORIGINAL SALE date instead of the received date. Works without a relationship on orig_txn_date_key.
+	measure 'Chargebacks by Sale Date' =
+			CALCULATE (
+			    [Chargebacks],
+			    CROSSFILTER ( fact_chargeback[Received Date Key], dim_date[Date Key], NONE ),
+			    TREATAS ( VALUES ( dim_date[Date Key] ), fact_chargeback[Original Sale Date Key] )
+			)
+		formatString: #,0
+		displayFolder: Chargebacks\4 Date Views
+		lineageTag: b70269b5-7812-48d6-a887-2ca3465300f5
+
+	/// Chargebacks counted on the date they were resolved (uses the inactive resolution_date_key relationship).
+	measure 'Chargebacks by Resolution Date' = CALCULATE ( [Chargebacks], USERELATIONSHIP ( fact_chargeback[Resolution Date Key], dim_date[Date Key] ) )
+		formatString: #,0
+		displayFolder: Chargebacks\4 Date Views
+		lineageTag: c221df6f-0a20-48f7-ba65-0543d133e22e
+
+	/// Approved sales + rebills: the chargeback-ratio denominator. Needs fact_transaction relationships to filter by date, merchant, etc.
+	measure 'Sales Count' = CALCULATE ( COUNTROWS ( fact_transaction ), fact_transaction[Is Revenue] = TRUE () )
+		formatString: #,0
+		displayFolder: Chargebacks\5 Ratios
+		lineageTag: 030a3536-3fc6-4778-aea0-b3cd6d74d01f
+
+	/// Approved sales + rebills in USD.
+	measure 'Sales USD' = SUM ( fact_transaction[Revenue USD] )
+		formatString: \$#,0.00
+		displayFolder: Chargebacks\5 Ratios
+		lineageTag: d66110d7-5084-4089-9d31-9aceb466b7be
+
+	/// Sales Count for the month before the selected period (Mastercard-style denominator).
+	measure 'Prior Month Sales Count' = CALCULATE ( [Sales Count], PREVIOUSMONTH ( dim_date[Date] ), REMOVEFILTERS ( dim_date ) )
+		formatString: #,0
+		displayFolder: Chargebacks\5 Ratios
+		lineageTag: 7954e293-3ef6-48ff-b195-22b9f76b624b
+
+	/// Chargebacks received / sales in the same period (Visa style, by count).
+	measure 'CB Ratio %' = DIVIDE ( [Chargebacks], [Sales Count] )
+		formatString: 0.00%
+		displayFolder: Chargebacks\5 Ratios
+		lineageTag: 63725dc1-f538-4a50-aca4-3c34f7a04faf
+
+	/// Chargebacks received / sales in the previous month (Mastercard style, by count).
+	measure 'CB Ratio (Prior Month Sales) %' = DIVIDE ( [Chargebacks], [Prior Month Sales Count] )
+		formatString: 0.00%
+		displayFolder: Chargebacks\5 Ratios
+		lineageTag: dc71c2de-bcc5-4ce5-a76d-12bc13e3f317
+
+	/// Chargeback USD / sales USD in the same period.
+	measure 'CB Amount Ratio %' = DIVIDE ( [Chargeback Amount USD], [Sales USD] )
+		formatString: 0.00%
+		displayFolder: Chargebacks\5 Ratios
+		lineageTag: 4a6c0625-6489-433f-97b7-2338d7678d88
+
+	/// Share of a period's sales later charged back (chargebacks by original sale date / sales). Recent months keep rising as late disputes arrive.
+	measure 'CB Rate by Sale Month %' = DIVIDE ( [Chargebacks by Sale Date], [Sales Count] )
+		formatString: 0.00%
+		displayFolder: Chargebacks\5 Ratios
+		lineageTag: 2784dcdd-e757-46cf-ac60-591c1505912e
+
+	partition 'Measures Table' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

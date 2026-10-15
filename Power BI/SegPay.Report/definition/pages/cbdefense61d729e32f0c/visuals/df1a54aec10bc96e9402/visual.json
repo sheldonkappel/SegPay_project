@@ -1,0 +1,294 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "df1a54aec10bc96e9402",
+  "position": {
+    "x": 32,
+    "y": 656,
+    "z": 9000,
+    "height": 400,
+    "width": 1100,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_chargeback_reason"
+                    }
+                  },
+                  "Property": "Network"
+                }
+              },
+              "queryRef": "dim_chargeback_reason.Network",
+              "nativeQueryRef": "Network",
+              "displayName": "Network"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_chargeback_reason"
+                    }
+                  },
+                  "Property": "Reason Code"
+                }
+              },
+              "queryRef": "dim_chargeback_reason.Reason Code",
+              "nativeQueryRef": "Reason Code",
+              "displayName": "Reason Code"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_chargeback_reason"
+                    }
+                  },
+                  "Property": "Description"
+                }
+              },
+              "queryRef": "dim_chargeback_reason.Description",
+              "nativeQueryRef": "Description",
+              "displayName": "Description"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Chargebacks"
+                }
+              },
+              "queryRef": "Measures Table.Chargebacks",
+              "nativeQueryRef": "Chargebacks"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Representment Rate %"
+                }
+              },
+              "queryRef": "Measures Table.Representment Rate %",
+              "nativeQueryRef": "Representment Rate %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Win Rate %"
+                }
+              },
+              "queryRef": "Measures Table.Win Rate %",
+              "nativeQueryRef": "Win Rate %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Recovered USD"
+                }
+              },
+              "queryRef": "Measures Table.Recovered USD",
+              "nativeQueryRef": "Recovered USD"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Lost USD"
+                }
+              },
+              "queryRef": "Measures Table.Lost USD",
+              "nativeQueryRef": "Lost USD"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measures Table"
+                  }
+                },
+                "Property": "Lost USD"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'By reason code – sorted by dollars lost'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b93bef9c555823460dd8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_chargeback_reason"
+              }
+            },
+            "Property": "Network"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "50d780abd7dd8c674400",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_chargeback_reason"
+              }
+            },
+            "Property": "Reason Code"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7acb92ce7cc1e3913ece",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_chargeback_reason"
+              }
+            },
+            "Property": "Description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e6b72aca4803424b5183",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Chargebacks"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "96ae9482ae5ede61d60f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Representment Rate %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e1cc7d1bde9a3a911a84",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Win Rate %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8b5ba47d7f74b7cce81c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Recovered USD"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "db0a00db1817d12de04b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Lost USD"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

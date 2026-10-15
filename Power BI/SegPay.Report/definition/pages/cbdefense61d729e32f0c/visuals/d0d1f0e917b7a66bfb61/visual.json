@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "d0d1f0e917b7a66bfb61",
+  "position": {
+    "x": 32,
+    "y": 132,
+    "z": 3000,
+    "height": 130,
+    "width": 452,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Representment Rate %"
+                }
+              },
+              "queryRef": "Measures Table.Representment Rate %",
+              "nativeQueryRef": "Representment Rate %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

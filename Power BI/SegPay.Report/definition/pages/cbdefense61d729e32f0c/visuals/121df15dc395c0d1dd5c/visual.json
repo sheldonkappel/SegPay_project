@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "121df15dc395c0d1dd5c",
+  "position": {
+    "x": 31.361161524500908,
+    "y": 19.165154264972777,
+    "z": 1000,
+    "height": 101.05263157894737,
+    "width": 919.92740471869331,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Chargeback defense: which disputes are worth fighting?",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "22pt",
+                      "color": "#01426c"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Representment win rate by reason and merchant, and dollars recovered. Win rate = won ÷ (won + lost) among contested cases with an outcome; accepted and open cases are excluded.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#54595f"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

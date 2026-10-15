@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "cbdefense61d729e32f0c",
+  "displayName": "Chargeback Defense",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

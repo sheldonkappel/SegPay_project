@@ -1,0 +1,133 @@
+table dim_merchant_account
+	lineageTag: 1e917f86-4417-4681-ba96-64f873a10d12
+
+	column 'Merchant Account Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: b771ae69-d737-4f55-8ada-f13a8881a5c4
+		summarizeBy: none
+		sourceColumn: merchant_account_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column MID
+		dataType: string
+		lineageTag: 477ca294-6bbf-44bc-a753-881afbff887b
+		summarizeBy: none
+		sourceColumn: mid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Merchant ID'
+		dataType: string
+		lineageTag: 1fb93b8a-c0d5-4761-a88e-a57f41468be6
+		summarizeBy: none
+		sourceColumn: merchant_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Acquirer Name'
+		dataType: string
+		lineageTag: 427bcd79-42d0-4e90-a23f-58b3f15d6587
+		summarizeBy: none
+		sourceColumn: acquirer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Currency Group'
+		dataType: string
+		lineageTag: e68d41ba-b5d1-4d7b-986d-dabfe931e3f0
+		summarizeBy: none
+		sourceColumn: currency_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column MCC
+		dataType: string
+		lineageTag: 49a86e1e-2372-4d16-9a29-2309fd7af824
+		summarizeBy: none
+		sourceColumn: mcc
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Effective From'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 21387241-ab31-47fc-8cad-7d181411c518
+		summarizeBy: none
+		sourceColumn: effective_from
+
+		variation Variation
+			isDefault
+			relationship: 5724bc7c-1438-4ee5-8804-4fe99d26ee80
+			defaultHierarchy: LocalDateTable_c0fbec9e-5cc1-4805-9f17-0ccdb5c55b53.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Status
+		dataType: string
+		lineageTag: 58e2bed1-b08c-431c-b738-4d6bab6b82e4
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: cd3a3158-85bc-40ed-88f0-83b0e85fddcd
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cf2130a4-b445-45f6-ad9d-cdc6bc25e912
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 609482f2-31b7-4e72-b8e8-9f8593c39f8e
+			defaultHierarchy: LocalDateTable_13faac2b-43ae-4b81-a68b-f0f9dbebdc4b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c77e6f7a-0209-4908-925a-9e66907d3fba
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: 92171dac-3718-46a4-a8ae-e7777902b769
+			defaultHierarchy: LocalDateTable_b81390e3-d7ab-4faa-9e96-f4424d24acae.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: fcfbbfc0-5250-43e8-a810-6303b859ae4e
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_merchant_account = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_merchant_account = SegPay{[Schema="gold",Item="dim_merchant_account"]}[Data]
+				in
+				    gold_dim_merchant_account
+
+	annotation PBI_ResultType = Table
+

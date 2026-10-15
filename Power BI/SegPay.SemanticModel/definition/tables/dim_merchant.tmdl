@@ -1,0 +1,249 @@
+table dim_merchant
+	lineageTag: dd686b96-6b0e-4e23-b781-383a452dbf5e
+
+	column 'Merchant Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: 66a85edd-dddc-4796-b40b-b8778f4d037d
+		summarizeBy: none
+		sourceColumn: merchant_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Merchant ID'
+		dataType: string
+		lineageTag: 313c3bd5-8f97-44b8-a555-effa210395ff
+		summarizeBy: none
+		sourceColumn: merchant_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Legal Name'
+		dataType: string
+		lineageTag: 5f69069b-45fa-4ea7-b571-93a831663bb2
+		summarizeBy: none
+		sourceColumn: legal_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DBA Name'
+		dataType: string
+		lineageTag: ebe12dae-aea9-449e-820e-e092a9e640d1
+		summarizeBy: none
+		sourceColumn: dba_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vertical
+		dataType: string
+		lineageTag: 9128a219-d06c-48f7-afb8-69857c06b724
+		summarizeBy: none
+		sourceColumn: vertical
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: e8a1d2f1-2b52-435f-8af9-8142b2b4ad3e
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Onboard Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: deade737-2ecb-4341-be78-7c2981acb7ba
+		summarizeBy: none
+		sourceColumn: onboard_date
+
+		variation Variation
+			isDefault
+			relationship: 4b4f1b5d-c4e9-4481-8c7f-7ca04eebff01
+			defaultHierarchy: LocalDateTable_774bc003-2f7f-4509-90c9-60791cb46ae3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Status
+		dataType: string
+		lineageTag: 5ad4f7f8-80d3-4093-b868-3887acc75aba
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Risk Tier'
+		dataType: string
+		lineageTag: c64d8daf-ec47-42fd-b06d-da7608991a4f
+		summarizeBy: none
+		sourceColumn: risk_tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reserve %'
+		dataType: double
+		lineageTag: 5d13237d-d6e3-453d-8722-c999b9b2a662
+		summarizeBy: sum
+		sourceColumn: reserve_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Processing Fee %'
+		dataType: double
+		lineageTag: 060cd213-6e74-4ec0-9ec5-2b6d0f076c63
+		summarizeBy: sum
+		sourceColumn: processing_fee_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Per-Transaction Fee'
+		dataType: double
+		lineageTag: 23bd3953-50e7-408e-b37a-87613bfb977c
+		summarizeBy: sum
+		sourceColumn: per_txn_fee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Chargeback Fee'
+		dataType: double
+		lineageTag: e29fe533-65cd-4770-9083-3b8099dcca36
+		summarizeBy: sum
+		sourceColumn: chargeback_fee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MCC
+		dataType: string
+		lineageTag: 1bef7ea0-ff66-4476-a01e-778757fe254f
+		summarizeBy: none
+		sourceColumn: mcc
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Manager'
+		dataType: string
+		lineageTag: 0f11d533-216f-473f-97ab-e19c01f15204
+		summarizeBy: none
+		sourceColumn: account_manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valid From'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f46f0a2c-8433-4561-bd72-0bd383feb58e
+		summarizeBy: none
+		sourceColumn: valid_from
+
+		variation Variation
+			isDefault
+			relationship: 99723f73-1d6d-4a23-b733-3994a56ba5c6
+			defaultHierarchy: LocalDateTable_0aacaa51-66c6-42b9-8e42-750451cb9cd3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Valid To'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8c25bc91-a300-4a6a-af64-98b2445cbc52
+		summarizeBy: none
+		sourceColumn: valid_to
+
+		variation Variation
+			isDefault
+			relationship: 79806825-fd76-493b-8589-a1d1f6a75665
+			defaultHierarchy: LocalDateTable_03e43cb6-35e5-4b09-b7b5-493541aaa176.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Is Current'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 08f161bf-1ec7-4ddc-b894-62bf9cdbddd2
+		summarizeBy: none
+		sourceColumn: is_current
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Inferred'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ea516a0e-6cbc-40bc-8c9b-ad8ae9f0f8e2
+		summarizeBy: none
+		sourceColumn: is_inferred
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e3ddb1d7-31a5-4703-b05d-f2af519afe8c
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ed79db9a-0f1c-4716-941c-bf856fae832b
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 03eec5b0-8110-423d-80e5-2bfd124b0790
+			defaultHierarchy: LocalDateTable_42dd83fd-6b7d-4f96-aa1d-62322381aed1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6e6e2b41-4d56-48fd-97af-9f22063b2f08
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: 05ecf109-7bc8-47df-8b9d-c34292cb6353
+			defaultHierarchy: LocalDateTable_a9fc0a7d-0659-40f6-bae4-71125744c717.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: 17d6ca4b-6ea2-4a95-ba61-74ddd49a5ce0
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_merchant = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_merchant = SegPay{[Schema="gold",Item="dim_merchant"]}[Data]
+				in
+				    gold_dim_merchant
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

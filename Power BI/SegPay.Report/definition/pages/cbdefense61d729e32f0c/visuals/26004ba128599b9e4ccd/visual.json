@@ -1,0 +1,208 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "26004ba128599b9e4ccd",
+  "position": {
+    "x": 1148,
+    "y": 656,
+    "z": 10000,
+    "height": 400,
+    "width": 740,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_merchant"
+                    }
+                  },
+                  "Property": "DBA Name"
+                }
+              },
+              "queryRef": "dim_merchant.DBA Name",
+              "nativeQueryRef": "Merchant",
+              "displayName": "Merchant"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Chargebacks"
+                }
+              },
+              "queryRef": "Measures Table.Chargebacks",
+              "nativeQueryRef": "Chargebacks"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Representment Rate %"
+                }
+              },
+              "queryRef": "Measures Table.Representment Rate %",
+              "nativeQueryRef": "Representment Rate %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Win Rate %"
+                }
+              },
+              "queryRef": "Measures Table.Win Rate %",
+              "nativeQueryRef": "Win Rate %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Lost USD"
+                }
+              },
+              "queryRef": "Measures Table.Lost USD",
+              "nativeQueryRef": "Lost USD"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measures Table"
+                  }
+                },
+                "Property": "Lost USD"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'By merchant – sorted by dollars lost'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fe5a75dbba42f8858d05",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_merchant"
+              }
+            },
+            "Property": "DBA Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3d87fb4f1671a53967ae",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Chargebacks"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b0bc216cd3d6fe5fef36",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Representment Rate %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7900ef207453fb26606d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Win Rate %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "18fe055c2a1da3b6a97d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Lost USD"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

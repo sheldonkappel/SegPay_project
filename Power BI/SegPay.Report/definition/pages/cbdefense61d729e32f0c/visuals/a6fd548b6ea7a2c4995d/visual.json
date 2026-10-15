@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "a6fd548b6ea7a2c4995d",
+  "position": {
+    "x": 1436,
+    "y": 132,
+    "z": 6000,
+    "height": 130,
+    "width": 452,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures Table"
+                    }
+                  },
+                  "Property": "Lost USD"
+                }
+              },
+              "queryRef": "Measures Table.Lost USD",
+              "nativeQueryRef": "Lost USD"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3d2c5cb4a58e8f8cedab",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures Table"
+              }
+            },
+            "Property": "Lost USD"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

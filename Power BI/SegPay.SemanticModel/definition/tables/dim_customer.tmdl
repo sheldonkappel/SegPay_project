@@ -1,0 +1,110 @@
+table dim_customer
+	lineageTag: cc60ac53-614b-4749-a374-cfa870289574
+
+	column 'Customer Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1058098c-08e7-4fed-8f66-8ff81f50a869
+		summarizeBy: none
+		sourceColumn: customer_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: 383b315f-42b6-4765-93d8-f2b8879d1f85
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 669ed931-1d00-4f33-afe0-899e36950592
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b10e3bdf-281c-48d9-b520-016ae621af7f
+		summarizeBy: none
+		sourceColumn: created_date
+
+		variation Variation
+			isDefault
+			relationship: 164a52a7-a316-467f-94ba-f494f53d13a7
+			defaultHierarchy: LocalDateTable_692e62f4-1cf7-485a-ae24-2d3f31b6e90c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Marketing Opt-In'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 282a4ba9-b5e8-4249-a6ac-239372f6299b
+		summarizeBy: none
+		sourceColumn: marketing_opt_in
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 47ef65b7-279e-44b4-a718-d8968ef52b24
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4806a652-c270-4c23-8527-302d5034f2cf
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 1d51b16c-b668-4fa0-b4af-829e44d3f269
+			defaultHierarchy: LocalDateTable_abc205a9-3faf-493d-9760-a70f77aa7855.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9993bce8-83b6-4e48-a9ec-6d5faee90760
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: 630bf181-848c-457d-81cc-a28ac0af04a0
+			defaultHierarchy: LocalDateTable_88e174b7-ca75-482c-8735-63975b9bc348.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: edd8a218-711b-4ce6-9889-6934efb00508
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_customer = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_customer = SegPay{[Schema="gold",Item="dim_customer"]}[Data]
+				in
+				    gold_dim_customer
+
+	annotation PBI_ResultType = Table
+

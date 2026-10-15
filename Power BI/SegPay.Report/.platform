@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "SegPay"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a820957f-988e-4655-90fb-8bfa05bfddd4"
+  }
+}

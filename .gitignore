@@ -12,3 +12,7 @@ logs/
 Thumbs.db
 desktop.ini
 ~$*
+
+# Power BI project (PBIP): cached model data and per-user settings
+**/.pbi/cache.abf
+**/.pbi/localSettings.json

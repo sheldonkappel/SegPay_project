@@ -1,0 +1,110 @@
+table dim_response_code
+	lineageTag: cec2872a-90a6-450f-8225-fda4be5c2ea8
+
+	column 'Response Code Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: dcfd7a3f-2853-44e1-9645-ab75023c2d5a
+		summarizeBy: sum
+		sourceColumn: response_code_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Response Code'
+		dataType: string
+		lineageTag: fcab8498-8351-45ef-8884-8b11ea045424
+		summarizeBy: none
+		sourceColumn: response_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 7cd414fb-f51c-44b6-9e38-19e83af697e6
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Response Group'
+		dataType: string
+		lineageTag: 6015a5d0-b5bc-4843-adeb-181a13a8e4fc
+		summarizeBy: none
+		sourceColumn: response_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Decline Type'
+		dataType: string
+		lineageTag: 974b2d8e-2f66-4eb1-9e4e-6128f68e00fd
+		summarizeBy: none
+		sourceColumn: decline_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Approved'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ea323f35-9fdd-419b-a406-1d428e61c9c5
+		summarizeBy: none
+		sourceColumn: is_approved
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3809fbd6-48ed-47ab-9159-e46b7235bd96
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2a2da732-f32f-4503-8354-c7442e555100
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 76aa16b4-1374-4169-baf6-955b88fd6900
+			defaultHierarchy: LocalDateTable_91923ab2-8332-45eb-9a2c-1e194f24ba5a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9889a174-8292-44f6-bbda-d12dbcaf9da6
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: c6717b1f-202b-4ff8-9f78-0bb9ab5f27b3
+			defaultHierarchy: LocalDateTable_ff4325fc-a115-4593-b568-9b4ed9927b88.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: faab5312-91db-4f3f-9220-6ba4acda0c82
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_response_code = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_response_code = SegPay{[Schema="gold",Item="dim_response_code"]}[Data]
+				in
+				    gold_dim_response_code
+
+	annotation PBI_ResultType = Table
+

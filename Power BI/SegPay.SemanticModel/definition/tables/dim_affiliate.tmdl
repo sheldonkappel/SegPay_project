@@ -1,0 +1,143 @@
+table dim_affiliate
+	lineageTag: d90c588a-d862-4839-9fad-991da2b875ef
+
+	column 'Affiliate Key'
+		dataType: int64
+		formatString: 0
+		lineageTag: ed97dba2-8a5b-4b5e-9765-79864bdca50d
+		summarizeBy: none
+		sourceColumn: affiliate_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Affiliate ID'
+		dataType: string
+		lineageTag: 2728f3c9-cef8-4546-bd63-7dbcb0e49eeb
+		summarizeBy: none
+		sourceColumn: affiliate_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Affiliate Name'
+		dataType: string
+		lineageTag: 76f0ef73-663b-4e76-b9b9-879620f30cd5
+		summarizeBy: none
+		sourceColumn: affiliate_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Affiliate Type'
+		dataType: string
+		lineageTag: eab1c38a-1db6-4387-8d12-c1ee054c7922
+		summarizeBy: none
+		sourceColumn: affiliate_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Commission %'
+		dataType: double
+		lineageTag: fb531dbb-1b99-4712-b66f-4b40345039d1
+		summarizeBy: sum
+		sourceColumn: commission_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Status
+		dataType: string
+		lineageTag: 3489e4b6-47d0-45d0-ad24-ee69cb2ccd5d
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Join Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c54ad205-4e88-4ba7-9b13-156cd6b80173
+		summarizeBy: none
+		sourceColumn: join_date
+
+		variation Variation
+			isDefault
+			relationship: a32a9e8d-b4bc-4a4f-96d1-005174ef5491
+			defaultHierarchy: LocalDateTable_bd5383d9-8d95-4458-a4aa-485184b25064.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Country
+		dataType: string
+		lineageTag: a275d6ae-7c2e-4c48-ba37-83d396ce2a27
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Payout Method'
+		dataType: string
+		lineageTag: 74ec7a18-aadf-4de3-b8de-3ec1a2a4461f
+		summarizeBy: none
+		sourceColumn: payout_method
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Deleted'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b0f96145-0068-49dc-9268-0912919faede
+		summarizeBy: none
+		sourceColumn: is_deleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5d28eecd-c22b-4f21-9dc1-8d269786c0e5
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 0d335435-3530-456d-b40f-19abbb741f08
+			defaultHierarchy: LocalDateTable_1f58dab0-f433-4150-99ec-87ea5f9c8987.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Updated At'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 85e43807-7114-4ba4-8c67-74db3910b6c8
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		variation Variation
+			isDefault
+			relationship: edb23478-d850-4b38-90ad-bb790e10b01e
+			defaultHierarchy: LocalDateTable_195c7c4a-f6af-471e-875a-8a04efcb9a22.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Load Run ID'
+		dataType: string
+		lineageTag: f6f7ed97-8661-41ee-8cfa-0035657f2aea
+		summarizeBy: none
+		sourceColumn: load_run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_affiliate = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("DESKTOP-G6OG89D\SQLEXPRESS10"),
+				    SegPay = Source{[Name="SegPay"]}[Data],
+				    gold_dim_affiliate = SegPay{[Schema="gold",Item="dim_affiliate"]}[Data]
+				in
+				    gold_dim_affiliate
+
+	annotation PBI_ResultType = Table
+
