@@ -61,6 +61,12 @@
      EXEC bronze.usp_load_clearing_transactions
           @file_path = N'C:\Users\Sheldon\Desktop\Segpay Project\AI generated data\acquirer_clearing\clearing_EUROSETTLE_202410.xml';
    ===================================================================================== */
+-- The XML methods (.value, .nodes) require QUOTED_IDENTIFIER ON, and a procedure keeps the
+-- setting it was created with. sqlcmd defaults to OFF, so set it here rather than rely on -I.
+-- (Tested by test.usp_test_bronze_xml_settings.)
+SET QUOTED_IDENTIFIER ON;
+SET ANSI_NULLS ON;
+GO
 CREATE OR ALTER PROCEDURE [bronze].[usp_load_clearing_transactions]
     @file_path NVARCHAR(500)
 AS

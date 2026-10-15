@@ -8,7 +8,7 @@
    CREATE OR ALTER.
 
    How to run (from the SQL\gold folder - :r paths are relative):
-       sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -i deploy_gold.sql
+       sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -I -i deploy_gold.sql
    Requires the silver layer (SQL\silver\deploy_silver.sql).
    ===================================================================== */
 :on error exit

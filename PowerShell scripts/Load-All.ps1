@@ -14,6 +14,8 @@
            Import-RiskEvents.ps1        risk\*.jsonl
       3. Optional (-LoadSilver): EXEC silver.usp_load_all.
       4. Optional (-LoadGold): silver, then EXEC gold.usp_load_all.
+      5. Tests (EXEC test.usp_run_all): run automatically after -LoadGold,
+         or after any load with -RunTests. A failed test fails the run.
 
     Every bronze procedure replaces the rows of the file it loads (matched by
     file name), so re-running is safe and never duplicates data.
@@ -41,6 +43,12 @@
 .PARAMETER LoadSilver
     After bronze succeeds, rebuild silver with silver.usp_load_all.
 
+.PARAMETER RunTests
+    Run the warehouse tests (SQL\tests) at the end, even without -LoadGold.
+
+.PARAMETER SkipTests
+    Don't run the tests after -LoadGold.
+
 .PARAMETER StopOnError
     Stop at the first failed table instead of continuing with the rest.
 
@@ -49,7 +57,7 @@
 .EXAMPLE
     .\Load-All.ps1 -LoadSilver             # bronze, then silver
 .EXAMPLE
-    .\Load-All.ps1 -LoadGold               # bronze, silver, then gold (the full pipeline)
+    .\Load-All.ps1 -LoadGold               # bronze, silver, gold, then tests (the full pipeline)
 .EXAMPLE
     .\Load-All.ps1 -Only sites, packages   # just two tables
 .EXAMPLE
@@ -64,6 +72,8 @@ param(
     [switch]   $FullRefresh,
     [switch]   $LoadSilver,
     [switch]   $LoadGold,
+    [switch]   $RunTests,
+    [switch]   $SkipTests,
     [switch]   $StopOnError
 )
 
@@ -228,6 +238,38 @@ function Invoke-Layer([string]$layer) {
 
 if ($LoadSilver -or $LoadGold) { Invoke-Layer 'silver' }   # gold reads silver, so -LoadGold rebuilds silver first
 if ($LoadGold)                 { Invoke-Layer 'gold' }
+
+# ----------------------------------------------------------------- 5. tests
+function Invoke-Tests {
+    Write-Host "`n== Tests ==" -ForegroundColor Cyan
+    if (@($results | Where-Object { $_.Status -in 'Failed', 'Skipped' })) {
+        Write-Host "Skipped: an earlier step failed." -ForegroundColor Yellow
+        Add-Result 'tests' 'test.usp_run_all' 'Skipped' $null 0 'earlier failures'
+        return
+    }
+    $sw = [Diagnostics.Stopwatch]::StartNew()
+    try {
+        # @fail_on_error = 0: read the summary here and list the failures ourselves
+        $summary = (Invoke-Sql "EXEC test.usp_run_all @fail_on_error = 0;").Rows[0]
+        if ($summary.status -eq 'Passed') {
+            Add-Result 'tests' 'test.usp_run_all' 'OK' $summary.tests $sw.Elapsed.TotalSeconds ''
+            Write-Host ("All {0} tests passed ({1:N1}s) - run_id {2}" -f $summary.tests, $sw.Elapsed.TotalSeconds, $summary.run_id) -ForegroundColor Green
+        }
+        else {
+            $bad = Invoke-Sql "SELECT test_name, status, message FROM audit.test_result WHERE run_id = @r AND status <> 'Passed' ORDER BY result_id;" @{ '@r' = $summary.run_id }
+            $bad.Rows | ForEach-Object { Write-Host ("  {0} {1}: {2}" -f $_.status.ToUpper(), $_.test_name, $_.message) -ForegroundColor Red }
+            $msg = "{0} of {1} tests did not pass: {2}" -f $summary.not_passed, $summary.tests, (($bad.Rows | ForEach-Object test_name) -join ', ')
+            Add-Result 'tests' 'test.usp_run_all' 'Failed' $summary.tests $sw.Elapsed.TotalSeconds $msg
+        }
+    }
+    catch {
+        $msg = if ($_.Exception.InnerException) { $_.Exception.InnerException.Message } else { $_.Exception.Message }
+        Add-Result 'tests' 'test.usp_run_all' 'Failed' $null $sw.Elapsed.TotalSeconds $msg
+        Write-Host "FAILED: $msg" -ForegroundColor Red
+    }
+}
+
+if ($RunTests -or ($LoadGold -and -not $SkipTests)) { Invoke-Tests }
 
 # ----------------------------------------------------------------- summary
 Write-Host "`n== Summary ==" -ForegroundColor Cyan

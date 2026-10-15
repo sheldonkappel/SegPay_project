@@ -17,6 +17,7 @@ Use the PowerShell loader in `Segpay Project\PowerShell scripts`:
 ```powershell
 .\Load-All.ps1                          # all 21 bronze tables
 .\Load-All.ps1 -LoadSilver              # bronze, then rebuild silver
+.\Load-All.ps1 -LoadGold                # bronze, silver, gold, then the tests (SQL\tests)
 .\Load-All.ps1 -Only sites, packages    # selected tables only
 .\Load-All.ps1 -FullRefresh             # empty multi-file tables first
 ```

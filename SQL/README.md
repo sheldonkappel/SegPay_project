@@ -11,7 +11,8 @@ Segpay Project\
     ├── bronze\            raw layer: files loaded as received (all text)
     ├── silver\            cleaned layer: typed, de-duplicated, one table per source
     ├── gold\              reporting layer: star schema (dimensions, facts, summaries)
-    └── audit\             change auditing: triggers that log hand-made changes
+    ├── audit\             change auditing: triggers that log hand-made changes
+    └── tests\             automated tests, run after every full refresh
 ```
 
 ## Layers
@@ -31,13 +32,14 @@ Every change to the database leaves a record. Each kind of change is recorded in
 | A load procedure run: rows read, loaded, removed and why | Each load procedure | `audit.load_log` |
 | A row inserted, updated or deleted in a `ref` table (business rules edited by hand) | A trigger on each `ref` table | `audit.data_change_log` |
 | A table, view, procedure, function, trigger, index or schema created, altered or dropped | A database-level trigger | `audit.schema_change_log` (read it through `audit.v_schema_change_log`) |
+| A test run: each test's result and why it failed | `test.usp_run_all` | `audit.test_result` |
 
 Bronze, silver and gold tables have no triggers: they're written only by the load procedures, which already log every run. See `audit\README.md` for the details and example queries.
 
 ## Everyday use
 
 ```powershell
-# Load new files into bronze, then rebuild silver and gold
+# Load new files into bronze, rebuild silver and gold, then run the tests
 & "C:\Users\Sheldon\Desktop\Segpay Project\PowerShell scripts\Load-All.ps1" -LoadGold
 
 # Bronze + silver only
@@ -48,16 +50,20 @@ Bronze, silver and gold tables have no triggers: they're written only by the loa
 
 ```
 cd SQL\bronze
-sqlcmd -S <server> -E -C -d SegPay -b -i deploy_bronze.sql     # bronze tables + procedures
+sqlcmd -S <server> -E -C -d SegPay -b -I -i deploy_bronze.sql  # bronze tables + procedures
 <run PowerShell scripts\Load-All.ps1>                          # load the files
 cd ..\silver
-sqlcmd -S <server> -E -C -d SegPay -b -i deploy_silver.sql     # silver objects + first load
+sqlcmd -S <server> -E -C -d SegPay -b -I -i deploy_silver.sql  # silver objects + first load
 cd ..\gold
-sqlcmd -S <server> -E -C -d SegPay -b -i deploy_gold.sql       # gold objects + first load
+sqlcmd -S <server> -E -C -d SegPay -b -I -i deploy_gold.sql    # gold objects + first load
 cd ..\audit
 sqlcmd -S <server> -E -C -d SegPay -b -I -i deploy_audit.sql   # audit tables + triggers
+cd ..\tests
+sqlcmd -S <server> -E -C -d SegPay -b -I -i deploy_tests.sql   # tests, then run them
 ```
 
-Deploy `audit` last: its triggers attach to the `ref` tables, which the silver and gold foundation scripts create. Re-run it whenever a table is added to the `ref` schema.
+Deploy `audit` after silver and gold: its triggers attach to the `ref` tables, which the silver and gold foundation scripts create. Re-run it whenever a table is added to the `ref` schema. Deploy `tests` last; it fails if anything is wrong.
 
-See `bronze\README.md`, `silver\README.md`, `gold\README.md` and `audit\README.md` for details of each layer.
+**Use `-I` with sqlcmd.** sqlcmd turns `QUOTED_IDENTIFIER` off unless `-I` is given, and a procedure keeps the setting it was created with. Procedures that use XML functions fail without it (this broke the clearing-file load once). Scripts that need it now set it themselves, and the `bronze_xml_settings` test checks it.
+
+See `bronze\README.md`, `silver\README.md`, `gold\README.md`, `audit\README.md` and `tests\README.md` for details of each part.

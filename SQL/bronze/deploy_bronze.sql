@@ -11,7 +11,7 @@
        ..\..\PowerShell scripts\Load-All.ps1 -LoadSilver (bronze, then silver)
 
    How to run (from the SQL\bronze folder - :r paths are relative):
-       sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -i deploy_bronze.sql
+       sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -I -i deploy_bronze.sql
    In SSMS, run 01_bronze_tables.sql, then each file in procedures\.
    ===================================================================== */
 :on error exit

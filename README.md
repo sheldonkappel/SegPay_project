@@ -16,6 +16,7 @@ This project builds a complete data warehouse and reporting solution for **SegPa
 - **Data cleaning at scale:** two payment-gateway layouts merged into one, eight date formats, inconsistent spellings, duplicates and test data, every fix counted and logged.
 - **Dimensional modeling:** a star schema with merchant history (slowly changing dimension type 2) and an "Unknown" member, so no transaction drops out of a total.
 - **Reliable loading:** one command refreshes everything in order, re-running is safe, and every step records what it loaded, removed and why.
+- **Automated testing:** 22 tests run after every refresh, from the cleaning rules to gold-to-silver reconciliation, and fail the run if anything is wrong.
 - **Audit trail:** SQL Server triggers record every hand-made change to the business rules and every change to the database code: who, when, and what it was before.
 - **Business reporting:** chargeback ratios defined the way the card networks measure them, and a dashboard that shows which disputes are worth fighting.
 
@@ -199,7 +200,7 @@ flowchart TB
 | Customers | 69,019 | 69,019 | 69,019 (no personal details) |
 | Chargebacks | 877 | 877 | 877 |
 
-Gold totals are checked against silver on every build: **$7.38M** in transaction value, **$5.73M** in approved sales and rebills, and **$28.7K** in chargebacks, matching to the cent.
+An automated test checks gold totals against silver after every refresh: **$7.38M** in transaction value, **$5.73M** in approved sales and rebills, and **$28.7K** in chargebacks, matching to the cent.
 
 ---
 
@@ -227,7 +228,7 @@ A single command refreshes everything, in order:
 
 ```mermaid
 flowchart LR
-    A["New files arrive"] --> B["Load into bronze"] --> C["Rebuild silver<br/>(~1 min)"] --> D["Refresh gold<br/>(~10 sec)"] --> E["Reports show<br/>new data"]
+    A["New files arrive"] --> B["Load into bronze"] --> C["Rebuild silver<br/>(~1 min)"] --> D["Refresh gold<br/>(~10 sec)"] --> T["Run 22 tests<br/>(~15 sec)"] --> E["Reports show<br/>new data"]
 ```
 
 ```powershell
@@ -235,6 +236,23 @@ flowchart LR
 ```
 
 Every step is logged: start and end time, rows loaded, rows removed and why, and any error. If a step fails, the steps after it don't run, so reports keep showing the last good data instead of half-loaded data.
+
+### Automated tests
+
+After each refresh, 22 automated tests check that the numbers can be trusted. If any test fails, the refresh is reported as failed, with the test's name and what it found.
+
+| Area | What the tests check |
+|---|---|
+| Cleaning rules | Every date, amount, yes/no and "no value" format found in the source files is read correctly. For example, "03/04/2025" becomes March 4, "(67.95)" becomes −67.95, and "N/A" becomes empty. |
+| Raw → clean | Every raw row is accounted for (kept, removed as test data, or removed as a duplicate), no test merchant slips through, refunds are negative, and no "N/A" text is left behind |
+| Reporting | Gold totals match silver to the cent, every transaction links to a real date and merchant, merchant history has no gaps or overlaps, and the chargeback summary agrees with the detail |
+| Safeguards | The change-recording triggers are in place and actually record changes |
+
+The tests were themselves tested: deliberately breaking the data (a one-cent change, a test merchant left in, a positive refund) made the matching test fail with a message pointing at the problem.
+
+The first full run with tests found a real problem: a redeploy earlier that day had quietly stopped the acquirer clearing files from loading. It's now fixed, and a new test makes sure it can't happen again unnoticed.
+
+The tests run after the data is loaded. If one fails, the reports already show the new data, so check the failure before relying on them.
 
 ### Every change is on record
 
@@ -266,6 +284,7 @@ So if a merchant's chargeback warning appears or disappears, it's possible to te
 | `PowerShell scripts\` | The loader that brings files into bronze and runs every layer |
 | `SQL\bronze`, `SQL\silver`, `SQL\gold` | The database code for each layer, each with its own technical README |
 | `SQL\audit` | The triggers and tables that record every change (technical README included) |
+| `SQL\tests` | The automated tests (technical README included) |
 | `Power BI\` | The Power BI report and the SegPay color theme |
 | `docs\images\` | Screenshots used in this README |
 | `logs\` | A log of every refresh (not stored in GitHub) |

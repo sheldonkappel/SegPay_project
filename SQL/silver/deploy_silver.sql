@@ -8,7 +8,7 @@
    How to run
    ----------
      Command line (from the SQL\silver folder):
-       sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -i deploy_silver.sql
+       sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -I -i deploy_silver.sql
 
      SSMS: SSMS resolves :r paths from its own folder, so in SSMS run the
      files one at a time in the order below (00, 01, each procedure, then

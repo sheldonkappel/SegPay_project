@@ -17,7 +17,7 @@ The silver layer cleans the raw text in `bronze` into typed, de-duplicated table
 From this folder:
 
 ```
-sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -i deploy_silver.sql
+sqlcmd -S "DESKTOP-G6OG89D\SQLEXPRESS10" -E -C -d SegPay -b -I -i deploy_silver.sql
 ```
 
 ## Reload silver (daily use)
